@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -e
+
+DEFAULT_CONFIG_PREFIX="default"
+CONFIG_SUFFIX=".yaml"
+CONFIG_DIR="configs/"
+DOTBOT_DIR="dotbot"
+
+DOTBOT_BIN="bin/dotbot"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "${BASEDIR}"
+git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+configs=${DEFAULT_CONFIG_PREFIX}
+if ! [ -z "$*" ]; then
+  configs=${@/--fresh/}
+fi
+
+for conf in ${configs}; do
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG_DIR}${conf}${CONFIG_SUFFIX}"
+done
+

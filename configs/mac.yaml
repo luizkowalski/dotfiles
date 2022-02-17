@@ -1,0 +1,16 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~']
+
+- shell:
+    - [defaults -currentHost write -g AppleFontSmoothing -int 0]
+    - [sudo scutil --set ComputerName "⚡️ luizkowalski"]
+    - [sudo scutil --set HostName "luizkowalski"]
+    - [sudo scutil --set LocalHostName "luizkowalski"]
+    - [sudo nvram SystemAudioVolume=" "]
+    - [defaults write com.apple.finder ShowStatusBar -bool true]
+    - [defaults write com.apple.finder ShowPathbar -bool true]
+    - [defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true]

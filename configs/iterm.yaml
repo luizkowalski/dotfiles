@@ -1,0 +1,13 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/com.googlecode.iterm2.plist: files/com.googlecode.iterm2.plist
+
+- shell:
+    - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/", Setting up preference folder]
+    - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true, Use custom preference folder]

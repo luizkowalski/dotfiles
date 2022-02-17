@@ -1,0 +1,19 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: files/.gitconfig
+    ~/.gitignore: files/.gitignore
+    ~/.aliases: files/.aliases
+    ~/.zshrc: files/.zshrc
+    ~/.config/topgrade.toml: files/topgrade.toml
+    ~/.gemrc: files/.gemrc
+
+- shell: 
+  - [sh -c "files/install_p10k", "Installing p10k"]
+  - [cp files/.p10k.zsh ~/.p10k.zsh, "Copying p10k config"] # For some reason, linking this file doesn't work

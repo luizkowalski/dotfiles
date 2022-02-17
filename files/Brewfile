@@ -1,0 +1,34 @@
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/core'
+tap 'homebrew/services'
+brew 'coreutils'
+brew 'git'
+brew 'go'
+brew 'imagemagick'
+brew 'libxml2'
+# brew 'mas'
+brew 'node'
+brew 'rbenv'
+brew 'redis', restart_service: true
+brew 'topgrade'
+# brew 'youtube-dl'
+# cask 'cryptomator'
+cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
+cask 'font-fira-mono'
+cask 'font-inconsolata'
+cask 'font-inconsolata-nerd-font'
+cask 'font-juliamono'
+cask 'iterm2'
+cask 'ngrok'
+cask 'rectangle'
+cask 'visual-studio-code'
+cask 'vlc'
+# cask 'youtube-to-mp3'
+# mas 'Balance Lock', id: 1019371109
+# mas 'Dato', id: 1470584107
+# mas 'Pandan', id: 1569600264
+# mas 'Spark', id: 1176895641
+# mas 'The Unarchiver', id: 425424353

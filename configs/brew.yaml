@@ -1,0 +1,2 @@
+- shell:
+  - [brew bundle install --file="files/Brewfile", "Installing Brew bundle"]
