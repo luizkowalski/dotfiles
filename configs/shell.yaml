@@ -15,5 +15,5 @@
     ~/.gemrc: files/.gemrc
 
 - shell: 
-  - [sh -c "files/install_p10k", "Installing p10k"]
+  - [sh -c "scripts/install_p10k", "Installing p10k"]
   - [cp files/.p10k.zsh ~/.p10k.zsh, "Copying p10k config"] # For some reason, linking this file doesn't work
