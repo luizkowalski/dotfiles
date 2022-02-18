@@ -3,7 +3,7 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.config/com.googlecode.iterm2.plist: files/com.googlecode.iterm2.plist

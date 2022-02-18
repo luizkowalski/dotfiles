@@ -4,7 +4,7 @@
       relink: true
       force: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.gitconfig: files/.gitconfig
@@ -14,6 +14,6 @@
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.gemrc: files/.gemrc
 
-- shell: 
-  - [sh -c "scripts/install_p10k", "Installing p10k"]
-  - [cp files/.p10k.zsh ~/.p10k.zsh, "Copying p10k config"] # For some reason, linking this file doesn't work
+- shell:
+    - [sh -c "scripts/install_p10k", "Installing p10k"]
+    - [cp files/.p10k.zsh ~/.p10k.zsh, "Copying p10k config"] # For some reason, linking this file doesn't work, it has to be copied
