@@ -1,2 +1,2 @@
 - shell:
-  - [brew bundle install --file="files/Brewfile", "Installing Brew bundle"]
+  - [source ~/.zshrc; brew bundle install --file="files/Brewfile", "Installing Brew bundle"]

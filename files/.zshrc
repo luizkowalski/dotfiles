@@ -11,7 +11,7 @@ export GOPATH=$HOME/go
 export PATH="$PATH:${GOPATH}/bin"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/luizkowalski/.oh-my-zsh"
+export ZSH="/Users/${USER}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -20,7 +20,7 @@ export ZSH="/Users/luizkowalski/.oh-my-zsh"
 # ZSH_THEME="cloud"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-DEFAULT_USER="luizkowalski"
+DEFAULT_USER="${USER}"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
