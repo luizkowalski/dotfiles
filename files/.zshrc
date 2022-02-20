@@ -90,10 +90,11 @@ plugins=(
   # docker
   # docker-compose
   brew
-  # zsh-autosuggestions
+  zsh-autosuggestions
   macos
 )
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -114,19 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 source ~/.aliases
-
-# Phillips Hue
-function lon(){
-  curl -X PUT -d '{"on": true}' http://192.168.178.25/api/EfHCiHXfkbAlGTkpZxxTFS-KeNEwzxkvMF1rgGx4/lights/1/state
-}
-
-function loff(){
-  curl -X PUT -d '{"on": false}' http://192.168.178.25/api/EfHCiHXfkbAlGTkpZxxTFS-KeNEwzxkvMF1rgGx4/lights/1/state
-}
-
-function lset(){
-  curl -X PUT -d '{"on": true, "bri": '$1' }' http://192.168.178.25/api/EfHCiHXfkbAlGTkpZxxTFS-KeNEwzxkvMF1rgGx4/lights/1/state
-}
+source ~/.functions
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(rbenv init -)"
