@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
+tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/core'
 tap 'homebrew/services'
@@ -19,6 +22,7 @@ cask 'font-juliamono'
 cask 'font-meslo-lg'
 cask 'font-meslo-lg-dz'
 cask 'iterm2'
+cask 'logitech-options'
 cask 'ngrok'
 cask 'rectangle'
 cask 'spotify'
