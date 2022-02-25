@@ -1,11 +1,4 @@
-- defaults:
-    link:
-      create: true
-      relink: true
-
-- clean: ["~"]
-
 - shell:
-  - [mkdir -p ~/Projects, Creating projects directory]
+  - [mkdir -p ~/Projects, "Creating Projects directory"]
   - [sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing Oh My Zsh]
   - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", "Installing Brew"]

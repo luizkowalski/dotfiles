@@ -1,12 +1,6 @@
-- defaults:
-    link:
-      create: true
-      relink: true
-
-- clean: ["~"]
-
 - shell:
     - [defaults -currentHost write -g AppleFontSmoothing -int 0]
+    - [defaults write -g CGFontRenderingFontSmoothingDisabled -bool true]
     - [sudo scutil --set ComputerName "⚡️ luizkowalski"]
     - [sudo scutil --set HostName "luizkowalski"]
     - [sudo scutil --set LocalHostName "luizkowalski"]
@@ -15,9 +9,8 @@
     - [defaults write com.apple.finder ShowPathbar -bool true]
     - [defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true]
     - [defaults write com.apple.dock autohide -bool true]
-    - [defaults write -g CGFontRenderingFontSmoothingDisabled -bool true]
-    - [defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false]
     - [defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 80]
+    - [defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false]
     - [defaults write NSGlobalDomain AppleLanguages -array "en" "pt-BR"]
     - [defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"]
     - [defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"]
