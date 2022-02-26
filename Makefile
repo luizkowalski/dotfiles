@@ -1,5 +1,8 @@
 all: setup
 
+update_dotbot:
+	git submodule update --remote dotbot
+
 request_sudo:
 	sudo -v
 
