@@ -4,7 +4,7 @@
     - [sudo scutil --set ComputerName "⚡️ luizkowalski"]
     - [sudo scutil --set HostName "luizkowalski"]
     - [sudo scutil --set LocalHostName "luizkowalski"]
-    - [sudo nvram SystemAudioVolume=" "]
+    - [sudo nvram StartupMute=%01]
     - [defaults write com.apple.finder ShowStatusBar -bool true]
     - [defaults write com.apple.finder ShowPathbar -bool true]
     - [defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true]
