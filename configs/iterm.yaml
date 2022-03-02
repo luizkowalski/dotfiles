@@ -4,7 +4,7 @@
       relink: true
       force: true
 
-- clean: ["~"]
+- clean: ["~/.config"]
 
 - link:
     ~/.config/com.googlecode.iterm2.plist: files/com.googlecode.iterm2.plist

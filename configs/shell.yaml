@@ -4,7 +4,11 @@
       relink: true
       force: true
 
-- clean: ["~"]
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
 
 - link:
     ~/.gitconfig: files/.gitconfig
@@ -17,5 +21,5 @@
 
 - shell:
     - [sh -c "scripts/install_p10k", "Installing p10k"]
-    - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
     - [cp files/.p10k.zsh ~/.p10k.zsh, "Copying p10k config"] # For some reason, linking this file doesn't work, it has to be copied
+    - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
