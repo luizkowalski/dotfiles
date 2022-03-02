@@ -75,7 +75,7 @@ DEFAULT_USER="${USER}"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
+VSCODE='code'
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -83,15 +83,16 @@ DEFAULT_USER="${USER}"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   bundler
-  git
-  ruby
-  rails
-  vscode
+  brew
   # docker
   # docker-compose
-  brew
-  zsh-autosuggestions
+  git
   macos
+  rails
+  ruby
+  # terraform
+  vscode
+  zsh-autosuggestions
 )
 
 source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
