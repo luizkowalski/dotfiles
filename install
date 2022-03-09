@@ -20,6 +20,5 @@ if ! [ -z "$*" ]; then
 fi
 
 for conf in ${configs}; do
-    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG_DIR}${conf}${CONFIG_SUFFIX}"
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${CONFIG_DIR}${conf}${CONFIG_SUFFIX}"
 done
-
