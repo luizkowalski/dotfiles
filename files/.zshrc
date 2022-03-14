@@ -17,10 +17,19 @@ export ZSH="/Users/${USER}/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="pygmalion"
+ZSH_THEME="bullet-train"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
 
 DEFAULT_USER="${USER}"
+BULLETTRAIN_PROMPT_ORDER=(
+  dir
+  git
+  ruby
+)
+BULLETTRAIN_GIT_FG="white"
+BULLETTRAIN_GIT_BG="black"
+BULLETTRAIN_DIR_FG="black"
+BULLETTRAIN_RUBY_FG="black"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -35,7 +44,7 @@ DEFAULT_USER="${USER}"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"

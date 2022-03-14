@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+rm -rf ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/bullet-train.zsh-theme
+curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/bullet-train.zsh-theme
