@@ -17,10 +17,8 @@
     ~/.functions: files/.functions
     ~/.zshrc: files/.zshrc
     ~/.config/topgrade.toml: files/topgrade.toml
+    ~/.config/starship.toml: files/starship.toml
     ~/.gemrc: files/.gemrc
 
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
-    - [sh -c "scripts/install_bullet_train", "Installing Bullet Train"]
-    # - [sh -c "scripts/install_p10k", "Installing p10k"]
-    # - [cp files/.p10k.zsh ~/.p10k.zsh, "Copying p10k config"] # For some reason, linking this file doesn't work, it has to be copied
