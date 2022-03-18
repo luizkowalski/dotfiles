@@ -1,0 +1,40 @@
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+# [git_commit]
+# only_detached = false
+
+[git_metrics]
+disabled = false
+
+[golang]
+symbol = " "
+
+[java]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+threshold = 0
+disabled = false
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[ruby]
+symbol = "🕹  "
