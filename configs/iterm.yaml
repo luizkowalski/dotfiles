@@ -6,6 +6,9 @@
 
 - clean: ["~/.config"]
 
+- shell:
+  - [rm ~/.config/com.googlecode.iterm2.plist, "Cleaning up current iTerm2 config"]
+
 - link:
     ~/.config/com.googlecode.iterm2.plist: files/com.googlecode.iterm2.plist
 

@@ -1,3 +1,6 @@
+# [gcloud]
+# disabled = true
+
 [directory]
 read_only = " "
 
