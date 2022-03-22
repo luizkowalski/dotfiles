@@ -4,7 +4,16 @@
 	name = luizkowalski
 	email = luizeduardokowalski@gmail.com
 [core]
-	pager = less -F -X
+	# pager = less -F -X
+  pager = delta
 	excludesfile = /Users/luizkowalski/.gitignore
 [include]
 	path = /Users/luizkowalski/.config/dev/gitconfig
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
