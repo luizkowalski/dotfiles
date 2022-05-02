@@ -1,3 +1,30 @@
+function squashit() {
+  to_squash=$(git symbolic-ref --short -q HEAD)
+  echo "Squashing ${to_squash}..."
+
+  echo "Going back to master and refresh it..."
+  git checkout -q master
+  git pull -q origin master
+
+  echo "Done. Going to a temp branch..."
+  temp_branch="temp-${RANDOM}"
+
+  echo "Creating temp branch ${temp_branch}..."
+  git checkout -b $temp_branch
+
+  echo "Done. Squashing ${to_squash}..."
+  git merge --squash $to_squash
+
+  echo "Squashed. Committing..."
+  git commit -am "Squashed $to_squash"
+
+  git checkout $to_squash
+  git reset --hard $temp_branch
+
+  echo "All done, deleting $temp_branch"
+  git branch -D $temp_branch
+}
+
 # Phillips Hue
 function lon(){
   curl -X PUT -d '{"on": true}' http://192.168.178.25/api/EfHCiHXfkbAlGTkpZxxTFS-KeNEwzxkvMF1rgGx4/lights/1/state
@@ -9,4 +36,9 @@ function loff(){
 
 function lset(){
   curl -X PUT -d '{"on": true, "bri": '$1' }' http://192.168.178.25/api/EfHCiHXfkbAlGTkpZxxTFS-KeNEwzxkvMF1rgGx4/lights/1/state
+}
+
+function reload(){
+  echo "Reloading..."
+  source ~/dotfiles/files/.zshrc
 }
