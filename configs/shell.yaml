@@ -16,9 +16,10 @@
     ~/.aliases: files/.aliases
     ~/.functions: files/.functions
     ~/.zshrc: files/.zshrc
+    ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
-    ~/.gemrc: files/.gemrc
+    ~/.config/karabiner.json: files/karabiner.json
 
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
