@@ -114,11 +114,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
 
-source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
-source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
-
-chruby 3.1.1
-
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 eval "$(starship init zsh)"

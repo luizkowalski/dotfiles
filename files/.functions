@@ -2,9 +2,9 @@ function squashit() {
   to_squash=$(git symbolic-ref --short -q HEAD)
   echo "Squashing ${to_squash}..."
 
-  echo "Going back to master and refresh it..."
-  git checkout -q master
-  git pull -q origin master
+  echo "Going back to main and refresh it..."
+  git checkout -q main
+  git pull -q origin main
 
   echo "Done. Going to a temp branch..."
   temp_branch="temp-${RANDOM}"
