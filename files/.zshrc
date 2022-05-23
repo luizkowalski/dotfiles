@@ -112,12 +112,14 @@ source ~/.functions
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-shopify_chruby=/opt/homebrew/opt/chruby/share/chruby/chruby.sh
+shopify=/opt/dev/sh/chruby/chruby.sh
 
-if [[ -f shopify_chruby ]]; then
+if [[ -f "$shopify" ]]; then
+  echo "Loadin Shopify environment"
   [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
   [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 else
+echo "Loading home environment"
   source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
   source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 fi
