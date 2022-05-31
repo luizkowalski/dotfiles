@@ -2,13 +2,13 @@
 # disabled = true
 
 [directory]
-read_only = " "
+read_only = " "
 
-[docker_context]
-symbol = " "
+# [docker_context]
+# symbol = " "
 
-[elixir]
-symbol = " "
+# [elixir]
+# symbol = " "
 
 [git_branch]
 symbol = " "
@@ -22,8 +22,8 @@ disabled = false
 [golang]
 symbol = " "
 
-[java]
-symbol = " "
+# [java]
+# symbol = " "
 
 [memory_usage]
 symbol = " "
@@ -40,4 +40,4 @@ symbol = " "
 symbol = " "
 
 [ruby]
-symbol = "🕹  "
+symbol = "💎 "
