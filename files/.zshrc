@@ -85,9 +85,9 @@ plugins=(
   # terraform
   vscode
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -125,5 +125,3 @@ fi
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
 eval "$(starship init zsh)"
-
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
