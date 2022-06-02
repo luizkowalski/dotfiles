@@ -125,3 +125,5 @@ fi
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
 eval "$(starship init zsh)"
+
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
