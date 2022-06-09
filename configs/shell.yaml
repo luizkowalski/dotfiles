@@ -19,6 +19,7 @@
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
+    ~/.config/nvim/init.vim: files/init.vim
     # ~/.config/karabiner.json: files/karabiner.json
 
 - shell:
