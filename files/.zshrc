@@ -90,6 +90,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export EJSON_KEYDIR="/Users/luizkowalski/ejson/keys"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -123,5 +125,6 @@ else
 fi
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+[[ -x /opt/homebrew/bin/pyenv ]] && eval "$(pyenv init -)"
 
 eval "$(starship init zsh)"

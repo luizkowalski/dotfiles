@@ -1,10 +1,12 @@
 function squashit() {
+  local main_branch="${1:-main}"
+
   to_squash=$(git symbolic-ref --short -q HEAD)
   echo "Squashing ${to_squash}..."
 
   echo "Going back to main and refresh it..."
-  git checkout -q main
-  git pull -q origin main
+  git checkout -q $main_branch
+  git pull -q origin $main_branch
 
   echo "Done. Going to a temp branch..."
   temp_branch="temp-${RANDOM}"
