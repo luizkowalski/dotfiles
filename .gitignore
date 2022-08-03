@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/homebrew,macos,ruby,rails
 # Edit at https://www.toptal.com/developers/gitignore?templates=homebrew,macos,ruby,rails
 
+.vscode
+
 ### Homebrew ###
 Brewfile.lock.json
 

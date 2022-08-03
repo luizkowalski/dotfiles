@@ -86,6 +86,7 @@ plugins=(
   vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,6 +115,8 @@ source ~/.functions
 
 shopify=/opt/dev/sh/chruby/chruby.sh
 
+[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+
 if [[ -f "$shopify" ]]; then
   echo "Loadin Shopify environment"
   [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
@@ -124,7 +127,6 @@ else
   source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 fi
 
-[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 [[ -x /opt/homebrew/bin/pyenv ]] && eval "$(pyenv init -)"
 
 eval "$(starship init zsh)"
