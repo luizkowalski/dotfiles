@@ -39,3 +39,7 @@ function lon(){
 function loff(){
   echo '{"id":1,"method":"setState","params":{"state":false}}' | nc -u -w 1 192.168.178.20 38899
 }
+
+function su() {
+  spin up $1 --wait -c $1.branch=${2:-main}
+}
