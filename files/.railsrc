@@ -1,0 +1,9 @@
+--database=postgresql
+--skip-action-mailer
+--skip-action-mailbox
+--skip-action-cable
+--skip-jbuilder
+--skip-system-test
+--skip-bootsnap
+--javascript=esbuild
+--css=tailwind

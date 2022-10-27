@@ -16,6 +16,7 @@
     ~/.aliases: files/.aliases
     ~/.functions: files/.functions
     ~/.zshrc: files/.zshrc
+    ~/.railsrc: files/.railsrc
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
