@@ -61,6 +61,7 @@ self_update = true
 
 [brew]
 # greedy_cask = true
+autoremove = true
 
 [linux]
 # Arguments to pass yay when updating packages
@@ -85,3 +86,5 @@ self_update = true
 [npm]
 # Use sudo if the NPM directory isn't owned by the current user
 #use_sudo = true
+
+[firmware]
