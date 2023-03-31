@@ -17,4 +17,5 @@ alias so="spin open"
 # alias su="spin up"
 alias t="bundle exec rake test"
 alias tg="topgrade"
+alias trigger_build='git commit --allow-empty -m "trigger build"'
 alias zshconfig="code ~/.zshrc"
