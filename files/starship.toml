@@ -7,17 +7,18 @@ read_only = " "
 [docker_context]
 symbol = " "
 
-# [elixir]
-# symbol = " "
+[elixir]
+symbol = " "
 
 [git_branch]
 symbol = " "
 
-# [git_commit]
-# only_detached = false
+[git_commit]
+only_detached = true
 
 [git_metrics]
 disabled = false
+
 
 [golang]
 symbol = " "
@@ -44,3 +45,8 @@ symbol = " "
 
 [ruby]
 symbol = "💎 "
+
+[shell]
+unknown_indicator = 'mystery shell'
+style = 'cyan bold'
+disabled = false

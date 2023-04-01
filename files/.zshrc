@@ -129,6 +129,6 @@ fi
 
 [[ -x /opt/homebrew/bin/pyenv ]] && eval "$(pyenv init -)"
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 eval "$(mcfly init zsh)"
