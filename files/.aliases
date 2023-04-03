@@ -1,3 +1,5 @@
+alias btg="bin/tapioca gem"
+alias btd="bin/tapioca dsl"
 alias berd="bundle exec rubocop -D"
 alias bera="bundle exec rubocop -A"
 # alias berd="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -D"
@@ -17,5 +19,4 @@ alias so="spin open"
 # alias su="spin up"
 alias t="bundle exec rake test"
 alias tg="topgrade"
-alias trigger_build='git commit --allow-empty -m "trigger build"'
 alias zshconfig="code ~/.zshrc"

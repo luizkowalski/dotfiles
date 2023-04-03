@@ -10,7 +10,7 @@ export ZSH="/Users/${USER}/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="wezm"
 
 DEFAULT_USER="${USER}"
 # Set list of themes to pick from when loading at random
@@ -129,6 +129,6 @@ fi
 
 [[ -x /opt/homebrew/bin/pyenv ]] && eval "$(pyenv init -)"
 
-eval "$(mcfly init zsh)"
-
 eval "$(starship init zsh)"
+
+eval "$(mcfly init zsh)"
