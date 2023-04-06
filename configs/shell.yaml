@@ -10,6 +10,9 @@
     ~/.config:
       recursive: true
 
+- shell:
+  - [sh -c "scripts/install_nvchad", "Installing nvchad"]
+
 - link:
     ~/.gitconfig: files/.gitconfig
     ~/.gitignore: files/.gitignore
@@ -20,8 +23,10 @@
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
+    ~/.config/nvim/lua/custom/chadrc.lua: files/chadrc.lua
+    ~/.config/nvim/lua/custom/plugins.lua: files/plugins.lua
+    ~/.config/nvim/lua/custom/mappings.lua: files/mappings.lua
 
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
     - [sh -c "scripts/install_zsh_syntax_highlight", "Installing zsh-syntax-highlight"]
-    - [sh -c "scripts/install_nvchad", "Installing nvchad"]
