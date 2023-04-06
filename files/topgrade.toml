@@ -60,7 +60,7 @@ self_update = true
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 
 [brew]
-# greedy_cask = true
+greedy_cask = true
 autoremove = true
 
 [linux]

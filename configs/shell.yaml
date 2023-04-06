@@ -19,10 +19,8 @@
     ~/.railsrc: files/.railsrc
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
-    ~/.config/starship.toml: files/starship.toml
-    ~/.config/nvim/init.vim: files/init.vim
+    ~/.config/starship.toml: files/starship.toml 
 
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
     - [sh -c "scripts/install_zsh_syntax_highlight", "Installing zsh-syntax-highlight"]
-    - [sh -c "scripts/install_neovim_plugins", "Installing plugin manager"]
