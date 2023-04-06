@@ -6,6 +6,7 @@ M.abc = {
         ["<C-o>"] = {":Telescope find_files <CR>", "Telescope Files"},
         ["<C-Left>"] = {"^ <CR>", "beginning of line"},
         ["<C-Right>"] = {"$ <CR>", "end of line"},
+        ["<C-z"] = { "undo <CR>", "Undo"},
         ["q"] = {"<cmd> <leader> x <CR>", "Quit file"}
     },
 
