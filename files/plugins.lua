@@ -1,5 +1,5 @@
 local plugins = {
-  { "github/copilot.vim", lazy = false }
+  { "github/copilot.vim", lazy = false },
 }
 
 return plugins

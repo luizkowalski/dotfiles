@@ -88,3 +88,4 @@ autoremove = true
 #use_sudo = true
 
 [firmware]
+upgrade = true

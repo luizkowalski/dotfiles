@@ -23,8 +23,8 @@ disabled = false
 [golang]
 symbol = " "
 
-# [python]
-# disabled = true
+[python]
+disabled = false
 
 # [java]
 # symbol = " "
