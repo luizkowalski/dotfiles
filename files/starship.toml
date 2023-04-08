@@ -19,7 +19,6 @@ only_detached = true
 [git_metrics]
 disabled = false
 
-
 [golang]
 symbol = " "
 
@@ -37,8 +36,8 @@ disabled = false
 [nodejs]
 symbol = " "
 
-[package]
-symbol = " "
+# [package]
+# symbol = " "
 
 [rust]
 symbol = " "

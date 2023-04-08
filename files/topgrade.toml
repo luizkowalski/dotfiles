@@ -73,7 +73,7 @@ autoremove = true
 #redhat_distro_sync = false
 #rpm_ostree = false
 
-[windows]
+# [windows]
 # Manually select Windows updates
 #accept_all_updates = false
 #open_remotes_in_new_terminal = true
