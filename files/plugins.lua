@@ -7,9 +7,13 @@ local plugins = {
         require "custom.configs.lspconfig"
      end,
   },
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = { current_line_blame = true },
+  },
 }
 
-require'lspconfig'.ruby_ls.setup{}
+require('lspconfig').ruby_ls.setup{}
 
 return plugins
 
