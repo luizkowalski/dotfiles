@@ -26,6 +26,7 @@
     ~/.config/nvim/lua/custom/chadrc.lua: files/chadrc.lua
     ~/.config/nvim/lua/custom/plugins.lua: files/plugins.lua
     ~/.config/nvim/lua/custom/mappings.lua: files/mappings.lua
+    ~/.config/nvim/lua/custom/configs/null-ls.lua: files/null-ls.lua
     ~/.config/nvim/lua/custom/configs/lspconfig.lua: files/lspconfig.lua
 
 - shell:
