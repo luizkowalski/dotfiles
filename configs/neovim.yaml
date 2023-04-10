@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean:
+    ~/.config/nvim:
+      recursive: true
+
+- shell:
+    - [sh -c "scripts/install_nvchad", "Installing nvchad"]
+
+- link:
+    ~/.config/nvim/lua/custom/chadrc.lua: files/nvchad/chadrc.lua
+    ~/.config/nvim/lua/custom/plugins.lua: files/nvchad/plugins.lua
+    ~/.config/nvim/lua/custom/mappings.lua: files/nvchad/mappings.lua
+    ~/.config/nvim/lua/custom/configs/null-ls.lua: files/nvchad/null-ls.lua
+    ~/.config/nvim/lua/custom/configs/lspconfig.lua: files/nvchad/lspconfig.lua

@@ -8,9 +8,11 @@ local sources = {
   formatting.stylua,
   formatting.htmlbeautifier,
   formatting.prettier,
+  formatting.jq,
   hover.printenv,
   hover.dictionary,
   diagnostics.eslint,
+  diagnostics.yamllint,
   -- diagnostics.shellcheck,
   -- diagnostics.rubocop.with ( { command = "bundle", args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" } } ),
 }
