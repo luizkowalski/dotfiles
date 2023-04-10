@@ -29,9 +29,11 @@ local plugins = {
           "html-lsp",
           "prettier",
           "stylua",
-          "ruby-lsp",
         },
       },
+    },
+    {
+      "williamboman/mason-lspconfig.nvim",
     },
   },
 }

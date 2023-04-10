@@ -20,6 +20,7 @@ brew 'node'
 # brew 'rbenv'
 brew 'ruby-install'
 brew 'redis', restart_service: true
+brew 'shellcheck'
 brew 'starship'
 brew 'topgrade'
 brew 'tmux'

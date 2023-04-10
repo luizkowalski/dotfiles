@@ -23,11 +23,11 @@
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
-    ~/.config/nvim/lua/custom/chadrc.lua: files/chadrc.lua
-    ~/.config/nvim/lua/custom/plugins.lua: files/plugins.lua
-    ~/.config/nvim/lua/custom/mappings.lua: files/mappings.lua
-    ~/.config/nvim/lua/custom/configs/null-ls.lua: files/null-ls.lua
-    ~/.config/nvim/lua/custom/configs/lspconfig.lua: files/lspconfig.lua
+    ~/.config/nvim/lua/custom/chadrc.lua: files/nvchad/chadrc.lua
+    ~/.config/nvim/lua/custom/plugins.lua: files/nvchad/plugins.lua
+    ~/.config/nvim/lua/custom/mappings.lua: files/nvchad/mappings.lua
+    ~/.config/nvim/lua/custom/configs/null-ls.lua: files/nvchad/null-ls.lua
+    ~/.config/nvim/lua/custom/configs/lspconfig.lua: files/nvchad/lspconfig.lua
 
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]

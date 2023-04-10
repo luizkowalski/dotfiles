@@ -6,9 +6,11 @@ M.custom = {
     ["<C-k>"] = {
       function()
         vim.lsp.buf.format()
-        -- vim.lsp.buf.format({name = "ruby_ls", async = true})
       end,
     },
+    ["<C-d>"] = { "<ESC>^d$", "Delete whole line" },
+    ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
+    ["<C-'>"] = { ":m .+1<CR>==", "Move line down" },
     ["<C-o>"] = { ":Telescope find_files <CR>", "Telescope Files" },
     ["<C-p>"] = { ":Telescope git_files <CR>", "Telescope Files" },
     ["<C-z>"] = { "<cmd> undo <CR>", "Undo" },
@@ -22,6 +24,11 @@ M.custom = {
       end,
       "close buffer",
     },
+  },
+
+  v = {
+    ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
+    ["<C-'>"] = { ":m .+1<CR>==", "Move line down" },
   },
 
   i = {},
