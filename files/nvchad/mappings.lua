@@ -8,6 +8,8 @@ M.custom = {
         vim.lsp.buf.format()
       end,
     },
+    -- Collapse nvim trere
+    ["<C-Minus>"] = { "<cmd>NvimTreCollapse<CR>", "Collapse all folders" },
     ["<C-d>"] = { "<ESC>^d$", "Delete whole line" },
     ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
     ["<A-Up>"] = { ":m .-2<CR>==", "Move line up" },
