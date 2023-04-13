@@ -35,6 +35,23 @@ local plugins = {
     {
       "williamboman/mason-lspconfig.nvim",
     },
+    {
+      "echasnovski/mini.cursorword",
+      version = false,
+      lazy = false,
+      config = function()
+        require("mini.cursorword").setup()
+      end,
+    },
+    {
+      "echasnovski/mini.animate",
+      version = false,
+      lazy = false,
+      config = function()
+        require("mini.animate").setup()
+      end,
+    },
+    { "echasnovski/mini.trailspace", version = false },
   },
 }
 
