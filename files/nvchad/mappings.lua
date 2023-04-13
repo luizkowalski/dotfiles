@@ -36,6 +36,8 @@ M.custom = {
     -- Move the block up and down
     ["<A-Up>"] = { ":m '<-2<CR>gv=gv", "Move block up" },
     ["<A-Down>"] = { ":m '>+1<CR>gv=gv", "Move line down" },
+    ["<C-r>"] = { "y <ESC> :%s/<C-r><C-w>//g<Left><Left>" },
+    -- replace whatever is selected in the Visual mode
   },
 
   i = {
