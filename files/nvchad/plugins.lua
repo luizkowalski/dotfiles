@@ -49,7 +49,11 @@ local plugins = {
     version = false,
     lazy = false,
     config = function()
-      require("mini.indentscope").setup()
+      require("mini.indentscope").setup({
+        draw = {
+          delay = 50,
+        },
+      })
     end,
   },
   {
@@ -60,14 +64,14 @@ local plugins = {
       require("mini.cursorword").setup()
     end,
   },
-  {
-    "echasnovski/mini.animate",
-    version = false,
-    lazy = false,
-    config = function()
-      require("mini.animate").setup()
-    end,
-  },
+  -- {
+  --   "echasnovski/mini.animate",
+  --   version = false,
+  --   lazy = false,
+  --   config = function()
+  --     require("mini.animate").setup()
+  --   end,
+  -- },
 }
 
 return plugins

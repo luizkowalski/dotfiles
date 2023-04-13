@@ -13,6 +13,7 @@ local sources = {
   hover.dictionary,
   diagnostics.eslint,
   diagnostics.yamllint,
+  diagnostics.hadolint,
   -- diagnostics.shellcheck,
   -- diagnostics.rubocop.with ( { command = "bundle", args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" } } ),
 }

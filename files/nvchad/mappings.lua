@@ -8,17 +8,17 @@ M.custom = {
         vim.lsp.buf.format()
       end,
     },
-    -- Collapse nvim trere
-    ["<C-Minus>"] = { "<cmd>NvimTreCollapse<CR>", "Collapse all folders" },
+    --search and replace word under cursor
+    ["<C-r>"] = { ":%s/<C-r><C-w>//g<Left><Left>", "Replace word under cursor" },
     ["<C-d>"] = { "<ESC>^d$", "Delete whole line" },
     ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
     ["<A-Up>"] = { ":m .-2<CR>==", "Move line up" },
     ["<C-'>"] = { ":m .+1<CR>==", "Move line down" },
     ["<A-Down>"] = { ":m .+1<CR>==", "Move line down" },
-    ["<C-o>"] = { ":Telescope find_files <CR>", "Telescope Files" },
-    ["<C-p>"] = { ":Telescope git_files <CR>", "Telescope Files" },
+    ["<C-o>"] = { ":Telescope find_files <CR>", "Find all files" },
+    ["<C-p>"] = { ":Telescope git_files <CR>", "Find files added to Git" },
     ["<C-z>"] = { "<cmd> undo <CR>", "Undo" },
-    ["<leader>gs"] = { ":Telescope git_status <CR>", "git status" },
+    ["<leader>gs"] = { ":Telescope git_status <CR>", "Git status" },
     ["<C-f>"] = { ":Telescope live_grep <CR>", "live grep" },
     ["<C-b>"] = { "<ESC>^i", "beginning of line" },
     ["<A-Left>"] = { "<ESC>^", "beginning of line" },
@@ -28,7 +28,7 @@ M.custom = {
       function()
         require("nvchad_ui.tabufline").close_buffer()
       end,
-      "close buffer",
+      "Close current buffer",
     },
   },
 
