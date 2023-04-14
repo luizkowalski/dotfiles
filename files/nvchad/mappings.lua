@@ -1,6 +1,5 @@
 local M = {}
 
--- Your custom mappings
 M.custom = {
   n = {
     ["<C-k>"] = {
@@ -8,7 +7,6 @@ M.custom = {
         vim.lsp.buf.format()
       end,
     },
-    --search and replace word under cursor
     ["<C-r>"] = { ":%s/<C-r><C-w>//g<Left><Left>", "Replace word under cursor" },
     ["<C-d>"] = { "<ESC>^d$", "Delete whole line" },
     ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
@@ -36,8 +34,6 @@ M.custom = {
     -- Move the block up and down
     ["<A-Up>"] = { ":m '<-2<CR>gv=gv", "Move block up" },
     ["<A-Down>"] = { ":m '>+1<CR>gv=gv", "Move line down" },
-    ["<C-r>"] = { "y <ESC> :%s/<C-r><C-w>//g<Left><Left>" },
-    -- replace whatever is selected in the Visual mode
   },
 
   i = {
