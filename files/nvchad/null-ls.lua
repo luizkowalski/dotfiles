@@ -8,13 +8,14 @@ local sources = {
   formatting.stylua,
   formatting.htmlbeautifier,
   formatting.prettier,
+  formatting.shellharden,
   formatting.jq,
-  hover.printenv,
-  hover.dictionary,
   diagnostics.eslint,
   diagnostics.yamllint,
   diagnostics.hadolint,
-  -- diagnostics.shellcheck,
+  diagnostics.shellcheck,
+  hover.dictionary,
+  hover.printenv,
   -- diagnostics.rubocop.with ( { command = "bundle", args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" } } ),
 }
 
