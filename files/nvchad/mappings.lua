@@ -21,6 +21,7 @@ M.custom = {
     ["<C-b>"] = { "<ESC>^i", "beginning of line" },
     ["<A-Left>"] = { "<ESC>^", "beginning of line" },
     ["<A-Right>"] = { "<End>", "end of line" },
+    ["<C-S-d>"] = { "<ESC> yyp", "Duplicate line" },
     ["<C-e>"] = { "<End>", "end of line" },
     ["q"] = {
       function()
@@ -37,10 +38,13 @@ M.custom = {
   },
 
   i = {
-    ["<A-Up>"] = { ":m .-2<CR>==", "Move line up" },
-    ["<A-Down>"] = { ":m .+1<CR>==", "Move line down" },
+    ["<A-Up>"] = { "<ESC> :m .-2<CR>== i", "Move line up" },
+    ["<A-Down>"] = { "<ESC> :m .+1<CR>== i", "Move line down" },
     ["<A-Left>"] = { "<ESC>^i", "beginning of line" },
     ["<A-Right>"] = { "<End>", "end of line" },
+    ["<C-s>"] = { "<ESC> <cmd> w <CR> i", "Save" },
+    ["<C-z>"] = { "<ESC> <cmd> undo <CR> i", "Undo" },
+    ["<C-S-d>"] = { "<ESC> yyp i", "Duplicate line" },
   },
 }
 
