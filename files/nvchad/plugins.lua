@@ -63,6 +63,17 @@ local plugins = {
       require("mini.cursorword").setup()
     end,
   },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({})
+    end,
+    ops = { suggestion = {
+      auto_trigger = true,
+    } },
+  },
   -- {
   --   "echasnovski/mini.animate",
   --   version = false,
