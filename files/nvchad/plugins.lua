@@ -35,7 +35,6 @@ local plugins = {
     opts = {
       ensure_installed = {
         "lua-language-server",
-        "html-lsp",
         "prettier",
         "stylua",
       },
