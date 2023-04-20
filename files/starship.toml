@@ -45,7 +45,7 @@ symbol = " "
 [ruby]
 symbol = "💎 "
 
-[shell]
-unknown_indicator = 'mystery shell'
-style = 'cyan bold'
-disabled = false
+# [shell]
+# unknown_indicator = 'mystery shell'
+# style = 'red bold'
+# disabled = false
