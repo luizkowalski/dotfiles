@@ -74,6 +74,28 @@ local plugins = {
       auto_trigger = true,
     } },
   },
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      {
+        "zbirenbaum/copilot-cmp",
+        config = function()
+          require("copilot_cmp").setup()
+        end,
+        lazy = false
+      },
+    },
+    opts = {
+      sources = {
+        { name = "nvim_lsp" },
+        { name = "luasnip" },
+        { name = "buffer" },
+        { name = "nvim_lua" },
+        { name = "path" },
+        { name = "copilot" },
+      },
+    },
+  },
   -- {
   --   "echasnovski/mini.animate",
   --   version = false,
