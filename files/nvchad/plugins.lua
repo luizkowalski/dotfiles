@@ -63,36 +63,38 @@ local plugins = {
       require("mini.cursorword").setup()
     end,
   },
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup({})
-    end,
-    ops = { suggestion = {
-      auto_trigger = true,
-    } },
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require("copilot").setup({})
+  --   end,
+  --   ops = {
+  --     suggestion = {
+  --       auto_trigger = true,
+  --     },
+  --   },
+  -- },
   {
     "hrsh7th/nvim-cmp",
-    dependencies = {
-      {
-        "zbirenbaum/copilot-cmp",
-        config = function()
-          require("copilot_cmp").setup()
-        end,
-        lazy = false
-      },
-    },
+  --   dependencies = {
+  --     {
+  --       "zbirenbaum/copilot-cmp",
+  --       config = function()
+  --         require("copilot_cmp").setup()
+  --       end,
+  --       lazy = false,
+  --     },
+  --   },
     opts = {
       sources = {
         -- { name = "nvim_lsp" },
         -- { name = "luasnip" },
         -- { name = "buffer" },
         -- { name = "nvim_lua" },
-        { name = "path" },
-        { name = "copilot" },
+        -- { name = "path" },
+        -- { name = "copilot" },
       },
     },
   },
