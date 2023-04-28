@@ -78,15 +78,15 @@ local plugins = {
   -- },
   {
     "hrsh7th/nvim-cmp",
-  --   dependencies = {
-  --     {
-  --       "zbirenbaum/copilot-cmp",
-  --       config = function()
-  --         require("copilot_cmp").setup()
-  --       end,
-  --       lazy = false,
-  --     },
-  --   },
+    --   dependencies = {
+    --     {
+    --       "zbirenbaum/copilot-cmp",
+    --       config = function()
+    --         require("copilot_cmp").setup()
+    --       end,
+    --       lazy = false,
+    --     },
+    --   },
     opts = {
       sources = {
         -- { name = "nvim_lsp" },
@@ -97,6 +97,18 @@ local plugins = {
         -- { name = "copilot" },
       },
     },
+  },
+  {
+    "rgroli/other.nvim",
+    lazy = false,
+    config = function()
+      require("other-nvim").setup({
+        mappings = {
+          "rails",
+        },
+        rememberBuffers = false,
+      })
+    end,
   },
   -- {
   --   "echasnovski/mini.animate",
