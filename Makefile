@@ -13,6 +13,9 @@ setup: request_sudo
 shell:
 	./install shell
 
+iterm:
+	./install iterm
+
 brew:
 	./install brew
 

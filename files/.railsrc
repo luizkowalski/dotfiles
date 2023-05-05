@@ -6,4 +6,4 @@
 --skip-system-test
 --skip-bootsnap
 --javascript=esbuild
---css=tailwind
+--css=postcss
