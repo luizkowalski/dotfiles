@@ -1,9 +1,9 @@
 local plugins = {
   { "echasnovski/mini.trailspace", version = false },
-  {
-    "github/copilot.vim",
-    lazy = false,
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   lazy = false,
+  -- },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
