@@ -11,6 +11,9 @@ lspconfig.ruby_ls.setup({
   enabledFeatures = { "codeActions", "diagnostics", "documentHighlights", "documentSymbols", "formatting", "inlayHint" },
   -- on_attach = on_attach,
   capabilities = capabilities,
+  init_options = {
+    formatter = "auto",
+  },
 })
 
 lspconfig.sorbet.setup({
