@@ -7,8 +7,8 @@ local mason_lspconfig = require("mason-lspconfig")
 mason_lspconfig.setup()
 
 lspconfig.ruby_ls.setup({
-  cmd = { "bundle", "exec", "ruby-lsp" },
-  enabledFeatures = { "codeActions", "diagnostics", "documentHighlights", "documentSymbols", "formatting", "inlayHint" },
+  cmd = { "ruby-lsp" },
+  -- enabledFeatures = { "codeActions", "diagnostics", "documentHighlights", "documentSymbols", "formatting", "inlayHint" },
   -- on_attach = on_attach,
   capabilities = capabilities,
   init_options = {

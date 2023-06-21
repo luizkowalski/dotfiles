@@ -70,6 +70,8 @@ DISABLE_AUTO_UPDATE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 VSCODE='code'
+
+EDITOR='nvim'
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
