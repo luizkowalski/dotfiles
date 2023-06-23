@@ -24,4 +24,3 @@
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
     - [sh -c "scripts/install_zsh_syntax_highlight", "Installing zsh-syntax-highlight"]
-

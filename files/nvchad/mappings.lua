@@ -8,7 +8,7 @@ M.custom = {
       end,
     },
     ["<C-r>"] = { ":%s/<C-r><C-w>//g<Left><Left>", "Replace word under cursor" },
-    ["<C-d>"] = { "<ESC>^d$", "Delete whole line" },
+    ["<C-d>"] = { "<ESC>^dd", "Delete whole line" },
     ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
     ["<A-Up>"] = { ":m .-2<CR>==", "Move line up" },
     ["<C-'>"] = { ":m .+1<CR>==", "Move line down" },
