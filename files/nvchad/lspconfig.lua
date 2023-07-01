@@ -24,4 +24,18 @@ lspconfig.tailwindcss.setup({
   cmd = { "./node_modules/.bin/tailwindcss-language-server", "--stdio" },
   on_attach = on_attach,
   capabilities = capabilities,
+  filetypes = {
+    "html",
+    "css",
+    "scss",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "erb",
+    "eruby",
+    "postcss",
+    "svelte",
+  },
 })

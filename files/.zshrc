@@ -91,6 +91,9 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   yarn
+  # dotenv
+  encode64
+  genpass
 )
 
 source $ZSH/oh-my-zsh.sh
