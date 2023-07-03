@@ -29,7 +29,7 @@ disabled = false
 # symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = "💾 "
 threshold = 5
 disabled = false
 
