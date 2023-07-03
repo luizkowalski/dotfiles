@@ -1,8 +1,8 @@
 all: setup
 
 update_dotbot:
-	git submodule update --remote dotbot
-	git submodule update --remote dotbot-brew
+	git submodule update --init --remote dotbot
+	git submodule update --init --remote dotbot-brew
 
 request_sudo:
 	sudo -v
