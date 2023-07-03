@@ -7,6 +7,8 @@
 export ZSH="/Users/${USER}/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export PATH="$PATH:/Users/${USER}/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -97,8 +99,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-export EJSON_KEYDIR="/Users/luizkowalski/ejson/keys"
 
 # User configuration
 
