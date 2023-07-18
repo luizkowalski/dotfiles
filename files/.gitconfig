@@ -5,7 +5,7 @@
 	email = luizeduardokowalski@gmail.com
 [core]
   pager = delta
-	excludesfile = /Users/luizkowalski/.gitignore
+	excludesfile = /Users/luiz/.gitignore
 [include]
 	path = /Users/luizkowalski/.config/dev/gitconfig
 [interactive]
