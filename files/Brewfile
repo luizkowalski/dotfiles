@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 tap 'homebrew/bundle'
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
-tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'osx-cross/arm'
 tap 'osx-cross/avr'
