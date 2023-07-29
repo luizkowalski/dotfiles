@@ -7,7 +7,7 @@ M.custom = {
         vim.lsp.buf.format()
       end,
     },
-    ["<C-l>"] = { ":%s/<C-r><C-w>//gc<Left><Left><Left>", "Replace word under cursor (confirmation)" },
+    ["<C-t>"] = { ":%s/<C-r><C-w>//gc<Left><Left><Left>", "Replace word under cursor (confirmation)" },
     ["<C-r>"] = { ":%s/<C-r><C-w>//g<Left><Left>", "Replace word under cursor" },
     ["<C-d>"] = { "<ESC>^dd", "Delete whole line" },
     ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
