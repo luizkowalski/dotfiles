@@ -5,8 +5,10 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/${USER}/.oh-my-zsh"
+export GOPATH="/Users/${USER}/go"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export PATH="$PATH:/Users/${USER}/bin"
+export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 
