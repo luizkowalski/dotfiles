@@ -40,6 +40,6 @@ function loff(){
   echo '{"id":1,"method":"setState","params":{"state":false}}' | nc -u -w 1 192.168.178.20 38899
 }
 
-function su() {
-  spin up $1 --wait -c $1.branch=${2:-main}
+vialogin() {
+  heroku run bin/rails runner "puts %(:globe_with_meridians: #{Rails.application.routes.url_helpers.create_from_signed_link_session_url(sgid: User.find_by(email: 'luiz@viaeurope.com').to_sgid(for: 'login'))})" -a viaeurope-${1:-production}
 }
