@@ -45,6 +45,9 @@ symbol = " "
 [ruby]
 symbol = "💎 "
 
+[battery]
+disabled = true
+
 # [shell]
 # unknown_indicator = 'mystery shell'
 # style = 'red bold'
