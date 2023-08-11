@@ -3,10 +3,11 @@ alias btd="bin/tapioca dsl"
 alias ber="bundle exec rspec"
 alias berd="bundle exec rubocop -D"
 alias bera="bundle exec rubocop -A"
+alias cat='bat --paging=never' # cat with syntax highlighting
 alias hla="haml-lint -A"
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
-# alias berd="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -D"
-# alias beru="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -A"
+alias berdd="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -D"
+alias beru="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -A"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias genpasswd="shuf -n 4 /usr/share/dict/words | tr '\n' ' ' | tr '[:upper:]' '[:lower:]' | sed 's/^[ \t]*//;s/[ \t]*$//'| pbcopy"
 alias lla='ls -al'

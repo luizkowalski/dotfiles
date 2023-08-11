@@ -8,6 +8,7 @@ tap 'osx-cross/avr'
 # tap "qmk/qmk"
 
 brew 'automake'
+brew 'bat'
 brew 'bison'
 brew 'btop'
 brew 'libffi'
