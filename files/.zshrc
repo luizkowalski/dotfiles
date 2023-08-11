@@ -4,13 +4,14 @@
 # export PATH="$PATH:${GOPATH}/bin"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/${USER}/.oh-my-zsh"
 export GOPATH="/Users/${USER}/go"
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+export ZSH="/Users/${USER}/.oh-my-zsh"
 export PATH="$PATH:/Users/${USER}/bin"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,7 +127,5 @@ source ~/.functions
 [[ -x /opt/homebrew/bin/pyenv ]] && eval "$(pyenv init -)"
 
 eval "$(starship init zsh)"
-
 eval "$(mcfly init zsh)"
-
 eval "$(rbenv init - zsh)"

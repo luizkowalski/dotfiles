@@ -1,3 +1,23 @@
+# squashit - Squashes the current branch into a single commit and merges it into the main branch.
+#
+# Usage: squashit [main_branch]
+#
+# Arguments:
+#   main_branch: The name of the main branch to merge the squashed branch into. Default is "main".
+#
+# Example:
+#   squashit develop
+#
+# This function will:
+#   1. Get the name of the current branch.
+#   2. Checkout the main branch and pull the latest changes.
+#   3. Create a temporary branch.
+#   4. Squash the current branch into a single commit.
+#   5. Commit the squashed changes.
+#   6. Checkout the original branch and reset it to the temporary branch.
+#   7. Delete the temporary branch.
+#
+# Note: This function will not push the changes to the remote repository.
 function squashit() {
   local main_branch="${1:-main}"
 
@@ -27,16 +47,16 @@ function squashit() {
   git branch -D $temp_branch
 }
 
-function reload(){
+function reload() {
   echo "Reloading..."
   source ~/dotfiles/files/.zshrc
 }
 
-function lon(){
+function lon() {
   echo '{"id":1,"method":"setState","params":{"state":true}}' | nc -u -w 1 192.168.178.20 38899
 }
 
-function loff(){
+function loff() {
   echo '{"id":1,"method":"setState","params":{"state":false}}' | nc -u -w 1 192.168.178.20 38899
 }
 
