@@ -26,7 +26,7 @@ M.custom = {
     ["<C-e>"] = { "<End>", "end of line" },
     ["q"] = {
       function()
-        require("nvchad_ui.tabufline").close_buffer()
+        require("nvchad.tabufline").close_buffer()
       end,
       "Close current buffer",
     },
