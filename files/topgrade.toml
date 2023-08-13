@@ -9,7 +9,7 @@ assume_yes = true
 # ignore_failures = ["powershell"]
 
 # Run specific steps - same options as the command line flag
-only = ["brew_formula", "brew_cask", "shell", "mas", "system"]
+only = ["brew_formula", "brew_cask", "shell", "mas", "config_update", "gem"]
 
 # Do not ask to retry failed steps (default: false)
 #no_retry = true
@@ -64,7 +64,7 @@ self_update = true
 greedy_cask = true
 autoremove = true
 
-[linux]
+# [linux]
 # Arguments to pass yay when updating packages
 #yay_arguments = "--nodevel"
 #trizen_arguments = "--devel"
@@ -84,7 +84,7 @@ autoremove = true
 # manager such as Scoop to Cargo
 #self_rename = true
 
-[npm]
+# [npm]
 # Use sudo if the NPM directory isn't owned by the current user
 #use_sudo = true
 
