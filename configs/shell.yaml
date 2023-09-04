@@ -20,6 +20,8 @@
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
+    ~/.config/zed/keymap.json: files/zed/keymap.json
+    ~/.config/zed/settings.json: files/zed/settings.json
 
 - shell:
     - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
