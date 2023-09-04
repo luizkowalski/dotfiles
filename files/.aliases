@@ -20,6 +20,7 @@ alias rebase_master="git fetch origin && git rebase origin/master"
 alias sp="spotify"
 alias t="bundle exec rake test"
 alias tg="topgrade"
+alias z="zed ."
 alias zshconfig="code ~/.zshrc"
 alias update="bundle; bin/rails db:migrate"
 
