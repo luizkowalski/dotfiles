@@ -13,6 +13,7 @@
   "tab_size": 2,
   "preferred_line_length": 150,
   "copy_on_select": true,
+  "confirm_quit": true,
   "shell": {
     "program": "zsh"
   },
