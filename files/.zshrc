@@ -3,10 +3,12 @@
 # export GOPATH=$HOME/go
 # export PATH="$PATH:${GOPATH}/bin"
 
-# Path to your oh-my-zsh installation.
 export GOPATH="/Users/${USER}/go"
 export ZSH="/Users/${USER}/.oh-my-zsh"
+export BUN_INSTALL="$HOME/.bun"
+
 export PATH="$PATH:/Users/${USER}/bin"
+export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
@@ -129,3 +131,4 @@ source ~/.functions
 eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
 eval "$(rbenv init - zsh)"
+[ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"

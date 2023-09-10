@@ -1,3 +1,4 @@
+alias bcp="brew cleanup --prune=all"
 alias btg="bin/tapioca gem"
 alias btd="bin/tapioca dsl"
 alias ber="bundle exec rspec"
