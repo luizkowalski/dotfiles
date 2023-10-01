@@ -2,7 +2,7 @@
 disabled = true
 
 [directory]
-read_only = " "
+read_only = "󰌾 "
 
 [docker_context]
 symbol = " "
@@ -37,7 +37,7 @@ disabled = false
 symbol = " "
 
 # [package]
-# symbol = " "
+# symbol = " "
 
 [rust]
 symbol = " "
