@@ -2,7 +2,7 @@
 disabled = true
 
 [directory]
-read_only = "󰌾 "
+read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
@@ -29,7 +29,7 @@ disabled = false
 # symbol = " "
 
 [memory_usage]
-symbol = "📟 "
+symbol = "💾 "
 threshold = 5
 disabled = false
 
