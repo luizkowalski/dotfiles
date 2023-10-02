@@ -4,8 +4,12 @@ disabled = true
 [directory]
 read_only = " 󰌾"
 
+[hostname]
+ssh_only = false
+
 [docker_context]
 symbol = " "
+disabled = true
 
 [elixir]
 symbol = " "
@@ -14,7 +18,7 @@ symbol = " "
 symbol = " "
 
 [git_commit]
-only_detached = true
+only_detached = false
 
 [git_metrics]
 disabled = false
