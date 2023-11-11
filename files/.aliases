@@ -11,7 +11,6 @@ alias berdd="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/nu
 alias beru="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -A"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias genpasswd="shuf -n 4 /usr/share/dict/words | tr '\n' ' ' | tr '[:upper:]' '[:lower:]' | sed 's/^[ \t]*//;s/[ \t]*$//'| pbcopy"
-alias lla='ls -al'
 alias merge_main="git fetch origin && git merge origin/main"
 alias merge_master="git fetch origin && git merge origin/master"
 alias oc="overmind c"

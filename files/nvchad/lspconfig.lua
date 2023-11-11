@@ -6,6 +6,16 @@ local mason_lspconfig = require("mason-lspconfig")
 
 mason_lspconfig.setup()
 
+lspconfig.eslint.setup({
+  packageManager = "yarn",
+  on_attach = function(bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+})
+
 lspconfig.ruby_ls.setup({
   cmd = { "ruby-lsp" },
   -- enabledFeatures = { "codeActions", "diagnostics", "documentHighlights", "documentSymbols", "formatting", "inlayHint" },
@@ -16,9 +26,9 @@ lspconfig.ruby_ls.setup({
   },
 })
 
-lspconfig.sorbet.setup({
-  cmd = { "bundle", "exec", "srb", "tc", "--lsp" },
-})
+-- lspconfig.sorbet.setup({
+--   cmd = { "bundle", "exec", "srb", "tc", "--lsp" },
+-- })
 
 lspconfig.tailwindcss.setup({
   cmd = { "./node_modules/.bin/tailwindcss-language-server", "--stdio" },
@@ -28,10 +38,10 @@ lspconfig.tailwindcss.setup({
     "html",
     "css",
     "scss",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
+    -- "javascript",
+    -- "javascriptreact",
+    -- "typescript",
+    -- "typescriptreact",
     "vue",
     "erb",
     "eruby",
