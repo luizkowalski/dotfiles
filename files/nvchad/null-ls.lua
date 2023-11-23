@@ -10,7 +10,7 @@ local sources = {
   formatting.prettier,
   formatting.shellharden,
   formatting.stylua,
-  diagnostics.eslint,
+  -- diagnostics.eslint,
   diagnostics.hadolint,
   diagnostics.shellcheck,
   -- diagnostics.rubocop.with ( { command = "bundle", args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" } } ),
