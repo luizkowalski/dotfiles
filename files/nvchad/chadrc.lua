@@ -16,10 +16,11 @@ vim.filetype.add({
   },
 })
 
--- Open nvim-tree on startup
+-- Startup configurations
 vim.api.nvim_create_autocmd({ "VimEnter" }, {
   callback = function()
     require("nvim-tree.api").tree.open()
+    require("treesitter-context").enable()
   end,
 })
 

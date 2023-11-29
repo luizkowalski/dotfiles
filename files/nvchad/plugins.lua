@@ -1,5 +1,21 @@
 local plugins = {
-  { "echasnovski/mini.trailspace", version = false },
+  {
+    "echasnovski/mini.trailspace",
+    version = false,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    dependencies = { "nvim-treesitter/nvim-treesitter-context" },
+    opts = {
+      ensure_installed = {
+        "c",
+        "ruby",
+        "javascript",
+        "typescript"
+      }
+    },
+    lazy = true,
+  },
   {
     "github/copilot.vim",
     lazy = false,
