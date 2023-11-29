@@ -63,3 +63,20 @@ function loff() {
 vialogin() {
   heroku run bin/rails runner "puts %(:globe_with_meridians: #{Rails.application.routes.url_helpers.create_from_signed_link_session_url(sgid: User.find_by(email: 'luiz@viaeurope.com').to_sgid(for: 'login'))})" -a viaeurope-${1:-production}
 }
+
+function oneoff() {
+  local task=$1
+  local environment="${2:-production}"
+  STATEMENT_TIMEOUT=120000 RAILS_LOG_LEVEL=info JUDOSCALE_LOG_LEVEL=WARN IRB_USE_AUTOCOMPLETE=false IRB_USE_COLORIZE=true \
+    heroku run bundle exec rails oneoff:$task -a=viaeurope-$environment
+}
+
+function update(){
+  if [ -e "bin/stubs/update" ]; then
+    bin/stubs/update $@
+  elif [ -e "bin/update" ]; then
+    bin/update $@
+  else
+    command bundle; yarn install; bin/rails db:migrate
+  fi
+}
