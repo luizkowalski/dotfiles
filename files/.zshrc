@@ -12,6 +12,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export CDPATH="$CDPATH:$HOME/Projects"
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
