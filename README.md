@@ -5,5 +5,3 @@
 ```shell
 make
 ```
-
-done!
