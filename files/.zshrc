@@ -13,7 +13,7 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 export CDPATH="$CDPATH:$HOME/Projects"
-
+export DISPLAY="localhost:0.0"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 # Set name of the theme to load --- if set to "random", it will
