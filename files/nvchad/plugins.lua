@@ -79,19 +79,6 @@ local plugins = {
       require("mini.cursorword").setup()
     end,
   },
-  -- {
-  --   "zbirenbaum/copilot.lua",
-  --   cmd = "Copilot",
-  --   event = "InsertEnter",
-  --   config = function()
-  --     require("copilot").setup({})
-  --   end,
-  --   ops = {
-  --     suggestion = {
-  --       auto_trigger = true,
-  --     },
-  --   },
-  -- },
   {
     "hrsh7th/nvim-cmp",
     --   dependencies = {
@@ -126,14 +113,14 @@ local plugins = {
       })
     end,
   },
-  -- {
-  --   "echasnovski/mini.animate",
-  --   version = false,
-  --   lazy = false,
-  --   config = function()
-  --     require("mini.animate").setup()
-  --   end,
-  -- },
+  {
+    "echasnovski/mini.animate",
+    version = false,
+    lazy = false,
+    config = function()
+      require("mini.animate").setup()
+    end,
+  },
 }
 
 require("telescope").setup({
