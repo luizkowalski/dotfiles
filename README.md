@@ -1,4 +1,4 @@
-# Luiz's Dotfiles
+# Kowa's Dotfiles
 
 ## 1. Run
 
