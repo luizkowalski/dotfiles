@@ -1,5 +1,6 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
+local base = require("plugins.configs.lspconfig")
+local on_attach = base.on_attach
+local capabilities = base.capabilities
 
 local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")

@@ -10,9 +10,11 @@ local plugins = {
       ensure_installed = {
         "c",
         "ruby",
+        "html",
         "javascript",
-        "typescript"
-      }
+        "typescript",
+        "embedded_template",
+      },
     },
     lazy = true,
   },
@@ -31,6 +33,13 @@ local plugins = {
     config = function()
       require("plugins.configs.lspconfig")
       require("custom.configs.lspconfig")
+    end,
+  },
+  {
+    "nvimtools/none-ls.nvim",
+    event = "VeryLazy",
+    opts = function()
+      return require("custom.configs.null-ls")
     end,
   },
   {
@@ -113,14 +122,14 @@ local plugins = {
       })
     end,
   },
-  {
-    "echasnovski/mini.animate",
-    version = false,
-    lazy = false,
-    config = function()
-      require("mini.animate").setup()
-    end,
-  },
+  -- {
+  --   "echasnovski/mini.animate",
+  --   version = false,
+  --   lazy = false,
+  --   config = function()
+  --     require("mini.animate").setup()
+  --   end,
+  -- },
 }
 
 require("telescope").setup({
