@@ -5,5 +5,5 @@
 --skip-jbuilder
 --skip-system-test
 --skip-bootsnap
---javascript=esbuild
+--javascript=bun
 --css=tailwind

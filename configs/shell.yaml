@@ -3,13 +3,11 @@
       create: true
       relink: true
       force: true
-
 - clean:
     ~/:
       force: true
     ~/.config:
       recursive: true
-
 - link:
     ~/.gitconfig: files/.gitconfig
     ~/.gitignore: files/.gitignore
