@@ -24,12 +24,6 @@ local plugins = {
   },
   {
     "neovim/nvim-lspconfig",
-    -- dependencies = {
-    --   "jose-elias-alvarez/null-ls.nvim",
-    --   config = function()
-    --     require("custom.configs.null-ls")
-    --   end,
-    -- },
     config = function()
       require("plugins.configs.lspconfig")
       require("custom.configs.lspconfig")
@@ -60,7 +54,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "lua-language-server",
-        "prettier",
+        "prettierd",
         "stylua",
       },
     },
@@ -103,10 +97,10 @@ local plugins = {
       sources = {
         -- { name = "nvim_lsp" },
         -- { name = "luasnip" },
-        -- { name = "buffer" },
+        { name = "buffer" },
         -- { name = "nvim_lua" },
         -- { name = "path" },
-        -- { name = "copilot" },
+        { name = "copilot" },
       },
     },
   },
@@ -122,20 +116,13 @@ local plugins = {
       })
     end,
   },
-  -- {
-  --   "echasnovski/mini.animate",
-  --   version = false,
-  --   lazy = false,
-  --   config = function()
-  --     require("mini.animate").setup()
-  --   end,
-  -- },
 }
 
-require("telescope").setup({
-  defaults = {
-    file_ignore_patterns = { "node_modules", "sorbet" },
-  },
-})
+-- Not needed if installed Ripgrep, it picks up the config from .gitignore
+-- require("telescope").setup({
+--   defaults = {
+--     file_ignore_patterns = { "node_modules", "sorbet" },
+--   },
+-- })
 
 return plugins
