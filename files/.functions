@@ -71,12 +71,24 @@ function oneoff() {
     heroku run bundle exec rails oneoff:$task -a=viaeurope-$environment
 }
 
-function update(){
+function update() {
   if [ -e "bin/stubs/update" ]; then
     bin/stubs/update $@
   elif [ -e "bin/update" ]; then
     bin/update $@
   else
-    command bundle; yarn install; bin/rails db:migrate
+    command bundle
+    yarn install
+    bin/rails db:migrate
+  fi
+}
+
+function dev() {
+  if [ -e "bin/stubs/dev" ]; then
+    bin/stubs/dev $@
+  elif [ -e "bin/dev" ]; then
+    bin/dev $@
+  else
+    dev
   fi
 }
