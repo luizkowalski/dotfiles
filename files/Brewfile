@@ -1,83 +1,91 @@
-# frozen_string_literal: true
+tap "homebrew/bundle"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "osx-cross/arm"
+tap "osx-cross/avr"
+tap "qmk/qmk"
 
-tap 'homebrew/bundle'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/services'
-tap 'osx-cross/arm'
-tap 'osx-cross/avr'
-# tap "qmk/qmk"
+brew "automake"
+brew "bat"
+brew "bison"
+brew "btop"
+brew "coreutils"
+brew "docker"
+brew "dua-cli"
+brew "docker-buildx"
+brew "flyctl"
+brew "gdbm"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "go"
+brew "hadolint"
+brew "imagemagick"
+brew "irssi"
+brew "jq"
+brew "lazygit"
+brew "libffi"
+brew "readline"
+brew "libvirt", restart_service: true
+brew "libxml2"
+brew "libyaml"
+brew "lua-language-server"
+brew "mas"
+brew "mcfly"
+brew "neofetch"
+brew "neovim"
+brew "openssl@1.1"
+brew "tmux"
+brew "overmind"
+brew "sqlite", link: true
+brew "qemu"
+brew "rbenv"
+brew "redis", restart_service: true
+brew "ripgrep"
+brew "shellcheck"
+brew "shellharden"
+brew "starship"
+brew "stylua"
+brew "topgrade"
+brew "watchman"
+brew "wb32-dfu-updater_cli"
+brew "wget"
+brew "yamllint"
+brew "youtube-dl"
+brew "qmk/qmk/qmk"
 
-brew 'automake'
-brew 'bat'
-brew 'bison'
-brew 'btop'
-brew 'libffi'
-brew 'openssl@1.1'
-brew 'qemu'
-brew 'colima'
-brew 'coreutils'
-brew 'docker'
-brew 'docker-buildx'
-brew 'node'
-brew 'esbuild'
-brew 'flyctl'
-brew 'gdbm'
-brew 'gh'
-brew 'git'
-brew 'git-delta'
-brew 'hadolint'
-brew 'jq'
-brew 'readline'
-brew 'libvirt', restart_service: true
-brew 'libxml2'
-brew 'libyaml'
-brew 'mas'
-brew 'mcfly'
-brew 'neofetch'
-brew 'neovim'
-brew 'sqlite', link: true
-brew 'rbenv'
-brew 'redis', restart_service: true
-brew 'ripgrep'
-brew 'shellcheck'
-brew 'shellharden'
-brew 'starship'
-brew 'stylua'
-brew 'tmux'
-brew 'topgrade'
-brew 'watchman'
-brew 'wb32-dfu-updater_cli'
-brew 'wget'
-brew 'yamllint'
-brew 'yarn'
-brew 'youtube-dl'
-# brew "qmk/qmk/qmk"
+cask "airbuddy"
+cask "appcleaner"
+cask "discord"
+cask "dropbox"
+cask "font-fira-code-nerd-font"
+cask "font-monaspace"
+cask "hammerspoon"
+cask "hot"
+cask "iterm2"
+cask "maccy"
+cask "ngrok"
+cask "notion"
+cask "nvidia-geforce-now"
+cask "omnidisksweeper"
+cask "orbstack"
+cask "postico"
+cask "qmk-toolbox"
+cask "rectangle"
+cask "slack"
+cask "sqlitestudio"
+cask "the-unarchiver"
+cask "turbovnc-viewer"
+cask "via"
+cask "visual-studio-code"
+cask "vlc"
+cask "youtube-to-mp3"
+cask "yubico-yubikey-manager"
 
-cask 'airbuddy'
-cask 'appcleaner'
-cask 'dropbox'
-cask 'font-fira-code-nerd-font'
-cask 'font-hack-nerd-font'
-cask 'font-inconsolata-nerd-font'
-# cask 'google-chrome'
-cask 'hot'
-cask 'iterm2'
-cask 'ngrok'
-cask 'notion'
-cask 'nvidia-geforce-now'
-cask 'postico'
-cask 'qmk-toolbox'
-cask 'rectangle'
-cask 'slack'
-cask 'spotify'
-cask 'the-unarchiver'
-cask 'via'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'youtube-to-mp3'
-cask 'zenmate-vpn'
-
-mas 'Balance Lock', id: 1_019_371_109
-mas 'Bitwarden', id: 1_352_778_147
-mas 'Dato', id: 1_470_584_107
-mas 'Spark', id: 1_176_895_641
+mas "Balance Lock", id: 1019371109
+mas "Dato", id: 1470584107
+mas "MuteKey", id: 1509590766
+mas "Spark", id: 1176895641
+mas "StreakBar", id: 6464448808
+mas "ToDoBar", id: 1641624925
