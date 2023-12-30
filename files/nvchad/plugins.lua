@@ -13,6 +13,8 @@ local plugins = {
         "html",
         "javascript",
         "typescript",
+        "json",
+        "css",
         "embedded_template",
       },
     },
