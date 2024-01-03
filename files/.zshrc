@@ -95,7 +95,7 @@ plugins=(
   macos
   rails
   # ruby
-  # terraform
+  terraform
   vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
