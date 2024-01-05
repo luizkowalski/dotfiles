@@ -16,6 +16,7 @@ local plugins = {
         "json",
         "markdown",
         "ruby",
+        "terraform",
         "typescript",
       },
     },
@@ -59,6 +60,7 @@ local plugins = {
         "lua-language-server",
         "prettierd",
         "stylua",
+        "terraform-ls",
       },
     },
   },
@@ -87,15 +89,6 @@ local plugins = {
   },
   {
     "hrsh7th/nvim-cmp",
-    --   dependencies = {
-    --     {
-    --       "zbirenbaum/copilot-cmp",
-    --       config = function()
-    --         require("copilot_cmp").setup()
-    --       end,
-    --       lazy = false,
-    --     },
-    --   },
     opts = {
       sources = {
         -- { name = "nvim_lsp" },

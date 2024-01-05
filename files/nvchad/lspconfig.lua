@@ -7,6 +7,7 @@ local mason_lspconfig = require("mason-lspconfig")
 
 mason_lspconfig.setup()
 
+lspconfig.terraformls.setup {}
 lspconfig.dockerls.setup {}
 lspconfig.yamlls.setup {
   on_attach = on_attach,
