@@ -92,3 +92,13 @@ function dev() {
     dev
   fi
 }
+
+function kamal() {
+  if [ -e "bin/stubs/kamal" ]; then
+    bin/stubs/kamal $@
+  elif [ -e "bin/kamal" ]; then
+    bin/kamal $@
+  else
+    kamal
+  fi
+}
