@@ -5,10 +5,10 @@
 	email = luizeduardokowalski@gmail.com
 [core]
   pager = delta
-	excludesfile = /Users/luizkowalski/.gitignore
-	editor = nvim
+	excludesfile = ~/.gitignore
+	; editor = nvim
 [include]
-	path = /Users/luizkowalski/.config/dev/gitconfig
+	path = ~/.config/dev/gitconfig
 [interactive]
     diffFilter = delta --color-only
 [delta]

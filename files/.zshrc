@@ -16,7 +16,7 @@ export CDPATH="$CDPATH:$HOME/Projects"
 export DISPLAY="localhost:0.0"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
-export EDITOR="nvim"
+# export EDITOR="nvim"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
