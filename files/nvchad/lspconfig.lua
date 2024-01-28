@@ -9,29 +9,29 @@ mason_lspconfig.setup()
 
 lspconfig.terraformls.setup {}
 lspconfig.dockerls.setup {}
-lspconfig.yamlls.setup {
-  on_attach = on_attach,
-  capabilities = {
-    textDocument = {
-      foldingRange = {
-        dynamicRegistration = false,
-        lineFoldingOnly = true,
-      },
-    },
-  },
-  settings = {
-    redhat = { telemetry = { enabled = false } },
-    yaml = {
-      keyOrdering = false,
-      format = {
-        enable = true,
-      },
-      validate = true
-    }
-  }
-}
+-- lspconfig.yamlls.setup {
+--   on_attach = on_attach,
+--   capabilities = {
+--     textDocument = {
+--       foldingRange = {
+--         dynamicRegistration = false,
+--         lineFoldingOnly = true,
+--       },
+--     },
+--   },
+--   settings = {
+--     redhat = { telemetry = { enabled = false } },
+--     yaml = {
+--       keyOrdering = false,
+--       format = {
+--         enable = true,
+--       },
+--       validate = true
+--     }
+--   }
+-- }
 lspconfig.lua_ls.setup {}
-lspconfig.bashls.setup {}
+-- lspconfig.bashls.setup {}
 lspconfig.eslint.setup({
   packageManager = "yarn",
   on_attach = function(bufnr)
