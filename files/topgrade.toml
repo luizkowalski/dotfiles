@@ -9,7 +9,7 @@ assume_yes = true
 # ignore_failures = ["powershell"]
 
 # Run specific steps - same options as the command line flag
-only = ["brew_formula", "brew_cask", "shell", "mas", "config_update", "gem"]
+only = ["brew_formula", "brew_cask", "shell", "mas", "config_update", "gem", "go", "self_update", "tmux", "vscode"]
 
 # Do not ask to retry failed steps (default: false)
 #no_retry = true
