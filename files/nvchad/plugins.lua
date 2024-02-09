@@ -23,6 +23,13 @@ local plugins = {
     lazy = true,
   },
   {
+    "kdheepak/lazygit.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    lazy = false,
+  },
+  {
     "github/copilot.vim",
     lazy = false,
   },
