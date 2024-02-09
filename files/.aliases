@@ -10,6 +10,7 @@ alias beru="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/nul
 alias cat='bat --paging=never' # cat with syntax highlighting
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias gcupdate="git commit -am '(chore) updates'"
 alias hla="haml-lint -A"
 alias kar="kamal accessory reboot"
 alias karm="kamal accessory remove ${1} -y"
