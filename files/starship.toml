@@ -2,7 +2,7 @@
 disabled = true
 
 [directory]
-read_only = " 󰌾"
+read_only = "󰌾 "
 
 [hostname]
 ssh_only = false
@@ -28,15 +28,15 @@ disabled = false
 symbol = " "
 
 [python]
-disabled = false
+disabled = true
 
 # [java]
 # symbol = " "
 
 [memory_usage]
-symbol = " "
-threshold = 5
-disabled = true
+symbol = "🎚️  "
+threshold = 75
+disabled = false
 
 [nodejs]
 symbol = " "
@@ -52,7 +52,13 @@ symbol = " "
 symbol = "💎 "
 
 [battery]
-disabled = true
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+# disabled = true
+
+[[battery.display]]
+threshold = 80
 
 # [shell]
 # unknown_indicator = 'mystery shell'
