@@ -6,6 +6,7 @@ read_only = " 󰌾"
 
 [hostname]
 ssh_only = false
+format = '[$ssh_symbol$hostname]($style) coding in '
 
 [docker_context]
 symbol = " "
@@ -39,6 +40,7 @@ disabled = true
 
 [nodejs]
 symbol = " "
+disabled = true
 
 # [package]
 # symbol = " "
