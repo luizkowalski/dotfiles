@@ -1,5 +1,10 @@
 local plugins = {
   {
+    "zootedb0t/citruszest.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "echasnovski/mini.trailspace",
     version = false,
   },

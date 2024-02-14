@@ -9,6 +9,7 @@
 - shell:
     - [sh -c "scripts/install_nvchad", "Installing nvchad"]
 - link:
+    ~/.config/nvim/lua/custom/init.lua: files/nvchad/init.lua
     ~/.config/nvim/lua/custom/chadrc.lua: files/nvchad/chadrc.lua
     ~/.config/nvim/lua/custom/plugins.lua: files/nvchad/plugins.lua
     ~/.config/nvim/lua/custom/mappings.lua: files/nvchad/mappings.lua
