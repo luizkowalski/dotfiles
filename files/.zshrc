@@ -6,16 +6,13 @@
 export GOPATH="/Users/${USER}/go"
 export ZSH="/Users/${USER}/.oh-my-zsh"
 export BUN_INSTALL="$HOME/.bun"
-
-export PATH="$PATH:/Users/${USER}/bin"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 export CDPATH="$CDPATH:$HOME/Projects"
-export DISPLAY="localhost:0.0"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$PATH:/Users/${USER}/bin"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 # export EDITOR="nvim"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,9 +123,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.functions
 
-[[ -x /opt/homebrew/bin/pyenv ]] && eval "$(pyenv init -)"
-
 eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
 eval "$(rbenv init - zsh)"
+
 [ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"
