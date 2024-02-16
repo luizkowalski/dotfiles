@@ -4,6 +4,12 @@ local plugins = {
     version = false,
   },
   {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = { adaptive_size = true },
+    },
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     dependencies = { "nvim-treesitter/nvim-treesitter-context" },
     opts = {

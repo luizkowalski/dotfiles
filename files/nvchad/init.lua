@@ -15,4 +15,3 @@ autocmd("BufEnter", {
     vim.cmd("command! -nargs=0 Y :%y+")
   end,
 })
---
