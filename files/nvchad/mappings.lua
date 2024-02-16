@@ -18,7 +18,7 @@ M.custom = {
     ["<C-p>"] = { ":Telescope git_files <CR>", "Find files added to Git" },
     ["<C-z>"] = { "<cmd> undo <CR>", "Undo" },
     ["<leader>gs"] = { ":Telescope git_status <CR>", "Git status" },
-    ["<leader>gg"] = { ":LazyGit <CR>", "LazyGit"},
+    ["<leader>gg"] = { ":LazyGit <CR>", "LazyGit" },
     ["<C-f>"] = { ":Telescope live_grep <CR>", "live grep" },
     ["<C-b>"] = { "<ESC>^i", "beginning of line" },
     ["<A-Left>"] = { "<ESC>^", "beginning of line" },
@@ -40,6 +40,7 @@ M.custom = {
   },
 
   i = {
+    ["<C-BS>"] = { "<C-w>", "Delete previous word" },
     ["<A-Up>"] = { "<ESC> :m .-2<CR>== i", "Move line up" },
     ["<A-Down>"] = { "<ESC> :m .+1<CR>== i", "Move line down" },
     ["<A-Left>"] = { "<ESC>^i", "beginning of line" },
