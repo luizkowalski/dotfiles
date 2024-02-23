@@ -7,15 +7,21 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Ayu Dark",
+  "theme": "Catppuccin Frappe",
   "base_keymap": "VSCode",
   "buffer_font_size": 15,
   "tab_size": 2,
-  "preferred_line_length": 150,
+  "preferred_line_length": 180,
   "copy_on_select": true,
   "confirm_quit": true,
   "shell": {
     "program": "zsh"
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "git": {
+    "git_gutter": "tracked_files"
   },
   "terminal": {
     "font_family": "FiraCode Nerd Font",
@@ -26,6 +32,20 @@
       "initialization_options": {
         "diagnostics": true,
         "formatting": true
+      }
+    }
+  },
+  "language_overrides": {
+    "ERB": {
+      "soft_wrap": "preferred_line_length",
+      "format_on_save": "off",
+      "formatter": {
+        "external": {
+          // "command": "erb-format",
+          // "arguments": ["--stdin-filename", "{buffer_path}", "--print-width", "250"]
+          "command": "htmlbeautifier",
+          "arguments": []
+        }
       }
     }
   }
