@@ -5,8 +5,8 @@ local diagnostics = null_ls.builtins.diagnostics
 local hover = null_ls.builtins.hover
 
 local sources = {
-  formatting.htmlbeautifier,
-  formatting.jq,
+  formatting.tidy,
+  -- formatting.jq,
   formatting.prettier,
   -- formatting.shellharden,
   formatting.stylua,

@@ -4,6 +4,13 @@ local plugins = {
     version = false,
   },
   {
+    "VonHeikemen/fine-cmdline.nvim",
+    lazy = false,
+    dependencies = {
+      { "MunifTanjim/nui.nvim" },
+    },
+  },
+  {
     "nvim-tree/nvim-tree.lua",
     opts = {
       view = { adaptive_size = true },
