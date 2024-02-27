@@ -25,6 +25,7 @@ M.custom = {
     ["<A-Right>"] = { "<End>", "end of line" },
     ["<C-S-d>"] = { "<ESC> yyp", "Duplicate line" },
     ["<C-e>"] = { "<End>", "end of line" },
+    [":"] = { "<cmd>FineCmdline<CR>", "CmdLine" },
     ["q"] = {
       function()
         require("nvchad.tabufline").close_buffer()
