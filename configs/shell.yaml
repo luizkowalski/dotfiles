@@ -21,5 +21,4 @@
     ~/.config/zed/settings.json: files/zed/settings.json
 
 - shell:
-    - [sh -c "scripts/install_zsh_autosuggestions", "Installing zsh-autosuggestions"]
-    - [sh -c "scripts/install_zsh_syntax_highlight", "Installing zsh-syntax-highlight"]
+    - [sh -c "scripts/install_zsh_plugins", "Installing zsh plugins..."]
