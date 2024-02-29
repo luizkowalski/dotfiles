@@ -97,7 +97,7 @@ plugins=(
   vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-autocomplete
+  # zsh-autocomplete
   # dotenv
   encode64
   genpass
