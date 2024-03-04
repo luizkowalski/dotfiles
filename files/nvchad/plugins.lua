@@ -4,6 +4,14 @@ local plugins = {
     version = false,
   },
   {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
+  {
     "VonHeikemen/fine-cmdline.nvim",
     lazy = false,
     dependencies = {
@@ -27,10 +35,14 @@ local plugins = {
         "html",
         "javascript",
         "json",
+        "lua",
         "markdown",
         "ruby",
+        "sql",
         "terraform",
         "typescript",
+        "vim",
+        "yaml",
       },
     },
     lazy = true,
