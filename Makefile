@@ -24,3 +24,6 @@ mac:
 
 neovim:
 	./install neovim
+
+bins:
+	./install bins
