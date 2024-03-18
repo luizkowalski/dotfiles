@@ -88,6 +88,14 @@ function dev() {
   fi
 }
 
+function rt(){
+  if [ -e "bin/test"]; then
+    bin/test $@
+  else
+    rt
+  fi
+}
+
 function kamal() {
   if [ -e "bin/stubs/kamal" ]; then
     bin/stubs/kamal $@
