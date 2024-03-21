@@ -45,7 +45,7 @@ lspconfig.dockerls.setup {}
 --   }
 -- }
 lspconfig.lua_ls.setup {}
--- lspconfig.bashls.setup {}
+lspconfig.bashls.setup {}
 lspconfig.eslint.setup({
   packageManager = "yarn",
   on_attach = function(bufnr)
