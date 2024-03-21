@@ -4,6 +4,13 @@ local plugins = {
     version = false,
   },
   {
+    "petertriho/nvim-scrollbar",
+    lazy = false,
+    config = function()
+      require("scrollbar").setup()
+    end,
+  },
+  {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
