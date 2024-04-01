@@ -11,6 +11,13 @@ local plugins = {
     end,
   },
   {
+    "weizheheng/ror.nvim",
+    lazy = false,
+    config = function()
+      require("ror").setup()
+    end,
+  },
+  {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
