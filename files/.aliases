@@ -5,7 +5,7 @@ alias ber="bundle exec rspec"
 alias bera="bundle exec rubocop -A"
 alias berd="bundle exec rubocop -D"
 alias berdd="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -D"
-alias berm="git ls-files --modified --others spec/**/*_spec.rb | xargs bundle exec rspec"
+alias berm="bin/rspec $(git ls-files --modified --others spec/**/*_spec.rb)"
 alias beru="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -A"
 alias cat='bat --paging=never' # cat with syntax highlighting
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
