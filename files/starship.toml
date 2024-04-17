@@ -34,9 +34,9 @@ disabled = true
 # symbol = " "
 
 [memory_usage]
-symbol = "🎚️  "
+symbol = " "
 threshold = 75
-disabled = false
+disabled = true
 
 [nodejs]
 symbol = " "
