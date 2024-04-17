@@ -9,7 +9,6 @@ curl -s https://api.github.com/repos/tekumara/typos-lsp/releases/latest \
 | tr -d \" \
 | xargs -I {} curl -L {} | tar xz -C ~/bin
 
-
 # Download latests nerdfix
 curl -s https://api.github.com/repos/loichyan/nerdfix/releases/latest \
 | grep "browser_download_url.*.nerdfix-x86_64-apple-darwin.tar.gz" \
