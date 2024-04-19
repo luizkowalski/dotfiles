@@ -98,7 +98,7 @@ local function setup_diagnostics(client, buffer)
   })
 end
 
-lspconfig.ruby_ls.setup({
+lspconfig.ruby_lsp.setup({
   on_attach = function(client, buffer)
     setup_diagnostics(client, buffer)
   end,
