@@ -7,9 +7,10 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "One Dark Pro",
+  "theme": "Catppuccin Mocha - No Italics",
   "base_keymap": "VSCode",
   "buffer_font_size": 15,
+  "scroll_sensitivity": 3,
   "tab_size": 2,
   "preferred_line_length": 180,
   "copy_on_select": true,

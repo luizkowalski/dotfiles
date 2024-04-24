@@ -47,7 +47,7 @@ lspconfig.dockerls.setup {}
 lspconfig.lua_ls.setup {}
 lspconfig.bashls.setup {}
 lspconfig.eslint.setup({
-  packageManager = "yarn",
+  packageManager = "bun",
   on_attach = function(bufnr)
     vim.api.nvim_create_autocmd("BufWritePre", {
       buffer = bufnr,
