@@ -132,5 +132,6 @@ source ~/.functions
 eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
 eval "$(rbenv init - zsh)"
+eval "$(fzf --zsh)"
 
 [ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"

@@ -44,6 +44,15 @@
     }
   },
   "language_overrides": {
+    "Ruby": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "bundle",
+          "arguments": ["exec", "rubocop", "--fail-level", "error", "--autocorrect", "--stdin", "corrected.rb", "--stderr"]
+        }
+      }
+    },
     "ERB": {
       "soft_wrap": "preferred_line_length",
       "format_on_save": "off",
