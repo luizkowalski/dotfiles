@@ -100,7 +100,7 @@ function kamal() {
   elif [ -e "bin/kamal" ]; then
     bin/kamal $@
   else
-    kamal $@
+    command kamal $@
   fi
 }
 

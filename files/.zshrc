@@ -79,6 +79,9 @@ DISABLE_AUTO_UPDATE="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 VSCODE='code'
 
+ANSIBLE_HOME="$HOME/.ansible"
+ANSIBLE_CONFIG="$HOME/.ansible.cfg"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
