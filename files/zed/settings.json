@@ -10,6 +10,13 @@
   "theme": "Catppuccin Mocha - No Italics",
   "base_keymap": "VSCode",
   "buffer_font_size": 15,
+  "preview_tabs": {
+    "enabled": false
+  },
+  "file_types": {
+    "Ruby": ["haml"],
+    "Dockerfile": ["Dockerfile.dev"]
+  },
   "scroll_sensitivity": 3,
   "tab_size": 2,
   "preferred_line_length": 180,
@@ -37,6 +44,15 @@
     }
   },
   "language_overrides": {
+    "Ruby": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "bundle",
+          "arguments": ["exec", "rubocop", "--fail-level", "error", "--autocorrect", "--stdin", "corrected.rb", "--stderr"]
+        }
+      }
+    },
     "ERB": {
       "soft_wrap": "preferred_line_length",
       "format_on_save": "off",
