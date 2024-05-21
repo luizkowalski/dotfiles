@@ -15,6 +15,7 @@
     ~/.functions: files/.functions
     ~/.zshrc: files/.zshrc
     ~/.gemrc: files/.gemrc
+    ~/.alacritty.toml: files/.alacritty.toml
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
     ~/.config/zed/keymap.json: files/zed/keymap.json
