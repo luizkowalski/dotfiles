@@ -22,6 +22,9 @@ style = { shape = "Beam", blinking = "On" }
 [window]
 blur = true
 opacity = 0.94
+padding = { x = 3, y = 3 }
+dynamic_padding = true
+dimensions = { columns = 140, lines = 40 }
 
 # Default colors
 [colors.primary]
