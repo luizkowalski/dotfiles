@@ -82,7 +82,7 @@ function dev() {
   elif [ -e "bin/dev" ]; then
     bin/dev $@
   else
-    dev
+    command dev $@
   fi
 }
 
