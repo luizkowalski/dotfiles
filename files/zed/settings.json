@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Catppuccin Mocha - No Italics",
+  "theme": "Tokyo Night",
   "base_keymap": "VSCode",
   "buffer_font_size": 15,
   "preview_tabs": {
@@ -36,22 +36,24 @@
     "blinking": "off"
   },
   "lsp": {
-    "solargraph": {
+    "ruby-lsp": {
       "initialization_options": {
-        "diagnostics": true,
-        "formatting": true
+        "enabledFeatures": {
+          "diagnostics": false
+        }
       }
     }
   },
   "language_overrides": {
     "Ruby": {
-      "format_on_save": "on",
-      "formatter": {
-        "external": {
-          "command": "bundle",
-          "arguments": ["exec", "rubocop", "--fail-level", "error", "--autocorrect", "--stdin", "corrected.rb", "--stderr"]
-        }
-      }
+      "language_servers": ["ruby-lsp"]
+      // "format_on_save": "on"
+      // "formatter": {
+      //   "external": {
+      //     "command": "bundle",
+      //     "arguments": ["exec", "rubocop", "--fail-level", "error", "--autocorrect", "--stdin", "corrected.rb", "--stderr"]
+      //   }
+      // }
     },
     "ERB": {
       "soft_wrap": "preferred_line_length",

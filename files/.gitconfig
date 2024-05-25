@@ -10,7 +10,7 @@
 [include]
 	path = ~/.config/dev/gitconfig
 [interactive]
-    diffFilter = delta --color-only
+    diffFilter = delta --color-only --dark
 [delta]
     navigate = true  # use n and N to move between diff sections
     line-numbers = true
