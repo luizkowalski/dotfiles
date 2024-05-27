@@ -20,6 +20,8 @@
     ~/.config/starship.toml: files/starship.toml
     ~/.config/zed/keymap.json: files/zed/keymap.json
     ~/.config/zed/settings.json: files/zed/settings.json
+    ~/.config/zellij/config.kdl: files/zellij/config.kdl
+    ~/.config/zellij/layouts/default.kdl: files/zellij/layout.kdl
 
 - shell:
     - [sh -c "scripts/install_zsh_plugins", "Installing zsh plugins..."]

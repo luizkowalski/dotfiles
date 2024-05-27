@@ -1,0 +1,19 @@
+layout {
+  pane size=1 borderless=true {
+    plugin location="tab-bar"
+  }
+    pane split_direction="vertical" {
+        pane {
+          command "nvim"
+        }
+        pane split_direction="horizontal" {
+            pane
+            pane {
+              command "spotify_player"
+            }
+        }
+    }
+    pane size=1 borderless=true {
+        plugin location="status-bar"
+    }
+}
