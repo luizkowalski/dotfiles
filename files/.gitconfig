@@ -31,3 +31,5 @@
 [diff "lockb"]
 	textconv = bun
 	binary = true
+[credential]
+	helper = osxkeychain
