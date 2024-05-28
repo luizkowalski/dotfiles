@@ -1,3 +1,5 @@
+working_directory = "Projects/viaeurope/"
+
 [font]
 size = 14
 normal.family = "FiraCode Nerd Font"
@@ -23,6 +25,7 @@ style = { shape = "Beam", blinking = "On" }
 blur = true
 opacity = 0.94
 padding = { x = 3, y = 3 }
+position = { x = 1300, y = 700 }
 dynamic_padding = true
 dimensions = { columns = 140, lines = 40 }
 
