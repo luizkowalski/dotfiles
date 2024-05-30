@@ -4,6 +4,10 @@ local plugins = {
     version = false,
   },
   {
+    "sindrets/diffview.nvim",
+    lazy = false,
+  },
+  {
     "petertriho/nvim-scrollbar",
     lazy = false,
     config = function()
