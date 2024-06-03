@@ -3,9 +3,11 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        bind "Ctrl k" { Clear; WriteChars "\n"; }
     }
     locked {
         bind "Home" { SwitchToMode "Normal"; }
+        bind "Ctrl k" { Clear; WriteChars "\n"; }
     }
     resize {
         bind "Ctrl g" { SwitchToMode "Normal"; }
