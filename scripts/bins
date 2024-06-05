@@ -35,3 +35,13 @@ curl -s https://api.github.com/repos/docker/docker-credential-helpers/releases/l
 | cut -d : -f 2,3 \
 | tr -d \" \
 | xargs -I {} curl -L {} -o ~/bin/docker-credential-pass && chmod +x ~/bin/docker-credential-pass
+
+# Latest mcfly-fzf
+curl -s https://api.github.com/repos/bnprks/mcfly-fzf/releases/latest \
+| grep "browser_download_url.*.aarch64-apple-darwin.tar.gz\"" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| xargs -I {} curl -L {} | tar xz -C ~/bin
+
+# Clean up bundled mcfly (Using brew version)
+rm -f ~/bin/mcfly
