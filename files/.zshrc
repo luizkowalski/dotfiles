@@ -11,6 +11,7 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:/Users/${USER}/bin"
+export PATH="$PATH:/Users/${USER}/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
