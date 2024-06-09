@@ -118,3 +118,16 @@ function encode_video(){
 
   # rm $srt_as_utf8
 }
+
+function encode_video_utf8(){
+  local output_mkv="${1%}.sub.mkv"
+  local srt_as_utf8="${2%}.utf8.srt"
+
+  echo "Converting $2 to utf-8: $srt_as_utf8"
+  iconv -f iso-8859-1 -t utf-8 < $2 > $srt_as_utf8
+  echo "Done. Merging $1 and $srt_as_utf8..."
+
+  ffmpeg -i $1 -f srt -i $srt_as_utf8 -map 0 -map 1 -c copy $output_mkv
+
+  rm $srt_as_utf8
+}
