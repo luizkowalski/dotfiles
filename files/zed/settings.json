@@ -7,11 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Tokyo Night",
+  "vim_mode": true,
+  "theme": "Kanagawa Wave",
   "base_keymap": "VSCode",
   "buffer_font_size": 15,
   "preview_tabs": {
     "enabled": false
+  },
+  "indent_guides": {
+    "line_width": 1,
+    "enabled": true,
+    "background_coloring": "indent_aware"
   },
   "file_types": {
     "Ruby": ["haml"],
@@ -44,10 +50,10 @@
       }
     }
   },
-  "language_overrides": {
+  "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp"]
-      // "format_on_save": "on"
+      "language_servers": ["ruby-lsp"],
+      "format_on_save": "on"
       // "formatter": {
       //   "external": {
       //     "command": "bundle",
