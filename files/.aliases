@@ -11,6 +11,7 @@ alias cat='bat --paging=never' # cat with syntax highlighting
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias gcupdate="git commit -am '(chore) updates'"
+alias gbb="git branch | grep -v '^\*' | fzf --height=20% --reverse --info=inline | xargs git checkout"
 alias gg="lazygit"
 alias hla="haml-lint -A"
 alias kal="kamal accessory logs ${1}"
