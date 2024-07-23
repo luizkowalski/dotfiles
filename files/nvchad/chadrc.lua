@@ -1,7 +1,7 @@
 local M = {}
 
 M.ui = {
-  theme = "kanagawa",
+  theme = "bearded-arc",
 }
 
 M.plugins = "custom.plugins"
