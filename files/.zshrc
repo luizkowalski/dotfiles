@@ -15,6 +15,8 @@ export PATH="$PATH:/Users/${USER}/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+export PATH="$PATH:/opt/homebrew/opt/node@20/bin"
+
 # export EDITOR="nvim"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
