@@ -62,7 +62,7 @@ vialogin() {
 function oneoff() {
   local task=$1
   local environment="${2:-production}"
-  STATEMENT_TIMEOUT=120000 RAILS_LOG_LEVEL=info JUDOSCALE_LOG_LEVEL=WARN IRB_USE_AUTOCOMPLETE=false IRB_USE_COLORIZE=true \
+  STATEMENT_TIMEOUT=0 RAILS_LOG_LEVEL=info JUDOSCALE_LOG_LEVEL=WARN IRB_USE_AUTOCOMPLETE=false IRB_USE_COLORIZE=true \
     heroku run bundle exec rails oneoff:$task -a=viaeurope-$environment
 }
 
