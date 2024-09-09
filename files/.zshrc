@@ -9,13 +9,16 @@ export BUN_INSTALL="$HOME/.bun"
 export CDPATH="$CDPATH:$HOME/Projects"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
+export PYENV_ROOT="$HOME/.pyenv"
+
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$PATH:/Users/${USER}/bin"
 export PATH="$PATH:/Users/${USER}/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
-export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@20/bin"
+export PATH="$PATH:/Users/${USER}/.spicetify"
 
 # export EDITOR="nvim"
 # Set name of the theme to load --- if set to "random", it will
@@ -141,3 +144,8 @@ eval "$(mcfly-fzf init zsh)"
 eval "$(rbenv init - zsh)"
 
 [ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+fi
