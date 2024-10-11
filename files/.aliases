@@ -10,6 +10,7 @@ alias beru="git ls-files -m --others --exclude-standard | xargs ls -1 2>/dev/nul
 alias bu="bundle update"
 alias cat='bat --paging=never' # cat with syntax highlighting
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
+alias dc="docker-compose"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias gcupdate="git commit -am '(chore) updates'"
 alias gbb="git branch | grep -v '^\*' | fzf --height=20% --reverse --info=inline | xargs git checkout"

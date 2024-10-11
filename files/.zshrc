@@ -17,6 +17,7 @@ export PATH="$PATH:/Users/${USER}/bin"
 export PATH="$PATH:/Users/${USER}/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/17/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@20/bin"
 export PATH="$PATH:/Users/${USER}/.spicetify"
 
