@@ -17,24 +17,24 @@ curl -s https://api.github.com/repos/loichyan/nerdfix/releases/latest \
 | xargs -I {} curl -L {} | tar xz -C ~/bin
 
 # Latest Docker buildx
-curl -s https://api.github.com/repos/docker/buildx/releases/latest \
-| grep "browser_download_url.*.darwin-amd64\"" \
-| cut -d : -f 2,3 \
-| tr -d \" \
-| xargs -I {} curl -L {} -o ~/.docker/cli-plugins/docker-buildx && chmod +x ~/.docker/cli-plugins/docker-buildx
+# curl -s https://api.github.com/repos/docker/buildx/releases/latest \
+# | grep "browser_download_url.*.darwin-amd64\"" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | xargs -I {} curl -L {} -o ~/.docker/cli-plugins/docker-buildx && chmod +x ~/.docker/cli-plugins/docker-buildx
 
-# Latest Docker credential helper
-curl -s https://api.github.com/repos/docker/docker-credential-helpers/releases/latest \
-| grep "browser_download_url.*.osxkeychain.*.darwin-amd64\"" \
-| cut -d : -f 2,3 \
-| tr -d \" \
-| xargs -I {} curl -L {} -o ~/bin/docker-credential-osxkeychain && chmod +x ~/bin/docker-credential-osxkeychain
+# # Latest Docker credential helper
+# curl -s https://api.github.com/repos/docker/docker-credential-helpers/releases/latest \
+# | grep "browser_download_url.*.osxkeychain.*.darwin-amd64\"" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | xargs -I {} curl -L {} -o ~/bin/docker-credential-osxkeychain && chmod +x ~/bin/docker-credential-osxkeychain
 
-curl -s https://api.github.com/repos/docker/docker-credential-helpers/releases/latest \
-| grep "browser_download_url.*.pass.*.darwin-amd64\"" \
-| cut -d : -f 2,3 \
-| tr -d \" \
-| xargs -I {} curl -L {} -o ~/bin/docker-credential-pass && chmod +x ~/bin/docker-credential-pass
+# curl -s https://api.github.com/repos/docker/docker-credential-helpers/releases/latest \
+# | grep "browser_download_url.*.pass.*.darwin-amd64\"" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | xargs -I {} curl -L {} -o ~/bin/docker-credential-pass && chmod +x ~/bin/docker-credential-pass
 
 # Latest mcfly-fzf
 curl -s https://api.github.com/repos/bnprks/mcfly-fzf/releases/latest \
