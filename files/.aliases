@@ -11,6 +11,7 @@ alias bu="bundle update"
 alias cat='bat --paging=never' # cat with syntax highlighting
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
 alias dc="docker-compose"
+alias ducks="du -ckhs ./* | sort -hr"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias gcupdate="git commit -am '(chore) updates'"
 alias gbb="git branch | grep -v '^\*' | fzf --height=20% --reverse --info=inline | xargs git checkout"

@@ -84,6 +84,7 @@ DISABLE_AUTO_UPDATE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+
 VSCODE='code'
 
 ANSIBLE_HOME="$HOME/.ansible"
