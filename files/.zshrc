@@ -21,6 +21,8 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/17/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@20/bin"
 export PATH="$PATH:/Users/${USER}/.spicetify"
 
+export NVM_DIR="$HOME/.nvm"
+
 # export EDITOR="nvim"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -151,3 +153,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
 fi
+
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
