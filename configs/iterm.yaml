@@ -3,15 +3,11 @@
       create: true
       relink: true
       force: true
-
 - clean: ["~/.config"]
-
 - shell:
-  - [rm ~/.config/com.googlecode.iterm2.plist, "Cleaning up current iTerm2 config"]
-
+    - [rm ~/.config/com.googlecode.iterm2.plist, "Cleaning up current iTerm2 config"]
 - shell:
-  - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true, Use custom preference folder]
-  - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/", Setting up preference folder]
-
+    - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true, Use custom preference folder]
+    - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/", Setting up preference folder]
 - link:
     ~/.config/com.googlecode.iterm2.plist: files/com.googlecode.iterm2.plist
