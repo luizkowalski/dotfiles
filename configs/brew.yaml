@@ -1,8 +1,6 @@
 - shell:
     - [source ~/.zshrc, "Reload bash"]
-
 - brewfile:
     - files/Brewfile
-
 - shell:
     - [brew analytics off, "Turning off brew analytics"]

@@ -1,2 +1,2 @@
 - shell:
-  - [sh -c "scripts/bins", "Installing bins..."]
+    - [sh -c "scripts/bins", "Installing bins..."]
