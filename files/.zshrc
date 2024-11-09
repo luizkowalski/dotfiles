@@ -101,6 +101,7 @@ plugins=(
   ansible
   bundler
   brew
+  direnv
   # docker
   # docker-compose
   git
@@ -147,6 +148,7 @@ eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
 eval "$(mcfly-fzf init zsh)"
 eval "$(rbenv init - zsh)"
+eval "$(direnv hook zsh)"
 
 [ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"
 
