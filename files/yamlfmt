@@ -1,0 +1,7 @@
+formatter:
+  indent: 2
+  retain_line_breaks_single: true
+  indentless_arrays: false
+  drop_merge_tag: true
+  trim_trailing_whitespace: true
+  scan_folded_as_literal: true

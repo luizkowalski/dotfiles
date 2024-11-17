@@ -15,12 +15,12 @@
     ~/.functions: files/.functions
     ~/.zshrc: files/.zshrc
     ~/.gemrc: files/.gemrc
-    ~/.alacritty.toml: files/.alacritty.toml
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/starship.toml: files/starship.toml
     ~/.config/zed/keymap.json: files/zed/keymap.json
     ~/.config/zed/settings.json: files/zed/settings.json
     ~/.config/zellij/config.kdl: files/zellij/config.kdl
     ~/.config/zellij/layouts/default.kdl: files/zellij/layout.kdl
+    ~/.yamlfmt: files/yamlfmt
 - shell:
     - [sh -c "scripts/install_zsh_plugins", "Installing zsh plugins..."]
