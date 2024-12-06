@@ -106,6 +106,7 @@ plugins=(
   # docker-compose
   git
   macos
+  poetry
   rails
   # ruby
   terraform

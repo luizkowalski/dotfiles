@@ -30,7 +30,7 @@ disabled = false
 symbol = " "
 
 [python]
-disabled = true
+disabled = false
 
 # [java]
 # symbol = " "
