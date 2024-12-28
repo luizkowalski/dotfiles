@@ -1,20 +1,27 @@
-font-family = "Cascadia Code NF Regular ExtraLight"
-adjust-cell-width = -1
 adjust-cell-height = 1
+auto-update = download
 
-window-theme = dark
-window-decoration = true
-
-clipboard-read = allow
 clipboard-paste-protection = false
-
-cursor-style = block_hollow
-
-theme = catppuccin-frappe
-
+clipboard-read = allow
 copy-on-select = true
+cursor-style = block_hollow
+cursor-style-blink = true
 
+font-family = ""
+font-family = "Cascadia Code NF"
+font-family = "FiraCode Nerd Font Mono Ret"
+font-size = 14
+font-variation = "wght=100"
+
+macos-icon = custom-style
+macos-icon-frame = beige
+macos-option-as-alt = true
+
+theme = tokyonight-storm
+
+window-decoration = true
 window-height = 45
+window-theme = dark
 window-width  = 145
 
 working-directory = /Users/luiz/Projects/switchboard
