@@ -3,7 +3,9 @@ auto-update = download
 
 clipboard-paste-protection = false
 clipboard-read = allow
+
 copy-on-select = true
+
 cursor-style = block_hollow
 cursor-style-blink = true
 
