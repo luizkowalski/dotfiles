@@ -9,7 +9,7 @@ export BUN_INSTALL="$HOME/.bun"
 export CDPATH="$CDPATH:$HOME/Projects"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
-export PYENV_ROOT="$HOME/.pyenv"
+# export PYENV_ROOT="$HOME/.pyenv"
 
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -101,11 +101,12 @@ plugins=(
   ansible
   bundler
   brew
-  direnv
+  # direnv
   # docker
   # docker-compose
   git
   macos
+  mise
   poetry
   rails
   # ruby
@@ -148,15 +149,16 @@ source ~/.functions
 eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
 eval "$(mcfly-fzf init zsh)"
-eval "$(rbenv init - zsh)"
-eval "$(direnv hook zsh)"
+# eval "$(rbenv init - zsh)"
+# eval "$(direnv hook zsh)"
+# eval "$(/opt/homebrew/bin/mise activate zsh)"
+eval "$(mise activate zsh --shims)" # should be first
+eval "$(mise activate zsh)"
 
-[ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"
-
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
-  eval "$(pyenv init -)"
-fi
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init --path)"
+#   eval "$(pyenv init -)"
+# fi
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

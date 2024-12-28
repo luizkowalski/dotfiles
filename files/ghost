@@ -1,0 +1,20 @@
+font-family = "Cascadia Code NF Regular ExtraLight"
+adjust-cell-width = -1
+adjust-cell-height = 1
+
+window-theme = dark
+window-decoration = true
+
+clipboard-read = allow
+clipboard-paste-protection = false
+
+cursor-style = block_hollow
+
+theme = catppuccin-frappe
+
+copy-on-select = true
+
+window-height = 45
+window-width  = 145
+
+working-directory = /Users/luiz/Projects/switchboard
