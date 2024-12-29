@@ -1,4 +1,5 @@
 adjust-cell-height = 1
+
 auto-update = download
 
 clipboard-paste-protection = false
@@ -11,6 +12,7 @@ cursor-style-blink = true
 
 font-family = ""
 font-family = "Cascadia Code NF"
+font-family = "Departure Mono"
 font-family = "FiraCode Nerd Font Mono Ret"
 font-size = 14
 font-variation = "wght=100"
