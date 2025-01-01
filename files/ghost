@@ -12,10 +12,16 @@ cursor-style-blink = true
 
 font-family = ""
 font-family = "Cascadia Code NF"
-font-family = "Departure Mono"
+font-feature = "calt"
+font-feature = "ss01"
+font-feature = "ss02"
+font-feature = "ss03"
+font-feature = "ss19"
+font-feature = "ss20"
 font-family = "FiraCode Nerd Font Mono Ret"
+font-family = "Departure Mono"
 font-size = 14
-font-variation = "wght=100"
+font-variation = "wght=50"
 
 macos-icon = custom-style
 macos-icon-frame = beige
@@ -24,8 +30,8 @@ macos-option-as-alt = true
 theme = tokyonight-storm
 
 window-decoration = true
+window-width  = 145
 window-height = 45
 window-theme = dark
-window-width  = 145
 
 working-directory = /Users/luiz/Projects/switchboard
