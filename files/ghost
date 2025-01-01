@@ -7,7 +7,7 @@ clipboard-read = allow
 
 copy-on-select = true
 
-cursor-style = block_hollow
+cursor-style = bar
 cursor-style-blink = true
 
 font-family = ""
