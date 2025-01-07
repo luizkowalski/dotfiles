@@ -18,6 +18,7 @@
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/.config/ghostty/config: files/ghost
     ~/.config/starship.toml: files/starship.toml
+    ~/.config/helix/config.toml: files/helix.toml
     # ~/.config/zed/keymap.json: files/zed/keymap.json
     # ~/.config/zed/settings.json: files/zed/settings.json
     ~/.config/zellij/config.kdl: files/zellij/config.kdl

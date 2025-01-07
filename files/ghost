@@ -27,7 +27,10 @@ macos-icon = custom-style
 macos-icon-frame = beige
 macos-option-as-alt = true
 
-theme = tokyonight-storm
+# theme = whimsy
+# theme = blulocodark
+theme = tokyonight_night
+# theme = tokyonight-storm
 
 window-decoration = true
 window-width  = 145
