@@ -16,7 +16,7 @@
     ~/.zshrc: files/.zshrc
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
-    ~/.config/ghostty/config: files/ghost
+    ~/.config/ghostty/config: files/ghostty
     ~/.config/starship.toml: files/starship.toml
     ~/.config/helix/config.toml: files/helix.toml
     # ~/.config/zed/keymap.json: files/zed/keymap.json
