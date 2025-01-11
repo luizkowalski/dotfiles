@@ -3,6 +3,12 @@ command_timeout = 1000
 [gcloud]
 disabled = true
 
+[bun]
+symbol = "🥟"
+
+[aws]
+disabled = true
+
 [directory]
 read_only = "󰌾 "
 
@@ -51,7 +57,7 @@ disabled = true
 symbol = " "
 
 [ruby]
-symbol = "💎 "
+symbol = "💎"
 
 [battery]
 full_symbol = '🔋 '
