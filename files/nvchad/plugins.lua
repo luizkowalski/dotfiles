@@ -82,6 +82,14 @@ local plugins = {
       require("plugins.configs.lspconfig")
       require("custom.configs.lspconfig")
     end,
+    opts = {
+      servers = {
+        ruby_lsp = {
+          mason = false,
+          cmd = { vim.fn.expand("~/.local/share/mise/shims/ruby-lsp") },
+        },
+      },
+    },
   },
   {
     "nvimtools/none-ls.nvim",
