@@ -8,13 +8,10 @@ request_sudo:
 	sudo -v
 
 setup: request_sudo
-	./install default mac shell brew iterm neovim bins
+	./install default mac shell brew neovim bins
 
 shell:
 	./install shell
-
-iterm:
-	./install iterm
 
 brew:
 	./install brew
