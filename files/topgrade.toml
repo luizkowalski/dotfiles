@@ -10,7 +10,7 @@ assume_yes = true
 
 # Run specific steps - same options as the command line flag
 only = [
-  "brew_formula", "brew_cask", "shell", "mas",
+  "brew_formula", "brew_cask", "shell", #, "mas",
   "config_update", "go", "self_update", "tmux", "vscode", "github_cli_extensions"
   ]
 

@@ -1,4 +1,3 @@
-
 adjust-cell-height = 0
 
 auto-update = download
@@ -28,6 +27,11 @@ font-feature = "ss07"
 font-feature = "ss08"
 font-size = 14
 # font-variation = "wght=400"
+
+# keybind = cmd+f=write_scrollback_file:open
+keybind = super+f=write_screen_file:open
+
+scrollback-limit = 20000000
 
 macos-icon = custom-style
 macos-icon-frame = beige
