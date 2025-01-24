@@ -4,19 +4,15 @@
 	name = Luiz Eduardo Kowalski
 	email = luizeduardokowalski@gmail.com
 [core]
-  pager = delta
+  pager = less -F -X
 	excludesfile = ~/.gitignore
 	; editor = nvim
 [include]
 	path = ~/.config/dev/gitconfig
-[interactive]
-    diffFilter = delta --color-only --dark
-[delta]
-    navigate = true  # use n and N to move between diff sections
-    line-numbers = true
 [merge]
     conflictstyle = diff3
 [diff]
+    external = difft
     colorMoved = default
 [filter "lfs"]
 	clean = git-lfs clean -- %f
