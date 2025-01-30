@@ -39,7 +39,9 @@ macos-option-as-alt = true
 
 # theme = whimsy
 # theme = blulocodark
-theme = tokyonight_night
+# theme = tokyonight_night
+# theme = Kanagawa Wave
+theme = Kanagawabones
 # theme = tokyonight-storm
 
 window-decoration = true

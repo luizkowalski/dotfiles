@@ -16,12 +16,11 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$PATH:/Users/${USER}/bin"
 export PATH="$PATH:/Users/${USER}/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/17/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@20/bin"
 export PATH="$PATH:/Users/${USER}/.spicetify"
 
-export NVM_DIR="$HOME/.nvm"
+# export NVM_DIR="$HOME/.nvm"
 
 # export EDITOR="cursor --wait"
 # export VISUAL="cursor --wait"
@@ -160,5 +159,5 @@ eval "$(mise activate zsh)"
 #   eval "$(pyenv init -)"
 # fi
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
