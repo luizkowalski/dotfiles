@@ -111,6 +111,7 @@ plugins=(
   rails
   # ruby
   terraform
+  tmux
   vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
