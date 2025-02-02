@@ -2,13 +2,12 @@ adjust-cell-height = 0
 
 auto-update = download
 
-clipboard-paste-protection = false
-clipboard-read = allow
-
-copy-on-select = true
+clipboard-paste-protection = true
 
 cursor-style = bar
 cursor-style-blink = true
+
+copy-on-select = clipboard
 
 font-family = ""
 font-family = "Maple Mono NF Thin"
