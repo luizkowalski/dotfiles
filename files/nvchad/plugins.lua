@@ -8,6 +8,10 @@ local plugins = {
     lazy = false,
   },
   {
+    "prabirshrestha/tv.vim",
+    lazy = false
+  },
+  {
     "petertriho/nvim-scrollbar",
     lazy = false,
     config = function()
