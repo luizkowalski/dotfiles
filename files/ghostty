@@ -36,6 +36,10 @@ macos-icon = custom-style
 macos-icon-frame = beige
 macos-option-as-alt = true
 
+mouse-hide-while-typing = true
+background-blur-radius = 20
+
+
 # theme = whimsy
 # theme = blulocodark
 # theme = tokyonight_night
