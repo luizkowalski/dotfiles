@@ -6,7 +6,7 @@ keybinds clear-defaults=true {
         bind "Ctrl k" { Clear; WriteChars "\n"; }
     }
     locked {
-        bind "Home" { SwitchToMode "Normal"; }
+        bind "Ctrl Shift l" { SwitchToMode "Normal"; }
         bind "Ctrl k" { Clear; WriteChars "\n"; }
     }
     resize {
@@ -23,10 +23,10 @@ keybinds clear-defaults=true {
     }
     pane {
         bind "Ctrl p" { SwitchToMode "Normal"; }
-        bind "h" "Left" { MoveFocus "Left"; }
+        bind "j" "Left" { MoveFocus "Left"; }
         bind "l" "Right" { MoveFocus "Right"; }
-        bind "j" "Down" { MoveFocus "Down"; }
-        bind "k" "Up" { MoveFocus "Up"; }
+        bind "k" "Down" { MoveFocus "Down"; }
+        bind "i" "Up" { MoveFocus "Up"; }
         bind "p" { SwitchFocus; }
         bind "n" { NewPane; SwitchToMode "Normal"; }
         bind "d" { NewPane "Down"; SwitchToMode "Normal"; }
@@ -146,15 +146,15 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared_except "locked" {
-        bind "Home" { SwitchToMode "Locked"; }
+        bind "Ctrl Shift l" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
-        bind "Alt i" { MoveTab "Left"; }
+        bind "Alt p" { MoveTab "Left"; }
         bind "Alt o" { MoveTab "Right"; }
-        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
+        bind "Alt j" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
-        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt k" "Alt Down" { MoveFocus "Down"; }
+        bind "Alt i" "Alt Up" { MoveFocus "Up"; }
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt [" { PreviousSwapLayout; }
