@@ -2,7 +2,7 @@ adjust-cell-height = 0
 
 auto-update = download
 
-clipboard-paste-protection = true
+clipboard-paste-protection = false
 
 cursor-style = bar
 cursor-style-blink = true
