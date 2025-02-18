@@ -9,10 +9,11 @@ alias btd="bin/tapioca dsl"
 alias btg="bin/tapioca gem"
 alias bu="bundle update"
 alias c="cursor ."
-alias cat='bat --paging=never' # cat with syntax highlighting
+# alias cat='bat --paging=never' # cat with syntax highlighting
 alias clear_swap="rm -rf ~/.local/state/nvim/swap/*.*"
 alias dc="docker-compose"
-alias ducks="du -ckhs ./* | sort -hr"
+alias ducks="find . -maxdepth 1 -not -name '.' -print0 | xargs -0 du -ckhs | sort -hr"
+# alias ducks="du -ckhs ./* | sort -hr"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias gbb="git branch | grep -v '^\*' | fzf --height=20% --reverse --info=inline | xargs git checkout"
 alias gcupdate="git commit -am '(chore) updates'"
