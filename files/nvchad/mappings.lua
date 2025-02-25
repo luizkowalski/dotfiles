@@ -11,12 +11,18 @@ M.custom = {
     ["<C-t>"] = { ":%s/<C-r><C-w>//gc<Left><Left><Left>", "Replace word under cursor (confirmation)" },
     ["<C-r>"] = { ":%s/<C-r><C-w>//g<Left><Left>", "Replace word under cursor" },
     ["<C-d>"] = { "<ESC>^dd", "Delete whole line" },
+    ["<C-/>"] = {
+      function()
+        require("Comment.api").toggle.linewise.current()
+      end,
+      "Comment line"
+    },
     ["<C-;>"] = { ":m .-2<CR>==", "Move line up" },
     ["<A-Up>"] = { ":m .-2<CR>==", "Move line up" },
     ["<C-'>"] = { ":m .+1<CR>==", "Move line down" },
     ["<A-Down>"] = { ":m .+1<CR>==", "Move line down" },
     ["<C-o>"] = { ":Telescope find_files <CR>", "Find all files" },
-    --["<C-p>"] = { ":Telescope git_files <CR>", "Find files added to Git" },
+    -- ["<C-p>"] = { ":Telescope git_files <CR>", "Find files added to Git" },
     ["<C-p>"] = { ":Tv <CR>", "Find files added to Git" },
     ["<C-z>"] = { "<cmd> undo <CR>", "Undo" },
     ["<leader>gs"] = { ":Telescope git_status <CR>", "Git status" },
@@ -40,6 +46,7 @@ M.custom = {
     -- Move the block up and down
     ["<A-Up>"] = { ":m '<-2<CR>gv=gv", "Move block up" },
     ["<A-Down>"] = { ":m '>+1<CR>gv=gv", "Move line down" },
+    ["<C-/>"] = { "gc", "Comment selection" },
   },
 
   i = {

@@ -9,7 +9,7 @@ local plugins = {
   },
   {
     "prabirshrestha/tv.vim",
-    lazy = false
+    lazy = false,
   },
   {
     "petertriho/nvim-scrollbar",
@@ -172,6 +172,13 @@ local plugins = {
         },
         rememberBuffers = false,
       })
+    end,
+  },
+  {
+    "numToStr/Comment.nvim",
+    lazy = false,
+    config = function()
+      require("Comment").setup()
     end,
   },
 }

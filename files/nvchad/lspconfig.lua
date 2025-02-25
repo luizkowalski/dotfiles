@@ -58,8 +58,8 @@ lspconfig.eslint.setup({
 
 lspconfig.ruby_lsp.setup({
   init_options = {
-    formatter = 'auto',
-    linters = { 'rubocop' },
+    formatter = "auto",
+    linters = { "rubocop" },
   },
 })
 

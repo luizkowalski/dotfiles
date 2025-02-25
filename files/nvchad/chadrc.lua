@@ -14,7 +14,7 @@ vim.filetype.add({
     ["Dockerfile.*"] = "dockerfile",
     ["Brewfile"] = "ruby",
     [".aliases"] = "bash",
-    [".functions"] = "bash"
+    [".functions"] = "bash",
   },
 })
 

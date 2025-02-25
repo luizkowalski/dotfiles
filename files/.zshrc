@@ -30,7 +30,6 @@ export PATH="$PATH:/Users/${USER}/.spicetify"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="wezm"
 
-VIA_USER="luiz@viaeurope.com"
 DEFAULT_USER="${USER}"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

@@ -1,3 +1,5 @@
+# shellcheck disable=SC2148
+
 # squashit - Squashes the current branch into a single commit and merges it into the main branch.
 #
 # Usage: squashit [main_branch]
@@ -25,109 +27,110 @@ function squashit() {
   echo "Squashing ${to_squash}..."
 
   echo "Going back to main and refresh it..."
-  git checkout -q $main_branch
-  git pull -q origin $main_branch
+  git checkout -q "$main_branch"
+  git pull -q origin "$main_branch"
 
   echo "Done. Going to a temp branch..."
   temp_branch="temp-${RANDOM}"
 
   echo "Creating temp branch ${temp_branch}..."
-  git checkout -b $temp_branch
+  git checkout -b "$temp_branch"
 
   echo "Done. Squashing ${to_squash}..."
-  git merge --squash $to_squash
+  git merge --squash "$to_squash"
 
   echo "Squashed. Committing..."
   git commit -am "Squashed $to_squash"
 
-  git checkout $to_squash
-  git reset --hard $temp_branch
+  git checkout "$to_squash"
+  git reset --hard "$temp_branch"
 
   echo "All done, deleting $temp_branch"
-  git branch -D $temp_branch
+  git branch -D "$temp_branch"
 }
 
 function lon() {
-  echo '{"id":1,"method":"setState","params":{"state":true}}' | nc -u -w 1 192.168.178.20 38899
+  echo '{"id":1,"method":"setState","params":{"state":true}}' | nc -u -w 1 wiz.fritz.box 38899
 }
 
 function loff() {
-  echo '{"id":1,"method":"setState","params":{"state":false}}' | nc -u -w 1 192.168.178.20 38899
-}
-
-vialogin() {
-  heroku run bin/rails runner "puts %(:globe_with_meridians: #{Rails.application.routes.url_helpers.create_from_signed_link_session_url(sgid: User.find_by(email: 'luiz@viaeurope.com').to_sgid(for: 'login'))})" -a viaeurope-${1:-production}
-}
-
-function oneoff() {
-  local task=$1
-  local environment="${2:-production}"
-  STATEMENT_TIMEOUT=0 RAILS_LOG_LEVEL=info JUDOSCALE_LOG_LEVEL=WARN IRB_USE_AUTOCOMPLETE=false IRB_USE_COLORIZE=true \
-    heroku run bundle exec rails oneoff:$task -a=viaeurope-$environment
+  echo '{"id":1,"method":"setState","params":{"state":false}}' | nc -u -w 1 wiz.fritz.box 38899
 }
 
 function update() {
   if [ -e "bin/stubs/update" ]; then
-    bin/stubs/update $@
+    bin/stubs/update "$@"
   elif [ -e "bin/update" ]; then
-    bin/update $@
+    bin/update "$@"
   else
-    command update $@
+    command update "$@"
   fi
 }
 
 function dev() {
   if [ -e "bin/stubs/dev" ]; then
-    bin/stubs/dev $@
+    bin/stubs/dev "$@"
   elif [ -e "bin/dev" ]; then
-    bin/dev $@
+    bin/dev "$@"
   else
-    command dev $@
+    command dev "$@"
   fi
 }
 
 function test(){
   if [ -e "bin/test" ]; then
-    bin/test $@
+    bin/test "$@"
   else
-    command test $@
+    command test "$@"
   fi
 }
 
 function kamal() {
   if [ -e "bin/stubs/kamal" ]; then
-    bin/stubs/kamal $@
+    bin/stubs/kamal "$@"
   elif [ -e "bin/kamal" ]; then
-    bin/kamal $@
+    bin/kamal "$@"
   else
-    command kamal $@
+    command kamal "$@"
   fi
 }
 
-# Merges a video with a subtitle file and encodes it to a new file.
-# Usage: encode_video video.mkv subtitle.srt
-function encode_video(){
-  local output_mkv="${1%}.sub.mkv"
-  # local srt_as_utf8="${2%}.utf8.srt"
-
-  # echo "Converting $2 to utf-8: $srt_as_utf8"
-  # iconv -f iso-8859-1 -t utf-8 < $2 > $srt_as_utf8
-  # echo "Done. Merging $1 and $srt_as_utf8..."
-
-  ffmpeg -i $1 -f srt -i $2 -map 0 -map 1 -c copy $output_mkv
-
-  # rm $srt_as_utf8
+function kal() {
+  kamal accessory logs "$1"
 }
 
-function encode_video_utf8(){
-  local output_mkv="${1%}.sub.mkv"
-  local srt_as_utf8="${2%}.utf8.srt"
-
-  echo "Converting $2 to utf-8: $srt_as_utf8"
-  iconv -f iso-8859-1 -t utf-8 < $2 > $srt_as_utf8
-  echo "Done. Merging $1 and $srt_as_utf8..."
-
-  ffmpeg -i $1 -f srt -i $srt_as_utf8 -map 0 -map 1 -c copy $output_mkv
-
-  rm $srt_as_utf8
+function kar() {
+  kamal accessory reboot
 }
+
+function karm() {
+  kamal accessory remove "$1" -y
+}
+
+# # Merges a video with a subtitle file and encodes it to a new file.
+# # Usage: encode_video video.mkv subtitle.srt
+# function encode_video(){
+#   local output_mkv="${1%}.sub.mkv"
+#   # local srt_as_utf8="${2%}.utf8.srt"
+
+#   # echo "Converting $2 to utf-8: $srt_as_utf8"
+#   # iconv -f iso-8859-1 -t utf-8 < $2 > $srt_as_utf8
+#   # echo "Done. Merging $1 and $srt_as_utf8..."
+
+#   ffmpeg -i $1 -f srt -i $2 -map 0 -map 1 -c copy $output_mkv
+
+#   # rm $srt_as_utf8
+# }
+
+# function encode_video_utf8(){
+#   local output_mkv="${1%}.sub.mkv"
+#   local srt_as_utf8="${2%}.utf8.srt"
+
+#   echo "Converting $2 to utf-8: $srt_as_utf8"
+#   iconv -f iso-8859-1 -t utf-8 < $2 > $srt_as_utf8
+#   echo "Done. Merging $1 and $srt_as_utf8..."
+
+#   ffmpeg -i $1 -f srt -i $srt_as_utf8 -map 0 -map 1 -c copy $output_mkv
+
+#   rm $srt_as_utf8
+# }
