@@ -100,7 +100,7 @@ function kal() {
 }
 
 function kar() {
-  kamal accessory reboot
+  kamal accessory reboot "$1"
 }
 
 function karm() {
