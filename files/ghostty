@@ -30,7 +30,7 @@ font-size = 14
 # keybind = cmd+f=write_scrollback_file:open
 keybind = super+f=write_screen_file:open
 
-scrollback-limit = 20000000
+scrollback-limit = 2000000
 
 macos-icon = custom-style
 macos-icon-frame = beige
@@ -40,16 +40,16 @@ mouse-hide-while-typing = true
 background-blur-radius = 20
 
 
+theme = tokyonight_night
 # theme = whimsy
 # theme = blulocodark
-# theme = tokyonight_night
 # theme = Kanagawa Wave
-theme = Kanagawabones
+# theme = Kanagawabones
 # theme = tokyonight-storm
 
 window-decoration = true
-window-width  = 145
-window-height = 45
-window-theme = dark
+window-width      = 145
+window-height     = 45
+window-theme      = dark
 
 working-directory = /Users/luiz/Projects/switchboard
