@@ -8,7 +8,6 @@ export ZSH="/Users/${USER}/.oh-my-zsh"
 export BUN_INSTALL="$HOME/.bun"
 export CDPATH="$CDPATH:$HOME/Projects"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-
 # export PYENV_ROOT="$HOME/.pyenv"
 
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -87,7 +86,7 @@ DISABLE_AUTO_UPDATE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-VSCODE='code'
+VSCODE='cursor'
 
 ANSIBLE_HOME="$HOME/.ansible"
 ANSIBLE_CONFIG="$HOME/.ansible.cfg"
