@@ -49,7 +49,7 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     opts = {
-      view = { adaptive_size = true },
+      -- view = { adaptive_size = true },
     },
   },
   {

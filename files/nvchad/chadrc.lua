@@ -1,7 +1,7 @@
 local M = {}
 
 M.ui = {
-  theme = "ayu_dark",
+  theme = "ashes",
 }
 
 M.plugins = "custom.plugins"
@@ -11,7 +11,7 @@ vim.g.copilot_assume_mapped = true
 
 vim.filetype.add({
   pattern = {
-    ["Dockerfile.*"] = "dockerfile",
+    ["Dockerfile*"] = "dockerfile",
     ["Brewfile"] = "ruby",
     [".aliases"] = "bash",
     [".functions"] = "bash",
