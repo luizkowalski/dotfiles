@@ -3,11 +3,11 @@
 set -e
 
 # Download latests typos-lsp
-curl -s https://api.github.com/repos/tekumara/typos-lsp/releases/latest \
-| grep "browser_download_url.*.aarch64-apple-darwin.tar.gz" \
-| cut -d : -f 2,3 \
-| tr -d \" \
-| xargs -I {} curl -L {} | tar xz -C ~/bin
+# curl -s https://api.github.com/repos/tekumara/typos-lsp/releases/latest \
+# | grep "browser_download_url.*.aarch64-apple-darwin.tar.gz" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | xargs -I {} curl -L {} | tar xz -C ~/bin
 
 # Download latests nerdfix
 # curl -s https://api.github.com/repos/loichyan/nerdfix/releases/latest \
