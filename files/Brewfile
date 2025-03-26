@@ -47,7 +47,6 @@ brew "lua-language-server"
 brew "mas"
 brew "mcfly"
 brew "mise"
-brew "mysql", restart_service: :changed
 brew "neofetch"
 brew "neovim"
 brew "nmap"
