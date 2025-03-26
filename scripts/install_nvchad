@@ -2,10 +2,17 @@
 
 set -e
 
-echo "Backing up old nvim config if exists"
-mv ~/.config/nvim ~/.config/nvim.bak || true
+echo "Removing existing NvChad"
+rm -rf ~/.config/nvim
+echo "Removed ~/.config/nvim"
+rm -rf ~/.local/state/nvim
+echo "Removed ~/.local/state/nvim"
+rm -rf ~/.local/share/nvim
+echo "Removed ~/.local/share/nvim"
+
+echo "Removed existing NvChad"
 
 echo "Cloning NvChad"
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+git clone https://github.com/NvChad/starter ~/.config/nvim
 
 echo "Done"

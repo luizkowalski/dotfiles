@@ -32,14 +32,6 @@ local plugins = {
     end,
   },
   {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
-    build = function()
-      vim.fn["mkdp#util#install"]()
-    end,
-  },
-  {
     "VonHeikemen/fine-cmdline.nvim",
     lazy = false,
     dependencies = {
@@ -89,7 +81,6 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("plugins.configs.lspconfig")
       require("custom.configs.lspconfig")
     end,
     opts = {
