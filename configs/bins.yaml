@@ -1,2 +1,4 @@
+- create:
+    - ~/bin
 - shell:
     - [sh -c "scripts/bins", "Installing bins..."]
