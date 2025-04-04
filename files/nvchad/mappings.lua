@@ -17,7 +17,7 @@ vim.keymap.set("n", "<C-/>", function()
 end, { desc = "Comment line" })
 vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { desc = "Toggle tree" })
 vim.keymap.set("n", "<C-;>", ":m .-2<CR>==", { desc = "Move line up" })
-
+vim.keymap.set("n", "<C-s>", "<ESC> <cmd> w <CR>", { desc = "Save the file" })
 vim.keymap.set("n", "<C-h>", "<cmd>NvimTreeFocus<CR>", { desc = "Focus on the tree" })
 vim.keymap.set("n", "<C-l>", "<cmd>wincmd l<CR>", { desc = "Focus on the buffer" })
 vim.keymap.set("n", "<A-Up>", ":m .-2<CR>==", { desc = "Move line up" })
