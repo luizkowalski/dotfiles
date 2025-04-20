@@ -6,12 +6,12 @@
 local M = {}
 
 M.base46 = {
-	theme = "tokyodark",
+  theme = "catppuccin",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  -- hl_override = {
+  -- 	Comment = { italic = true },
+  -- 	["@comment"] = { italic = true },
+  -- },
 }
 
 vim.g.copilot_assume_mapped = true

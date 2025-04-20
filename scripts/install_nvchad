@@ -14,5 +14,6 @@ echo "Removed existing NvChad"
 
 echo "Cloning NvChad"
 git clone https://github.com/NvChad/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
 
 echo "Done"

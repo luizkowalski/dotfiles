@@ -55,15 +55,6 @@ lspconfig.dockerls.setup({})
 -- }
 lspconfig.lua_ls.setup({})
 lspconfig.bashls.setup({})
-lspconfig.eslint.setup({
-  packageManager = "bun",
-  on_attach = function(bufnr)
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      command = "EslintFixAll",
-    })
-  end,
-})
 
 lspconfig.ruby_lsp.setup({
   init_options = {
