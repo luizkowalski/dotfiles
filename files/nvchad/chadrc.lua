@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin",
+  theme = "eldritch",
 
   -- hl_override = {
   -- 	Comment = { italic = true },
@@ -14,7 +14,7 @@ M.base46 = {
   -- },
 }
 
-vim.g.copilot_assume_mapped = true
+-- vim.g.copilot_assume_mapped = true
 
 vim.filetype.add({
   pattern = {
