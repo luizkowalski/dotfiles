@@ -16,6 +16,7 @@
     ~/.zshrc: files/.zshrc
     ~/.gemrc: files/.gemrc
     ~/.config/topgrade.toml: files/topgrade.toml
+    ~/Library/Application Support/com.mitchellh.ghostty/config: files/ghostty
     ~/.config/ghostty/config: files/ghostty
     ~/.config/starship.toml: files/starship.toml
     # ~/.config/helix/config.toml: files/helix.toml
