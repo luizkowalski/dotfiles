@@ -4,10 +4,13 @@ local plugins = {
     version = false,
   },
   {
+    import = "nvchad.blink.lazyspec"
+  },
+  {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
     lazy = false,
-    priority = 1000
+    priority = 1000,
   },
   {
     "sindrets/diffview.nvim",
