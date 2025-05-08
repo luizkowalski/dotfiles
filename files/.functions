@@ -49,10 +49,6 @@ function squashit() {
   git branch -D "$temp_branch"
 }
 
-function bulb() {
-  ./scripts/bulb
-}
-
 function update() {
   if [ -e "bin/stubs/update" ]; then
     bin/stubs/update "$@"

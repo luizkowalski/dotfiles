@@ -22,6 +22,9 @@ if [ -f "bulb" ]; then
   # Make the binary executable
   chmod +x bulb
 
+  # Copy the binary to ~/bin
+  cp bulb ~/bin/bulb
+
   echo "💡 Your beautiful bulb controller awaits you!"
 else
   echo "❌ Build failed"

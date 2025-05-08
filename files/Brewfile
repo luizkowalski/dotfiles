@@ -12,6 +12,7 @@ tap "stripe/stripe-cli"
 
 brew "xz"
 brew "automake"
+brew "atuin"
 brew "bat"
 brew "bc"
 brew "readline"

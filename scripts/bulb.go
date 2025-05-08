@@ -210,17 +210,10 @@ func (m BulbModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.state = msg.state
 		m.newState = !msg.state // Immediately set the target new state
 
-		if m.state {
-			m.stateText = "ON"
-		} else {
-			m.stateText = "OFF"
-		}
+		stateMap := map[bool]string{true: "ON", false: "OFF"}
 
-		if m.newState {
-			m.newStateText = "ON"
-		} else {
-			m.newStateText = "OFF"
-		}
+		m.stateText = stateMap[m.state]
+		m.newStateText = stateMap[m.newState]
 
 		// Automatically proceed to toggling the state
 		m.togglingState = true
@@ -249,7 +242,7 @@ func (m BulbModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m BulbModel) View() string {
-	title := titleStyle.Render("Smart Bulb Controller")
+	title := titleStyle.Render("💡 Smart Bulb Controller 💡")
 
 	var statusText string
 
