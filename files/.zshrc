@@ -146,9 +146,9 @@ fi
 source ~/.aliases
 source ~/.functions
 
-eval "$(starship init zsh)"
-eval "$(mcfly init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(starship init zsh)"
+# eval "$(mcfly init zsh)"
 # eval "$(mcfly-fzf init zsh)"
 # eval "$(rbenv init - zsh)"
 # eval "$(/opt/homebrew/bin/mise activate zsh)"
