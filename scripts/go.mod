@@ -1,4 +1,4 @@
-module lampcontrol
+module bulbcontrol
 
 go 1.20
 
