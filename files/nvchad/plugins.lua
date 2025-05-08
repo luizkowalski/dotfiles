@@ -3,9 +3,9 @@ local plugins = {
     "echasnovski/mini.trailspace",
     version = false,
   },
-  {
-    import = "nvchad.blink.lazyspec"
-  },
+  -- {
+    -- import = "nvchad.blink.lazyspec"
+  -- },
   {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
