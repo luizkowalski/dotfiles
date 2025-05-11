@@ -49,6 +49,10 @@ function squashit() {
   git branch -D "$temp_branch"
 }
 
+function bright(){
+  /Applications/BetterDisplay.app/Contents/MacOS/BetterDisplay set -brightness="$1"%
+}
+
 function update() {
   if [ -e "bin/stubs/update" ]; then
     bin/stubs/update "$@"
@@ -67,6 +71,10 @@ function dev() {
   else
     command dev "$@"
   fi
+}
+
+function devx(){
+  devcontainer $1 --workspace-folder . ${@:2}
 }
 
 function test(){

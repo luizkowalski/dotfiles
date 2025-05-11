@@ -7,7 +7,7 @@ local hover = null_ls.builtins.hover
 local sources = {
   -- formatting.tidy,
   -- formatting.jq,
-  formatting.prettier,
+  -- formatting.prettier,
   -- formatting.shellharden,
   formatting.stylua,
   -- diagnostics.eslint,
