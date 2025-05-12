@@ -3,11 +3,12 @@ local plugins = {
     "echasnovski/mini.trailspace",
     version = false,
   },
+  { import = "nvchad.blink.lazyspec" },
   {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
     lazy = false,
-    priority = 1000
+    priority = 1000,
   },
   {
     "sindrets/diffview.nvim",
@@ -79,20 +80,6 @@ local plugins = {
     lazy = false,
   },
   {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require("custom.configs.lspconfig")
-    end,
-    opts = {
-      servers = {
-        ruby_lsp = {
-          mason = false,
-          cmd = { vim.fn.expand("~/.local/share/mise/shims/ruby-lsp") },
-        },
-      },
-    },
-  },
-  {
     "nvimtools/none-ls.nvim",
     event = "VeryLazy",
     opts = function()
@@ -113,18 +100,32 @@ local plugins = {
     },
   },
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "prettierd",
-        "stylua",
-        "terraform-ls",
-      },
-    },
+    "mason-org/mason.nvim",
   },
   {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
+    config = function()
+      require("mason-lspconfigs").setup({
+        ensure_installed = {
+          "stylua",
+          "terraform-ls",
+        },
+      })
+    end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("custom.configs.lspconfig")
+    end,
+    opts = {
+      servers = {
+        ruby_lsp = {
+          mason = false,
+          cmd = { vim.fn.expand("~/.local/share/mise/shims/ruby-lsp") },
+        },
+      },
+    },
   },
   {
     "echasnovski/mini.indentscope",

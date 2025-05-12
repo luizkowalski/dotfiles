@@ -49,12 +49,8 @@ function squashit() {
   git branch -D "$temp_branch"
 }
 
-function lon() {
-  echo '{"id":1,"method":"setState","params":{"state":true}}' | nc -u -w 1 wiz.fritz.box 38899
-}
-
-function loff() {
-  echo '{"id":1,"method":"setState","params":{"state":false}}' | nc -u -w 1 wiz.fritz.box 38899
+function bright(){
+  /Applications/BetterDisplay.app/Contents/MacOS/BetterDisplay set -brightness="$1"%
 }
 
 function update() {
@@ -75,6 +71,10 @@ function dev() {
   else
     command dev "$@"
   fi
+}
+
+function devx(){
+  devcontainer $1 --workspace-folder . ${@:2}
 }
 
 function test(){
