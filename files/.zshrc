@@ -148,7 +148,6 @@ source ~/.functions
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(starship init zsh)"
-eval "$(atuin init zsh)"
 # eval "$(mcfly init zsh)"
 # eval "$(mcfly-fzf init zsh)"
 # eval "$(rbenv init - zsh)"
