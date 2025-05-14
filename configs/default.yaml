@@ -1,5 +1,5 @@
 - create:
     - ~/Projects
 - shell:
-    - ['sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"', Installing Oh My Zsh]
+    - ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended', Installing Oh My Zsh]
     - ['/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"', "Installing Brew"]
