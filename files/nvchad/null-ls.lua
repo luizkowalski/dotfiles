@@ -9,6 +9,7 @@ local sources = {
   -- formatting.jq,
   -- formatting.prettier,
   -- formatting.shellharden,
+  formatting.yamlfmt,
   formatting.stylua,
   -- diagnostics.eslint,
   diagnostics.hadolint,
