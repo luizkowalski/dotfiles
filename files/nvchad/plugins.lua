@@ -3,7 +3,9 @@ local plugins = {
     "echasnovski/mini.trailspace",
     version = false,
   },
-  { import = "nvchad.blink.lazyspec" },
+  {
+    import = "nvchad.blink.lazyspec",
+  },
   {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
@@ -109,6 +111,7 @@ local plugins = {
         ensure_installed = {
           "stylua",
           "terraform-ls",
+          "yamlfmt",
         },
       })
     end,
@@ -182,10 +185,10 @@ local plugins = {
 }
 
 -- Not needed if installed Ripgrep, it picks up the config from .gitignore
--- require("telescope").setup({
---   defaults = {
---     file_ignore_patterns = { "node_modules", "sorbet" },
---   },
--- })
+require("telescope").setup({
+  defaults = {
+    file_ignore_patterns = { "node_modules", "sorbet" },
+  },
+})
 
 return plugins

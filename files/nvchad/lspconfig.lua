@@ -3,7 +3,6 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require("lspconfig")
 
--- EXAMPLE
 local servers = {
   "cssls",
   "docker_compose_language_service",
