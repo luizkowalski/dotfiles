@@ -15,6 +15,7 @@
     ~/.functions: files/.functions
     ~/.zshrc: files/.zshrc
     ~/.gemrc: files/.gemrc
+    ~/.config/atuin/config.toml: files/atuin.toml
     ~/.config/topgrade.toml: files/topgrade.toml
     ~/Library/Application Support/com.mitchellh.ghostty/config: files/ghostty
     ~/.config/ghostty/config: files/ghostty
