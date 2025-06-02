@@ -12,6 +12,7 @@ local servers = {
   "stimulus_ls",
   "terraformls",
   "turbo_ls",
+  "taplo",
   "yamlls",
 }
 local nvlsp = require("nvchad.configs.lspconfig")
