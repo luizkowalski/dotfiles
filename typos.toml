@@ -1,7 +1,5 @@
 [files]
-extend-exclude = [
-  "dotbot/**/*"
-]
+extend-exclude = ["dotbot/**/*"]
 ignore-hidden = true
 ignore-files = true
 ignore-dot = true
