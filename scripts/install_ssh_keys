@@ -1,0 +1,77 @@
+#!/bin/sh
+
+set -e
+
+echo "Syncing vault"
+bw sync
+
+echo "Installing SSH keys from Bitwarden..."
+
+if ! command -v bw >/dev/null 2>&1; then
+    echo "Error: Bitwarden CLI (bw) is not installed"
+    exit 1
+fi
+
+if ! bw status | grep -q '"status":"unlocked"'; then
+    echo "Error: Bitwarden is not unlocked. Please run 'bw unlock' first"
+    exit 1
+fi
+
+mkdir -p ~/.ssh
+
+echo "Retrieving Hetzner Keys from Bitwarden..."
+
+TEMP_JSON=$(mktemp)
+TEMP_CONFIG=$(mktemp)
+trap 'rm -f "$TEMP_JSON" "$TEMP_CONFIG"' EXIT
+
+if ! bw get item "Hetzner Keys" > "$TEMP_JSON"; then
+    echo "Error: Could not find 'Hetzner Keys' item in Bitwarden"
+    exit 1
+fi
+
+if ! bw get item "SSH Config" > "$TEMP_CONFIG"; then
+    echo "Error: Could not find 'SSH Config' item in Bitwarden"
+    exit 1
+fi
+
+if [ ! -s "$TEMP_JSON" ]; then
+    echo "Error: Empty response from Bitwarden"
+    exit 1
+fi
+
+PRIVATE_KEY=$(jq -r '.notes' "$TEMP_JSON")
+if [ "$PRIVATE_KEY" = "null" ] || [ -z "$PRIVATE_KEY" ]; then
+    echo "Error: No private key found in notes"
+    exit 1
+fi
+
+PUBLIC_KEY=$(jq -r '.fields[] | select(.name=="pub") | .value' "$TEMP_JSON")
+if [ "$PUBLIC_KEY" = "null" ] || [ -z "$PUBLIC_KEY" ]; then
+    echo "Error: No public key found in 'pub' custom field"
+    exit 1
+fi
+
+SSH_CONFIG=$(jq -r '.notes' "$TEMP_CONFIG")
+if [ "$SSH_CONFIG" = "null" ] || [ -z "$SSH_CONFIG" ]; then
+    echo "Error: No SSH config found in notes"
+    exit 1
+fi
+
+echo "Writing SSH config to ~/.ssh/config"
+echo "$SSH_CONFIG" > ~/.ssh/config
+chmod 644 ~/.ssh/config
+
+echo "Writing private key to ~/.ssh/hetzner"
+echo "$PRIVATE_KEY" > ~/.ssh/hetzner
+chmod 600 ~/.ssh/hetzner
+
+echo "Writing public key to ~/.ssh/hetzner.pub"
+echo "$PUBLIC_KEY" > ~/.ssh/hetzner.pub
+chmod 644 ~/.ssh/hetzner.pub
+
+chmod 700 ~/.ssh
+
+echo "SSH keys installed successfully!"
+echo "Private key: ~/.ssh/hetzner (permissions: 600)"
+echo "Public key: ~/.ssh/hetzner.pub (permissions: 644)"

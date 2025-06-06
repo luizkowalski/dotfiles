@@ -8,7 +8,7 @@ request_sudo:
 	sudo -v
 
 setup: request_sudo
-	./install default mac shell brew neovim bins
+	./install default mac shell brew neovim bins ssh
 
 shell:
 	./install shell
@@ -24,3 +24,6 @@ neovim:
 
 bins:
 	./install bins
+
+ssh:
+	./install ssh
