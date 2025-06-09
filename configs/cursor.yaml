@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean:
+    ~/.cursor:
+      recursive: true
+- link:
+    ~/.cursor/mcp.json: files/cursor/mcp.json
+
