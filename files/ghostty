@@ -9,7 +9,8 @@ cursor-style-blink = true
 
 copy-on-select = clipboard
 
-font-family = "Maple Mono NF Thin"
+# font-family = "Maple Mono NF Thin"
+font-family = "CaskaydiaMono NFM ExtraLight"
 
 font-feature = "cv33"
 font-feature = "cv34"
