@@ -45,10 +45,10 @@ mouse-hide-while-typing = true
 background-blur-radius = 20
 
 
-theme = tokyonight_night
+# theme = tokyonight_night
 # theme = MaterialOcean
 # theme = solarized-osaka-night
-# theme = Sublette
+theme = Sublette
 # theme = AdventureTime
 # theme = Kanagawa Wave
 # theme = Kanagawabones
