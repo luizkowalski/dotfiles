@@ -9,13 +9,20 @@
         "-y",
         "@upstash/context7-mcp"
       ]
+    },
+    "memory_bank": {
+      "command": "bunx",
+      "args": [
+        "-y",
+        "@allpepper/memory-bank-mcp@latest"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "bunx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
     }
-  },
-  "sequential-thinking": {
-    "command": "bunx",
-    "args": [
-      "-y",
-      "@modelcontextprotocol/server-sequential-thinking"
-    ]
   }
 }
