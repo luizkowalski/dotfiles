@@ -35,7 +35,7 @@ font-size = 14
 # keybind = cmd+f=write_scrollback_file:open
 keybind = super+f=write_screen_file:open
 
-scrollback-limit = 2000000
+scrollback-limit = 2000000000000000
 
 macos-icon = custom-style
 macos-icon-frame = beige
@@ -62,3 +62,4 @@ window-theme      = dark
 # working-directory = /Users/luiz/Projects/switchboard
 # working-directory = /Users/luiz.kowalski/Projects
 working-directory = home
+keybind = shift+enter=text:\n
