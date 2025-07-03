@@ -157,10 +157,8 @@ eval "$(starship init zsh)"
 
  poetry_auto_activate() {
    if [[ -f "pyproject.toml" ]]; then
-     if [[ -z "$POETRY_ACTIVE" ]]; then
        eval "$(poetry env activate)"
-     fi
-   elif [[ -n "$POETRY_ACTIVE" ]]; then
+   else
      deactivate 2>/dev/null || true
    fi
  }

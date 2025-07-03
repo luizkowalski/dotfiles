@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "ruby-deps": {
-      "url": "https://dep-mcp.9elements.com/sse"
+      "url": "https://hex-mcp.9elements.com/sse"
     },
     "context7": {
       "command": "bunx",
