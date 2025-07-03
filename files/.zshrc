@@ -18,6 +18,8 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/17/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@20/bin"
 export PATH="$PATH:/Users/${USER}/.spicetify"
 
+export KUBECONFIG=~/.kube/cf-auth-okta.yaml:~/.kube/cf-staging.yaml:~/.kube/cf-preview.yaml:~/.kube/cf-internal.yaml:~/.kube/cf-production.yaml:~/.kube/cf-convenience.yaml
+
 # export NVM_DIR="$HOME/.nvm"
 
 # export EDITOR="cursor --wait"

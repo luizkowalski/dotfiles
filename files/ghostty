@@ -62,3 +62,4 @@ window-theme      = dark
 # working-directory = /Users/luiz/Projects/switchboard
 # working-directory = /Users/luiz.kowalski/Projects
 working-directory = home
+keybind = shift+enter=text:\n
