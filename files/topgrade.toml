@@ -18,8 +18,7 @@ only = [
   "go",
   "self_update",
   "shell",                 #, "mas",
-  "tmux",
-  "uv"
+  "tmux"
 ]
 
 # Do not ask to retry failed steps (default: false)
