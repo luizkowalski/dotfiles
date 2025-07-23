@@ -177,3 +177,8 @@ eval "$(mise activate zsh --shims)" # should be first
 
 # bun completions
 # [ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/luiz.kowalski/.lmstudio/bin"
+# End of LM Studio CLI section
+
