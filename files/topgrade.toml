@@ -10,15 +10,15 @@ assume_yes = true
 
 # Run specific steps - same options as the command line flag
 only = [
-  "brew_formula",
   "brew_cask",
-  "shell",                 #, "mas",
+  "brew_formula",
+  "bun_packages",
   "config_update",
+  "github_cli_extensions",
   "go",
   "self_update",
-  "tmux",
-  "vscode",
-  "github_cli_extensions",
+  "shell",                 #, "mas",
+  "tmux"
 ]
 
 # Do not ask to retry failed steps (default: false)

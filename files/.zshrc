@@ -151,20 +151,8 @@ source ~/.functions
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(starship init zsh)"
+eval "$(uv generate-shell-completion zsh)"
 
- # Automatically activate poetry environment when entering a directory with pyproject.toml
- autoload -U add-zsh-hook
-
- poetry_auto_activate() {
-   if [[ -f "pyproject.toml" ]]; then
-       eval "$(poetry env activate)"
-   else
-     deactivate 2>/dev/null || true
-   fi
- }
-
- add-zsh-hook chpwd poetry_auto_activate
- poetry_auto_activate
 # eval "$(mcfly init zsh)"
 # eval "$(mcfly-fzf init zsh)"
 # eval "$(rbenv init - zsh)"
