@@ -151,7 +151,10 @@ source ~/.functions
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(starship init zsh)"
-eval "$(uv generate-shell-completion zsh)"
+
+if [[ -f $(which uv) ]]; then
+  eval "$(uv generate-shell-completion zsh)"
+fi
 
 # eval "$(mcfly init zsh)"
 # eval "$(mcfly-fzf init zsh)"
