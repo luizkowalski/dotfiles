@@ -29,7 +29,7 @@ font-feature = "ss19"
 font-feature = "ss20"
 font-feature = "calt"
 
-font-size = 14
+font-size = 13.5
 # font-variation = "wght=400"
 
 # keybind = cmd+f=write_scrollback_file:open
