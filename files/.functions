@@ -134,3 +134,15 @@ function karm() {
 
 #   rm $srt_as_utf8
 # }
+
+function quirely() {
+  kubectl config current-context | grep -q "quirely" || kubectl config use-context $(kubectl config get-contexts -o name | grep gatekeeper | grep quirely)
+  local pod=$(kubectl get pods -l app=gatekeeper -o name | grep -v deploy | head -1 | cut -d/ -f2)
+  kubectl exec -it "$pod" -- /bin/sh
+}
+
+function flinkly() {
+  kubectl config current-context | grep -q "flinkly" || kubectl config use-context $(kubectl config get-contexts -o name | grep gatekeeper | grep flinkly | head -1)
+  local pod=$(kubectl get pods -l app=gatekeeper -o name | grep -v deploy | head -1 | cut -d/ -f2)
+  kubectl exec -it "$pod" -- /bin/sh
+}
