@@ -16,6 +16,7 @@ only = [
   "config_update",
   "github_cli_extensions",
   "go",
+  "node",
   "self_update",
   "shell",                 #, "mas",
   "tmux"
