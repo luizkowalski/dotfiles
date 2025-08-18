@@ -21,6 +21,8 @@ export PATH=/Users/luiz.kowalski/.opencode/bin:$PATH
 
 export KUBECONFIG=~/.kube/cf-auth-okta.yaml:~/.kube/cf-staging.yaml:~/.kube/cf-preview.yaml:~/.kube/cf-internal.yaml:~/.kube/cf-production.yaml:~/.kube/cf-convenience.yaml
 
+export AWS_PROFILE="shared_production"
+
 # export NVM_DIR="$HOME/.nvm"
 
 # export EDITOR="cursor --wait"
