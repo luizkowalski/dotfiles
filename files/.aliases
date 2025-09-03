@@ -38,7 +38,7 @@ alias tfda="terraform destroy -auto-approve"
 alias tg="topgrade"
 alias zshconfig="code ~/.zshrc"
 
-alias rubocop_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E '\.rb$|(^|/)Gemfile$' | xargs bin/rubocop -D"
+alias rubocop_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E '\.rb$|(^|/)Gemfile$' | xargs bin/rubocop -D --force-exclusion"
 alias rubocop_fixall_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E '\.rb$|(^|/)Gemfile$' | xargs bin/rubocop -A"
 alias rubocop_fix_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E '\.rb$|(^|/)Gemfile$' | xargs bin/rubocop -a"
 alias rspec_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E 'spec/.*_spec.rb$' | xargs bin/rspec"
