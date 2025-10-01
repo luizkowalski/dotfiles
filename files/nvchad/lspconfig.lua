@@ -1,8 +1,6 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
-local lspconfig = require("lspconfig")
-
 local servers = {
   "cssls",
   "docker_compose_language_service",
@@ -19,14 +17,15 @@ local nvlsp = require("nvchad.configs.lspconfig")
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup({
+  vim.lsp.config(lsp, {
     on_attach = nvlsp.on_attach,
     on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
   })
+  vim.lsp.enable(lsp)
 end
 
-lspconfig.typos_lsp.setup({
+vim.lsp.config('typos_lsp', {
   config = {
     -- Logging level of the language server. Logs appear in :LspLog. Defaults to error.
     cmd_env = { RUST_LOG = "error" },
@@ -40,8 +39,10 @@ lspconfig.typos_lsp.setup({
     diagnosticSeverity = "Error",
   },
 })
-lspconfig.terraformls.setup({})
-lspconfig.dockerls.setup({})
+vim.lsp.enable('typos_lsp')
+
+vim.lsp.enable('terraformls')
+vim.lsp.enable('dockerls')
 -- lspconfig.yamlls.setup {
 --   on_attach = on_attach,
 --   capabilities = {
@@ -63,21 +64,23 @@ lspconfig.dockerls.setup({})
 --     }
 --   }
 -- }
-lspconfig.lua_ls.setup({})
-lspconfig.bashls.setup({})
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('bashls')
 
-lspconfig.ruby_lsp.setup({
+vim.lsp.config('ruby_lsp', {
+  cmd = { "ruby-lsp" }, -- Use globally installed ruby-lsp gem
   init_options = {
     formatter = "auto",
     linters = { "rubocop" },
   },
 })
+vim.lsp.enable('ruby_lsp')
 
 -- })
-lspconfig.tailwindcss.setup({
+vim.lsp.config('tailwindcss', {
   cmd = { "./node_modules/.bin/tailwindcss-language-server", "--stdio" },
-  on_attach = on_attach,
-  capabilities = capabilities,
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
   filetypes = {
     "html",
     "css",
@@ -93,3 +96,4 @@ lspconfig.tailwindcss.setup({
     -- "svelte",
   },
 })
+vim.lsp.enable('tailwindcss')

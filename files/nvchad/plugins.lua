@@ -3,9 +3,9 @@ local plugins = {
     "echasnovski/mini.trailspace",
     version = false,
   },
-  {
-    import = "nvchad.blink.lazyspec",
-  },
+  -- {
+  --   import = "nvchad.blink.lazyspec",
+  -- },
   {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
@@ -149,19 +149,6 @@ local plugins = {
     config = function()
       require("mini.cursorword").setup()
     end,
-  },
-  {
-    "hrsh7th/nvim-cmp",
-    opts = {
-      sources = {
-        -- { name = "nvim_lsp" },
-        -- { name = "luasnip" },
-        -- { name = "buffer" },
-        -- { name = "nvim_lua" },
-        -- { name = "path" },
-        -- { name = "copilot" },
-      },
-    },
   },
   {
     "rgroli/other.nvim",

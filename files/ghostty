@@ -33,7 +33,7 @@ font-size = 13.5
 # font-variation = "wght=400"
 
 # keybind = cmd+f=write_scrollback_file:open
-keybind = super+f=write_screen_file:open
+# keybind = super+f=write_screen_file:open
 
 scrollback-limit = 2000000000000000
 
@@ -44,11 +44,10 @@ macos-option-as-alt = true
 mouse-hide-while-typing = true
 background-blur-radius = 20
 
-
-# theme = tokyonight_night
+theme = TokyoNight Night
 # theme = MaterialOcean
 # theme = solarized-osaka-night
-theme = Sublette
+# theme = Sublette
 # theme = AdventureTime
 # theme = Kanagawa Wave
 # theme = Kanagawabones
