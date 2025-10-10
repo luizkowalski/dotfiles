@@ -9,7 +9,7 @@ cursor-style-blink = true
 
 copy-on-select = clipboard
 
-font-family = "Maple Mono NF Thin"
+font-family = "CaskaydiaCove NFM Light"
 # font-family = "CaskaydiaMono NFM ExtraLight"
 
 # font-feature = "cv33"
@@ -30,7 +30,7 @@ font-feature = "ss20"
 font-feature = "calt"
 
 font-size = 13
-# font-variation = "wght=400"
+font-variation = "wght=100"
 
 # keybind = cmd+f=write_scrollback_file:open
 keybind = super+f=write_screen_file:open
