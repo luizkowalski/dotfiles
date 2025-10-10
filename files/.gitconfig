@@ -1,5 +1,7 @@
 [pull]
 	rebase = false
+[rebase]
+    autoStash = true
 [user]
 	name = Luiz Eduardo Kowalski
 	email = luizeduardokowalski@gmail.com
