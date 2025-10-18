@@ -37,7 +37,7 @@ keybind = super+f=write_screen_file:open
 
 scrollback-limit = 2000000000000000
 
-macos-icon = xray
+macos-icon = holographic
 macos-option-as-alt = true
 
 mouse-hide-while-typing = true
