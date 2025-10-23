@@ -37,7 +37,11 @@ keybind = super+f=write_screen_file:open
 
 scrollback-limit = 2000000000000000
 
-macos-icon = holographic
+macos-icon = custom-style
+macos-icon-ghost-color = ddd
+macos-icon-screen-color = edc9f0
+macos-icon-frame = chrome
+
 macos-option-as-alt = true
 
 mouse-hide-while-typing = true
