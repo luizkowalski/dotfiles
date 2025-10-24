@@ -165,7 +165,7 @@ fi
 # eval "$(rbenv init - zsh)"
 # eval "$(/opt/homebrew/bin/mise activate zsh)"
 # eval "$(mise activate zsh --shims)" # should be first
-# eval "$(mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
