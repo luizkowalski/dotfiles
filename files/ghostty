@@ -61,6 +61,8 @@ window-width      = 145
 window-height     = 45
 window-theme      = dark
 
+macos-titlebar-style = transparent
+
 # working-directory = /Users/luiz/Projects/switchboard
 # working-directory = /Users/luiz.kowalski/Projects
 working-directory = home
