@@ -38,8 +38,8 @@ keybind = super+f=write_screen_file:open
 scrollback-limit = 2000000000000000
 
 macos-icon = custom-style
-macos-icon-ghost-color = #b4a8f0
-macos-icon-screen-color = #120a00
+macos-icon-ghost-color = #ddd
+macos-icon-screen-color = #000
 macos-icon-frame = chrome
 
 macos-option-as-alt = true
@@ -60,6 +60,8 @@ window-decoration = true
 window-width      = 145
 window-height     = 45
 window-theme      = dark
+
+macos-titlebar-style = transparent
 
 # working-directory = /Users/luiz/Projects/switchboard
 # working-directory = /Users/luiz.kowalski/Projects
