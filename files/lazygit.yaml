@@ -1,7 +1,6 @@
 git:
-  paging:
-    externalDiffCommand: difft --color=always --display=inline
-
+  pagers:
+    - externalDiffCommand: difft --color=always --display=inline
 os:
   editPreset: "cursor"
 promptToReturnFromSubprocess: false # removes "press enter to return to lazygit" popup
