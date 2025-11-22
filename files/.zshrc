@@ -146,6 +146,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+export RAILS_EDITOR="cursor"
+
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
 fi
@@ -176,3 +178,6 @@ eval "$(mise activate zsh --shims)" # should be first
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/luiz.kowalski/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# Added by Antigravity
+export PATH="/Users/luiz/.antigravity/antigravity/bin:$PATH"
