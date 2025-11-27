@@ -14,7 +14,7 @@
 [merge]
     conflictstyle = diff3
 [diff]
-    external = /opt/homebrew/bin/difft
+    external = difft
     colorMoved = default
 [filter "lfs"]
 	clean = git-lfs clean -- %f
