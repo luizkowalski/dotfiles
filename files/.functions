@@ -152,3 +152,16 @@ function flinklyeu() {
   local pod=$(kubectl get pods -l app=gatekeeper -o name | grep -v deploy | head -1 | cut -d/ -f2)
   kubectl exec -it "$pod" -- /bin/sh
 }
+
+function produs() {
+  kubectl config use-context $(kubectl config get-contexts -o name | grep gatekeeper | grep -v flinkly | grep -v quirely | grep us | head -1)
+  local pod=$(kubectl get pods -l app=gatekeeper -o name | grep -v deploy | head -1 | cut -d/ -f2)
+  kubectl exec -it "$pod" -- /bin/sh
+}
+
+function prodeu() {
+  kubectl config use-context $(kubectl config get-contexts -o name | grep gatekeeper | grep -v flinkly | grep -v quirely | grep eu | head -1)
+  local pod=$(kubectl get pods -l app=gatekeeper -o name | grep -v deploy | head -1 | cut -d/ -f2)
+  kubectl exec -it "$pod" -- /bin/sh
+}
+
