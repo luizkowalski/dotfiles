@@ -1,5 +1,7 @@
 adjust-cell-height = 1
 
+auto-update-channel = stable
+
 auto-update = download
 
 clipboard-paste-protection = false
@@ -31,9 +33,6 @@ font-feature = "calt"
 
 font-size = 13
 font-variation = "wght=100"
-
-# keybind = cmd+f=write_scrollback_file:open
-keybind = super+f=write_screen_file:open
 
 scrollback-limit = 2000000000000000
 
