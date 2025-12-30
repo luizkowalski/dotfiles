@@ -46,7 +46,8 @@ macos-option-as-alt = true
 mouse-hide-while-typing = true
 background-blur-radius = 20
 
-theme = TokyoNight Night
+theme = Material Ocean
+# theme = TokyoNight Night
 # theme = MaterialOcean
 # theme = solarized-osaka-night
 # theme = Sublette
