@@ -22,8 +22,10 @@
 # Note: This function will not push the changes to the remote repository.
 function squashit() {
   local main_branch="${1:-main}"
+  local commit_message="$2"
 
   to_squash=$(git symbolic-ref --short -q HEAD)
+  commit_message="${commit_message:-Squashed $to_squash}"
   echo "Squashing ${to_squash}..."
 
   echo "Going back to main and refresh it..."
@@ -40,7 +42,7 @@ function squashit() {
   git merge --squash "$to_squash"
 
   echo "Squashed. Committing..."
-  git commit -am "Squashed $to_squash"
+  git commit -am "$commit_message"
 
   git checkout "$to_squash"
   git reset --hard "$temp_branch"
