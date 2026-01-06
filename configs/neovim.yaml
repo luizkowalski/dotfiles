@@ -10,5 +10,4 @@
     ~/.config/nvim/lua/chadrc.lua: files/nvchad/chadrc.lua
     ~/.config/nvim/lua/plugins/init.lua: files/nvchad/plugins.lua
     ~/.config/nvim/lua/mappings.lua: files/nvchad/mappings.lua
-    ~/.config/nvim/lua/custom/configs/null-ls.lua: files/nvchad/null-ls.lua
     ~/.config/nvim/lua/custom/configs/lspconfig.lua: files/nvchad/lspconfig.lua
