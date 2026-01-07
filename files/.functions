@@ -79,13 +79,13 @@ function devx(){
   devcontainer $1 --workspace-folder . ${@:2}
 }
 
-function test(){
-  if [ -e "bin/test" ]; then
-    bin/test "$@"
-  else
-    command test "$@"
-  fi
-}
+# function test(){
+#   if [ -e "bin/test" ]; then
+#     bin/test "$@"
+#   else
+#     command test "$@"
+#   fi
+# }
 
 function kamal() {
   if [ -e "bin/stubs/kamal" ]; then
