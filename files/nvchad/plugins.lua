@@ -133,16 +133,27 @@ local plugins = {
   },
   {
     "mason-org/mason-lspconfig.nvim",
-    config = function()
-      require("mason-lspconfigs").setup({
-        ensure_installed = {
-          "stylua",
-          "terraform-ls",
-          "yamlfmt",
-          "hadolint",
-        },
-      })
-    end,
+    opts = {
+      ensure_installed = {
+        "dockerls",
+        "lua_ls",
+        "ruby_lsp",
+        "terraformls",
+        "typos_lsp",
+      },
+    },
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    dependencies = { "mason-org/mason.nvim" },
+    lazy = false,
+    opts = {
+      ensure_installed = {
+        "hadolint",
+        "stylua",
+        "yamlfmt",
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
