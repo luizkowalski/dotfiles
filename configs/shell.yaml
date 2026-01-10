@@ -27,6 +27,7 @@
     # ~/.config/zed/settings.json: files/zed/settings.json
     ~/.config/zellij/config.kdl: files/zellij/config.kdl
     ~/.config/zellij/layouts/default.kdl: files/zellij/layout.kdl
+    ~/.config/opencode/opencode.json: files/opencode/config.json
     ~/.yamlfmt: files/yamlfmt
 - shell:
     - [sh -c "scripts/install_zsh_plugins", "Installing zsh plugins..."]
