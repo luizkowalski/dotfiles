@@ -65,6 +65,15 @@ function update() {
   fi
 }
 
+unalias bu 2>/dev/null
+function bu() {
+  if [ "$@" ]; then
+    bundle update "$@"
+  else
+    bundle update --all
+  fi
+}
+
 function dev() {
   if [ -e "bin/stubs/dev" ]; then
     bin/stubs/dev "$@"
