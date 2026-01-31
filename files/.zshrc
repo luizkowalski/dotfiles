@@ -18,7 +18,8 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/17/bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/18/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@24/bin"
 export PATH="$PATH:/Users/${USER}/.spicetify"
-export PATH=/Users/luiz.kowalski/.opencode/bin:$PATH
+export PATH=/Users/${USER}/.opencode/bin:$PATH
+export PATH="/Users/${USER}/.local/bin:/opt/zerobrew/prefix/bin:$PATH"
 
 export KUBECONFIG=~/.kube/cf-auth-okta.yaml:~/.kube/cf-staging.yaml:~/.kube/cf-preview.yaml:~/.kube/cf-internal.yaml:~/.kube/cf-production.yaml:~/.kube/cf-convenience.yaml
 
