@@ -36,10 +36,10 @@ font-variation = "wght=100"
 
 scrollback-limit = 2000000000000000
 
-macos-icon = custom-style
-macos-icon-ghost-color = #ddd
-macos-icon-screen-color = #000
-macos-icon-frame = chrome
+#macos-icon = custom-style
+#macos-icon-ghost-color = #ddd
+#macos-icon-screen-color = #000
+#macos-icon-frame = chrome
 
 macos-option-as-alt = true
 
