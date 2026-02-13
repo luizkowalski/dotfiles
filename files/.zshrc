@@ -23,7 +23,7 @@ export PATH="/Users/${USER}/.local/bin:/opt/zerobrew/prefix/bin:$PATH"
 
 export KUBECONFIG=~/.kube/cf-auth-okta.yaml:~/.kube/cf-staging.yaml:~/.kube/cf-preview.yaml:~/.kube/cf-internal.yaml:~/.kube/cf-production.yaml:~/.kube/cf-convenience.yaml
 
-export AWS_PROFILE="shared_production"
+# export AWS_PROFILE="shared_production"
 
 # export NVM_DIR="$HOME/.nvm"
 
