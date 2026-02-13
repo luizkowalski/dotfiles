@@ -67,8 +67,9 @@ function update() {
 
 unalias bu 2>/dev/null
 function bu() {
-  if [ "$@" ]; then
-    bundle update "$@"
+  if [ $# -gt 0 ]; then
+    gems=("$@")
+    bundle update "${gems[@]}"
   else
     bundle update --all
   fi
