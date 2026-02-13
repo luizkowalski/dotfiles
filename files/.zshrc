@@ -182,3 +182,7 @@ export PATH="$PATH:/Users/luiz.kowalski/.lmstudio/bin"
 
 # Added by Antigravity
 export PATH="/Users/luiz/.antigravity/antigravity/bin:$PATH"
+
+# peon-ping quick controls
+alias peon="bash ~/.claude/hooks/peon-ping/peon.sh"
+[ -f ~/.claude/hooks/peon-ping/completions.bash ] && source ~/.claude/hooks/peon-ping/completions.bash

@@ -15,8 +15,18 @@
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
       ]
+    },
+    "memory_bank": {
+      "type": "local",
+      "command": [
+        "bunx",
+        "-y",
+        "@allpepper/memory-bank-mcp@latest"
+      ]
     }
   },
-  "plugin": ["@0xsero/open-queue"],
+  "plugin": [
+    "@0xsero/open-queue"
+  ],
   "$schema": "https://opencode.ai/config.json"
 }

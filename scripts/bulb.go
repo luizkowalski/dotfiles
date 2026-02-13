@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	hostIP   = "192.168.178.20"
+	hostIP   = "192.168.178.112"
 	hostPort = "38899"
 )
 
