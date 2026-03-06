@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 DEFAULT_CONFIG_PREFIX="default"
 CONFIG_SUFFIX=".yaml"
@@ -14,11 +14,23 @@ cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-configs=${DEFAULT_CONFIG_PREFIX}
-if ! [ -z "$*" ]; then
-  configs=${@/--fresh/}
+fresh=0
+configs=("${DEFAULT_CONFIG_PREFIX}")
+
+if [ "$#" -gt 0 ]; then
+  configs=()
+  for arg in "$@"; do
+    if [ "$arg" = "--fresh" ]; then
+      fresh=1
+      continue
+    fi
+
+    configs+=("$arg")
+  done
 fi
 
-for conf in ${configs}; do
+export DOTFILES_FRESH="$fresh"
+
+for conf in "${configs[@]}"; do
     "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${CONFIG_DIR}${conf}${CONFIG_SUFFIX}"
 done

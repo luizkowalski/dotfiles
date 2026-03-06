@@ -1,5 +1,5 @@
 {
-  "mcpServers": {
+  "shared": {
     "context7": {
       "command": "bunx",
       "args": [
@@ -20,7 +20,9 @@
         "-y",
         "@allpepper/memory-bank-mcp@latest"
       ]
-    },
+    }
+  },
+  "cursor": {
     "browsermcp": {
       "command": "npx",
       "args": [

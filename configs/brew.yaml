@@ -1,5 +1,4 @@
-- shell:
-    - [source ~/.zshrc, "Reload bash"]
+---
 - brewfile:
     - files/Brewfile
 - shell:

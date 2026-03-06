@@ -1,2 +1,3 @@
+---
 - shell:
     - [sh -c "scripts/install_ssh_keys", "Installing ssh keys..."]

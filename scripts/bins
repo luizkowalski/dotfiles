@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 # Download latests typos-lsp
 # curl -s https://api.github.com/repos/tekumara/typos-lsp/releases/latest \

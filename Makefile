@@ -1,3 +1,5 @@
+INSTALL_FLAGS ?=
+
 all: setup
 
 update_dotbot:
@@ -8,25 +10,28 @@ request_sudo:
 	sudo -v
 
 setup: request_sudo
-	./install default mac shell brew neovim bins ssh cursor
+	./install $(INSTALL_FLAGS) default mac shell brew neovim bins ssh cursor
+
+fresh: request_sudo
+	./install --fresh default mac shell brew neovim bins ssh cursor
 
 shell:
-	./install shell
+	./install $(INSTALL_FLAGS) shell
 
 brew:
-	./install brew
+	./install $(INSTALL_FLAGS) brew
 
 mac:
-	./install mac
+	./install $(INSTALL_FLAGS) mac
 
 neovim:
-	./install neovim
+	./install $(INSTALL_FLAGS) neovim
 
 bins:
-	./install bins
+	./install $(INSTALL_FLAGS) bins
 
 ssh:
-	./install ssh
+	./install $(INSTALL_FLAGS) ssh
 
 cursor:
-	./install cursor
+	./install $(INSTALL_FLAGS) cursor
