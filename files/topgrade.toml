@@ -13,6 +13,7 @@ only = [
   "brew_cask",
   "brew_formula",
   "bun_packages",
+  # "claude_code",
   "config_update",
   "github_cli_extensions",
   "go",

@@ -10,7 +10,6 @@ export CDPATH="$CDPATH:$HOME/Projects"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
