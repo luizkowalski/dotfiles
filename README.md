@@ -38,11 +38,3 @@ make fresh
 * `make neovim` installs the NvChad starter if Neovim is not already configured
 * `make ssh` installs SSH material from Bitwarden
 * `make cursor` links Cursor MCP config
-
-## MCP Config
-
-```shell
-python3 scripts/sync_mcp_configs.py
-```
-
-`files/mcp/servers.json` is the shared source for MCP server definitions used by OpenCode and Cursor.
