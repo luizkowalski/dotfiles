@@ -3,25 +3,20 @@
 # export GOPATH=$HOME/go
 # export PATH="$PATH:${GOPATH}/bin"
 
-export GOPATH="/Users/${USER}/go"
-export ZSH="/Users/${USER}/.oh-my-zsh"
+export GOPATH="$HOME/go"
+export ZSH="$HOME/.oh-my-zsh"
 export BUN_INSTALL="$HOME/.bun"
 export CDPATH="$CDPATH:$HOME/Projects"
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$PATH:/Users/${USER}/bin"
-export PATH="$PATH:/Users/${USER}/.local/bin"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/17/bin"
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/18/bin"
 export PATH="$PATH:/opt/homebrew/opt/node@24/bin"
-export PATH="$PATH:/Users/${USER}/.spicetify"
-export PATH=/Users/${USER}/.opencode/bin:$PATH
-export PATH="/Users/${USER}/.local/bin:/opt/zerobrew/prefix/bin:$PATH"
-
-export KUBECONFIG=~/.kube/cf-auth-okta.yaml:~/.kube/cf-staging.yaml:~/.kube/cf-preview.yaml:~/.kube/cf-internal.yaml:~/.kube/cf-production.yaml:~/.kube/cf-convenience.yaml
+export PATH="$PATH:$HOME/.spicetify"
+export PATH="$HOME/.opencode/bin:$PATH"
+export PATH="$HOME/.local/bin:/opt/zerobrew/prefix/bin:$PATH"
 
 # export AWS_PROFILE="shared_production"
 
@@ -97,7 +92,7 @@ VSCODE='cursor'
 ANSIBLE_HOME="$HOME/.ansible"
 ANSIBLE_CONFIG="$HOME/.ansible.cfg"
 
-source ~/.secrets
+[ -f ~/.secrets ] && source ~/.secrets
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -173,15 +168,7 @@ eval "$(mise activate zsh --shims)" # should be first
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# bun completions
-# [ -s "/Users/luiz/.bun/_bun" ] && source "/Users/luiz/.bun/_bun"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/luiz.kowalski/.lmstudio/bin"
-# End of LM Studio CLI section
-
-# Added by Antigravity
-export PATH="/Users/luiz/.antigravity/antigravity/bin:$PATH"
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # peon-ping quick controls
 alias peon="bash ~/.claude/hooks/peon-ping/peon.sh"

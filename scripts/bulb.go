@@ -13,8 +13,7 @@ import (
 )
 
 const (
-	hostIP   = "192.168.178.112"
-	hostPort = "38899"
+	defaultHostPort = "38899"
 )
 
 // Styles
@@ -73,8 +72,18 @@ type BulbModel struct {
 // Command to fetch the current state
 func fetchStateCmd() tea.Cmd {
 	return func() tea.Msg {
+		hostIP := os.Getenv("BULB_HOST")
+		if hostIP == "" {
+			return fetchStateErrMsg{fmt.Errorf("set BULB_HOST before running bulb")}
+		}
+
+		port := os.Getenv("BULB_PORT")
+		if port == "" {
+			port = defaultHostPort
+		}
+
 		// Create a connection to the UDP endpoint
-		conn, err := net.Dial("udp", net.JoinHostPort(hostIP, hostPort))
+		conn, err := net.Dial("udp", net.JoinHostPort(hostIP, port))
 		if err != nil {
 			return fetchStateErrMsg{err}
 		}
@@ -128,8 +137,18 @@ func fetchStateCmd() tea.Cmd {
 // Command to toggle the bulb state
 func toggleStateCmd(newState bool) tea.Cmd {
 	return func() tea.Msg {
+		hostIP := os.Getenv("BULB_HOST")
+		if hostIP == "" {
+			return fetchStateErrMsg{fmt.Errorf("set BULB_HOST before running bulb")}
+		}
+
+		port := os.Getenv("BULB_PORT")
+		if port == "" {
+			port = defaultHostPort
+		}
+
 		// Create a connection to the UDP endpoint
-		conn, err := net.Dial("udp", net.JoinHostPort(hostIP, hostPort))
+		conn, err := net.Dial("udp", net.JoinHostPort(hostIP, port))
 		if err != nil {
 			return fetchStateErrMsg{err}
 		}

@@ -2,15 +2,14 @@
 	rebase = false
 [rebase]
     autoStash = true
-[user]
-	name = Luiz Eduardo Kowalski
-	email = luizeduardokowalski@gmail.com
 [core]
   pager = less -F -X
 	excludesfile = ~/.gitignore
 	; editor = nvim
 [include]
 	path = ~/.config/dev/gitconfig
+[include]
+	path = ~/.gitconfig.local
 [merge]
     conflictstyle = diff3
 [diff]
