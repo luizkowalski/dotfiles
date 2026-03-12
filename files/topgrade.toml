@@ -19,6 +19,7 @@ only = [
   "go",
   "node",
   "self_update",
+  "skills",
   "shell",                 #, "mas",
   "tmux"
 ]
