@@ -26,7 +26,8 @@
     }
   },
   "plugin": [
-    "@0xsero/open-queue"
+    "@0xsero/open-queue",
+    "superpowers-ruby@git+https://github.com/lucianghinda/superpowers-ruby.git"
   ],
   "$schema": "https://opencode.ai/config.json"
 }
