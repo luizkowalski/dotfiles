@@ -170,10 +170,6 @@ eval "$(mise activate zsh --shims)" # should be first
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-# peon-ping quick controls
-alias peon="bash ~/.claude/hooks/peon-ping/peon.sh"
-[ -f ~/.claude/hooks/peon-ping/completions.bash ] && source ~/.claude/hooks/peon-ping/completions.bash
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

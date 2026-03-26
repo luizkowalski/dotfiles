@@ -6,11 +6,7 @@ config_dir="${HOME}/.config/nvim"
 state_dir="${HOME}/.local/state/nvim"
 share_dir="${HOME}/.local/share/nvim"
 
-if [ "${DOTFILES_FRESH:-0}" = "1" ]; then
-  rm -rf "$config_dir" "$state_dir" "$share_dir"
-fi
+rm -rf "$config_dir" "$state_dir" "$share_dir"
 
-if [ ! -d "$config_dir" ]; then
-  git clone https://github.com/NvChad/starter "$config_dir"
-  rm -rf "$config_dir/.git"
-fi
+git clone https://github.com/NvChad/starter "$config_dir"
+rm -rf "$config_dir/.git"

@@ -1,37 +1,28 @@
-INSTALL_FLAGS ?=
+.PHONY: bootstrap brew mac ssh zsh nvim stow-home
 
-all: setup
+stow-home:
+	stow --target="$$HOME" shell nvim cursor ghostty lazygit opencode atuin shell-home
 
-update_dotbot:
-	git submodule update --init --remote dotbot
-	git submodule update --init --remote dotbot-brew
+stow-work:
+	stow --target="$$HOME" shell nvim cursor ghostty lazygit opencode atuin shell-work
 
-request_sudo:
-	sudo -v
-
-setup: request_sudo
-	./install $(INSTALL_FLAGS) default mac shell brew neovim bins ssh cursor
-
-fresh: request_sudo
-	./install --fresh default mac shell brew neovim bins ssh cursor
-
-shell:
-	./install $(INSTALL_FLAGS) shell
+bootstrap:
+	mkdir -p ~/Projects
+	scripts/install_oh_my_zsh
+	scripts/install_homebrew
 
 brew:
-	./install $(INSTALL_FLAGS) brew
+	brew bundle
+	brew analytics off
 
 mac:
-	./install $(INSTALL_FLAGS) mac
-
-neovim:
-	./install $(INSTALL_FLAGS) neovim
-
-bins:
-	./install $(INSTALL_FLAGS) bins
+	scripts/mac
 
 ssh:
-	./install $(INSTALL_FLAGS) ssh
+	scripts/install_ssh_keys
 
-cursor:
-	./install $(INSTALL_FLAGS) cursor
+zsh:
+	scripts/install_zsh_plugins
+
+nvim:
+	scripts/install_nvchad

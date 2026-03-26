@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/homebrew,macos,ruby,rails
-# Edit at https://www.toptal.com/developers/gitignore?templates=homebrew,macos,ruby,rails
-
 .vscode
 
 ### Homebrew ###
@@ -161,4 +158,7 @@ build-iPhoneSimulator/
 
 scripts/bulb
 
-files/.secrets
+shell/.secrets
+shell/.zshrc.local
+shell/.gitconfig.local
+/scripts/bulbcontrol

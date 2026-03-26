@@ -1,7 +1,0 @@
-- defaults:
-    link:
-      create: true
-      relink: true
-      force: true
-- link:
-    ~/.cursor/mcp.json: files/cursor/mcp.json
