@@ -1,10 +1,10 @@
 .PHONY: bootstrap brew mac ssh zsh nvim stow-home
 
 stow-home:
-	stow shell nvim cursor ghostty lazygit opencode atuin shell-home
+	stow --target="$$HOME" shell nvim cursor ghostty lazygit opencode atuin shell-home
 
 stow-work:
-	stow shell nvim cursor ghostty lazygit opencode atuin shell-work
+	stow --target="$$HOME" shell nvim cursor ghostty lazygit opencode atuin shell-work
 
 bootstrap:
 	mkdir -p ~/Projects
