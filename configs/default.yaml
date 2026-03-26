@@ -1,5 +1,0 @@
-- create:
-    - ~/Projects
-- shell:
-    - [sh -c "scripts/install_oh_my_zsh", "Installing Oh My Zsh"]
-    - [sh -c "scripts/install_homebrew", "Installing Brew"]

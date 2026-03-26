@@ -2,39 +2,41 @@
 
 ## Prerequisites
 
+* Homebrew
 * Chrome
 * Ghostty
 * Bitwarden CLI (`bw`) unlocked before running the `ssh` target
-* Xcode Command Line Tools on macOS
+* GNU stow (`brew install stow`)
 
 ## Install
 
+Link dotfiles and run setup scripts as needed:
+
 ```shell
-make
+make stow        # link all dotfiles via stow
+make bootstrap   # oh-my-zsh + homebrew + ~/Projects
+make brew        # brew bundle
+make mac         # macOS defaults
+make ssh         # SSH keys (requires Bitwarden CLI unlocked)
+make zsh         # zsh plugins
+make nvim        # NvChad
 ```
 
 ## Local Overrides
 
 ```shell
-cp files/.zshrc.local.example ~/.zshrc.local
-cp files/.gitconfig.local.example ~/.gitconfig.local
+cp shell/.zshrc.local.example ~/.zshrc.local
+cp shell/.gitconfig.local.example ~/.gitconfig.local
 ```
 
 Use local overrides for machine-specific paths, Git identity, and private environment settings.
 
-## Fresh Install
+## Stow Packages
 
-```shell
-make fresh
-```
-
-`make` now avoids wiping existing Neovim and Oh My Zsh state. Use `make fresh` when you explicitly want the destructive reset behavior.
-
-## Targets
-
-* `make` installs the default macOS profile
-* `make shell` links shell config and installs shell plugins
-* `make brew` applies `files/Brewfile`
-* `make neovim` installs the NvChad starter if Neovim is not already configured
-* `make ssh` installs SSH material from Bitwarden
-* `make cursor` links Cursor MCP config
+* `shell` — shell config, git, and tool configs under `~/.config/`
+* `nvim` — NvChad Neovim config under `~/.config/nvim/`
+* `cursor` — Cursor MCP config under `~/.cursor/`
+* `ghostty` — Ghostty terminal config under `~/.config/ghostty/`
+* `lazygit` — Lazygit config under `~/.config/lazygit/`
+* `opencode` — OpenCode config under `~/.config/opencode/`
+* `atuin` — Atuin shell history config under `~/.config/atuin/`
