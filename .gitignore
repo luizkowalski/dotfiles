@@ -162,3 +162,4 @@ shell/.secrets
 shell/.zshrc.local
 shell/.gitconfig.local
 /scripts/bulbcontrol
+/gpg/private.asc

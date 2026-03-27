@@ -1,3 +1,7 @@
 [user]
 	name = Luiz Eduardo Kowalski
 	email = luizeduardokowalski@gmail.com
+[user]
+	signingkey = 5DFD0458E64B11E4DF8677B90A546AC688CA0A18
+[commit]
+	gpgsign = true
