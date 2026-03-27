@@ -22,15 +22,6 @@ make zsh         # zsh plugins
 make nvim        # NvChad
 ```
 
-## Local Overrides
-
-```shell
-cp shell/.zshrc.local.example ~/.zshrc.local
-cp shell/.gitconfig.local.example ~/.gitconfig.local
-```
-
-Use local overrides for machine-specific paths, Git identity, and private environment settings.
-
 ## Stow Packages
 
 * `shell` — shell config, git, and tool configs under `~/.config/`

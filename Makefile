@@ -1,15 +1,17 @@
-.PHONY: bootstrap brew mac ssh zsh nvim stow-home
+.PHONY: install bootstrap brew mac ssh zsh nvim stow-home stow-work
 
 stow-home:
-	stow --target="$$HOME" shell nvim cursor ghostty lazygit opencode atuin shell-home
+	scripts/stow-force shell nvim cursor ghostty lazygit opencode atuin shell-home
 
 stow-work:
-	stow --target="$$HOME" shell nvim cursor ghostty lazygit opencode atuin shell-work
+	scripts/stow-force shell nvim cursor ghostty lazygit opencode atuin shell-work
+
+install: bootstrap brew stow-home
 
 bootstrap:
 	mkdir -p ~/Projects
-	scripts/install_oh_my_zsh
 	scripts/install_homebrew
+	scripts/install_oh_my_zsh
 
 brew:
 	brew bundle

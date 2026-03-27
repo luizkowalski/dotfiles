@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+TARGET="${HOME:-~}"
+
+dry_run=$(stow --no --dir="$DOTFILES_DIR" --target="$TARGET" "$@" 2>&1 || true)
+conflicts=$(echo "$dry_run" | grep 'existing target' | sed "s/.*existing target \([^ ]*\).*/\1/" || true)
+
+for conflict in $conflicts; do
+  echo "Removing conflict: ${TARGET}/${conflict}"
+  rm -f "${TARGET}/${conflict}"
+done
+
+stow --dir="$DOTFILES_DIR" --target="$TARGET" "$@"
