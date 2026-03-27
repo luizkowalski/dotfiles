@@ -30,5 +30,6 @@ defaults write com.apple.TimeMachine "DoNotOfferNewDisksForBackup" -bool "true"
 defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool "false"
 defaults write com.apple.finder "_FXEnableColumnAutoSizing" -bool "true"
 defaults write com.apple.dock "expose-group-apps" -bool "true"
+
 killall Finder
 killall Dock
