@@ -109,7 +109,6 @@ plugins=(
   git
   macos
   mise
-  poetry
   rails
   # ruby
   terraform
