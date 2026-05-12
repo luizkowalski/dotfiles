@@ -44,8 +44,11 @@ scrollback-limit = 2000000000000000
 macos-titlebar-style = transparent
 macos-option-as-alt = true
 
-mouse-hide-while-typing = true
 background-blur-radius = 20
+background-blur = macos-glass-clear
+background-opacity = 0.99
+
+mouse-hide-while-typing = true
 
 theme = Material Ocean
 # theme = TokyoNight Night
