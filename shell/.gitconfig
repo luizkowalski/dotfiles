@@ -4,7 +4,7 @@
     autoStash = true
 [core]
   pager = less -F -X
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore.global
 	; editor = nvim
 [include]
 	path = ~/.config/dev/gitconfig

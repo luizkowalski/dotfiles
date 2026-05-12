@@ -108,7 +108,7 @@ function kamal() {
 }
 
 function kal() {
-  kamal accessory logs "$1"
+  kamal accessory logs "$1" -f
 }
 
 function kar() {

@@ -38,6 +38,7 @@ alias tfaa="terraform apply -auto-approve"
 alias tfda="terraform destroy -auto-approve"
 alias tg="topgrade"
 alias zshconfig="code ~/.zshrc"
+alias reboot_network="sudo ifconfig en0 down && sleep 5 && sudo ifconfig en0 up; flushdns"
 
 alias rubocop_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E '\.rb$|(^|/)Gemfile$' | xargs bin/rubocop -D --force-exclusion"
 alias rubocop_fixall_on_changes="git diff --name-only --diff-filter=AM origin/master...HEAD | grep -E '\.rb$|(^|/)Gemfile$' | xargs bin/rubocop -A"
