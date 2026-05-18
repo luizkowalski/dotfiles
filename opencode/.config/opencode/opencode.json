@@ -8,6 +8,11 @@
         "@upstash/context7-mcp"
       ]
     },
+    "sentry": {
+      "type": "remote",
+      "url": "https://mcp.sentry.dev/mcp",
+      "oauth": {}
+    },
     "sequential-thinking": {
       "type": "local",
       "command": [
