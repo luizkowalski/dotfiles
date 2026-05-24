@@ -46,7 +46,6 @@ macos-option-as-alt = true
 
 background-blur-radius = 20
 background-blur = macos-glass-clear
-background-opacity = 0.99
 
 mouse-hide-while-typing = true
 
