@@ -55,6 +55,25 @@ function bright(){
   /Applications/BetterDisplay.app/Contents/MacOS/BetterDisplay set -brightness="$1"%
 }
 
+function lid_sleep() {
+  local current_state
+  current_state="$(pmset -g | awk '$1 == "SleepDisabled" && $2 == 1 { print 1; exit }')"
+  current_state="${current_state:-0}"
+
+  local next_state
+  next_state=$((1 - current_state))
+
+  sudo pmset -a disablesleep "$next_state" || return
+
+  echo "Changed disablesleep: ${current_state} -> ${next_state}"
+
+  if [ "$next_state" = "1" ]; then
+    echo "Lid sleep disabled: Mac should stay awake when the lid closes."
+  else
+    echo "Lid sleep enabled: Mac can sleep normally when the lid closes."
+  fi
+}
+
 function update() {
   if [ -e "bin/stubs/update" ]; then
     bin/stubs/update "$@"
@@ -86,7 +105,7 @@ function dev() {
 }
 
 function devx(){
-  devcontainer $1 --workspace-folder . ${@:2}
+  devcontainer "$1" --workspace-folder . "${@:2}"
 }
 
 # function test(){
@@ -176,4 +195,3 @@ function prodeu() {
   local pod=$(kubectl get pods -l app=gatekeeper -o name | grep -v deploy | head -1 | cut -d/ -f2)
   kubectl exec -it "$pod" -- /bin/sh
 }
-
