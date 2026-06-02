@@ -57,26 +57,27 @@ function bright(){
 
 # Toggles whether the Mac sleeps when the lid closes. Requires sudo.
 function toggle_lid_sleep() {
-  local sleep_disabled
-  sleep_disabled="$(pmset -g | awk '$1 == "SleepDisabled" { print $2; exit }')"
-  sleep_disabled="${sleep_disabled:-0}"
+  local sleep_disabled new_value confirm
+  sleep_disabled=$(pmset -g | awk '$1 == "SleepDisabled" { print $2; exit }')
+  new_value=$((1 - sleep_disabled))
 
   local reset=$'\033[0m' cyan=$'\033[36m' green=$'\033[32m' yellow=$'\033[33m'
-  local current_label current_color new_label new_color new_value
+  local awake="stays awake when lid closes ☕️" sleeps="sleeps when lid closes 😴"
+  local current_label current_color new_label new_color
 
-  if [ "$sleep_disabled" = "1" ]; then
-    current_label="stays awake when lid closes" current_color="$yellow"
-    new_label="sleeps when lid closes"          new_color="$green" new_value=0
+  if (( sleep_disabled )); then
+    current_label=$awake  current_color=$yellow
+    new_label=$sleeps     new_color=$green
   else
-    current_label="sleeps when lid closes"      current_color="$green"
-    new_label="stays awake when lid closes"     new_color="$yellow" new_value=1
+    current_label=$sleeps current_color=$green
+    new_label=$awake      new_color=$yellow
   fi
 
   printf "%bCurrent:%b  %b%s%b\n" "$cyan" "$reset" "$current_color" "$current_label" "$reset"
   printf "%bChange to:%b %b%s%b\n" "$cyan" "$reset" "$new_color" "$new_label" "$reset"
   printf "Confirm? [y/N] (requires sudo): "
   read -r confirm
-  [[ "$confirm" =~ ^[Yy]$ ]] || return
+  [[ $confirm == [Yy] ]] || return 1
 
   sudo pmset -a disablesleep "$new_value" || return
   printf "%bDone. Mac now %s.%b\n" "$new_color" "$new_label" "$reset"
