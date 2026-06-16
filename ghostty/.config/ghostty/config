@@ -1,6 +1,6 @@
 adjust-cell-height = 1
 
-auto-update-channel = stable
+auto-update-channel = tip
 
 auto-update = download
 

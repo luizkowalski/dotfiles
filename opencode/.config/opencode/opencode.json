@@ -34,5 +34,16 @@
     "@0xsero/open-queue",
     "superpowers-ruby@git+https://github.com/lucianghinda/superpowers-ruby.git"
   ],
-  "$schema": "https://opencode.ai/config.json"
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": {
+    "ruby": {
+      "command": [
+        "~/.local/share/mise/shims/ruby-lsp"
+      ],
+      "extensions": [
+        ".rb",
+        ".erb"
+      ]
+    }
+  }
 }
