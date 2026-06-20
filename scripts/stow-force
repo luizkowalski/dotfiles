@@ -5,12 +5,15 @@ set -euo pipefail
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 TARGET="${HOME:-~}"
 
-dry_run=$(stow --no --dir="$DOTFILES_DIR" --target="$TARGET" "$@" 2>&1 || true)
-conflicts=$(echo "$dry_run" | grep 'existing target' | sed "s/.*existing target[^:]*: \(.*\)/\1/" || true)
+if [ "$#" -eq 0 ]; then
+  echo "usage: stow-force <package>..." >&2
+  exit 1
+fi
 
-for conflict in $conflicts; do
-  echo "Removing conflict: ${TARGET}/${conflict}"
-  rm -f "${TARGET}/${conflict}"
-done
+if [ -n "$(git -C "$DOTFILES_DIR" status --porcelain -- "$@")" ]; then
+  echo "Refusing to stow: uncommitted changes in $* — commit or stash first." >&2
+  exit 1
+fi
 
-stow --dir="$DOTFILES_DIR" --target="$TARGET" "$@"
+stow --adopt --dir="$DOTFILES_DIR" --target="$TARGET" "$@"
+git -C "$DOTFILES_DIR" restore -- "$@"
