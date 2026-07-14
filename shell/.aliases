@@ -23,6 +23,7 @@ alias gdd="git branch | grep -v '^\*' | fzf --height=20% --reverse --info=inline
 alias gdnav="git diff | diffnav"
 alias gg="lazygit"
 alias hla="haml-lint -A"
+alias kd="kamal deploy"
 alias ll="command ll -1"
 alias merge_main="git fetch origin && git merge origin/main"
 alias merge_master="git fetch origin && git merge origin/master"

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://opencode.ai/config.json",
   "mcp": {
     "context7": {
       "type": "local",
@@ -31,10 +32,9 @@
     }
   },
   "plugin": [
-    "@0xsero/open-queue",
-    "superpowers-ruby@git+https://github.com/lucianghinda/superpowers-ruby.git"
+    "@dietrichgebert/ponytail",
+    "Tarquinen/oc-tps"
   ],
-  "$schema": "https://opencode.ai/config.json",
   "lsp": {
     "ruby": {
       "command": [
