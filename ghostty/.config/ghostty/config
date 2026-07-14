@@ -45,12 +45,12 @@ macos-titlebar-style = transparent
 macos-option-as-alt = true
 
 background-blur-radius = 20
-background-blur = macos-glass-clear
+# background-blur = macos-glass-clear
 
 mouse-hide-while-typing = true
 
-theme = Material Ocean
-# theme = TokyoNight Night
+# theme = Material Ocean
+theme = TokyoNight Night
 # theme = MaterialOcean
 # theme = solarized-osaka-night
 # theme = Sublette
