@@ -1,5 +1,23 @@
 command_timeout = 1000
 
+format = """
+${env_var.PCUSER}\
+$directory\
+$git_branch\
+$git_commit\
+$git_metrics\
+$git_status\
+$package\
+$python\
+$cmd_duration\
+$line_break\
+$character"""
+
+[cmd_duration]
+min_time = 2000
+format = '[⚡ $duration]($style) '
+style = 'bold yellow'
+
 [gcloud]
 disabled = true
 
@@ -11,10 +29,16 @@ disabled = true
 
 [directory]
 read_only = "󰌾 "
+style = "bold cyan"
+truncation_length = 3
+format = '[📁 $path]($style)[$read_only]($style) '
 
 [hostname]
-ssh_only = false
-format = '[$ssh_symbol$hostname]($style) coding in '
+disabled = true
+
+[env_var.PCUSER]
+default = "kowalski"
+format = '[$env_value](bold 205) ⟩ '
 
 [docker_context]
 symbol = " "
@@ -25,18 +49,30 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+style = "bold yellow"
+format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [git_commit]
 only_detached = false
+style = "bold purple"
 
 [git_metrics]
 disabled = false
+
+[git_status]
+style = "bold red"
+
+[character]
+success_symbol = '[▶](bold green)'
+error_symbol = '[▶](bold red)'
 
 [golang]
 symbol = " "
 
 [python]
 disabled = false
+format = '[$symbol$version( \($virtualenv\))]($style) '
+style = "bold green"
 
 # [java]
 # symbol = " "
@@ -50,8 +86,10 @@ disabled = true
 symbol = " "
 disabled = true
 
-# [package]
-# symbol = " "
+[package]
+symbol = "📦 "
+format = "[$symbol$version]($style) "
+style = "bold 205"
 
 [rust]
 symbol = " "

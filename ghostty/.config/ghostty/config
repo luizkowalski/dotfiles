@@ -50,11 +50,13 @@ background-blur-radius = 20
 mouse-hide-while-typing = true
 
 # theme = Material Ocean
+# theme = Snazzy
 theme = TokyoNight Night
+# theme = Apple System Colors
+# theme = Aura Dark
 # theme = MaterialOcean
 # theme = solarized-osaka-night
 # theme = Sublette
-# theme = AdventureTime
 # theme = Kanagawa Wave
 # theme = Kanagawabones
 # theme = tokyonight-storm
