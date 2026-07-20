@@ -18,6 +18,7 @@ only = [
   "github_cli_extensions",
   "go",
   "node",
+  "pi",
   "self_update",
   "skills",
   "shell",                 #, "mas",

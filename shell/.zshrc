@@ -177,3 +177,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="/Users/luiz/.antigravity-ide/antigravity-ide/bin:$PATH"
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+
+# Pi
+export PATH="/Users/luiz.kowalski/.local/share/mise/installs/node/24.17.0/bin:$PATH"
