@@ -31,14 +31,14 @@ disabled = true
 read_only = "󰌾 "
 style = "bold cyan"
 truncation_length = 3
-format = '[📁 $path]($style)[$read_only]($style) '
+format = '[🗂️ $path]($style)[$read_only]($style) '
 
 [hostname]
 disabled = true
 
 [env_var.PCUSER]
 default = "kowalski"
-format = '[$env_value](bold 205) ⟩ '
+format = '[$env_value](bold 100) ⟩ '
 
 [docker_context]
 symbol = " "
