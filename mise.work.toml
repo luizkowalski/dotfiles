@@ -1,3 +1,6 @@
+[bootstrap.packages]
+"brew:awscli" = "latest"
+
 [dotfiles]
 "~/.gitconfig.local" = "dotfiles/profiles/work/gitconfig"
 "~/.zshrc.local" = "dotfiles/profiles/work/zshrc"
