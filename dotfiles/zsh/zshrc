@@ -22,6 +22,8 @@ DISABLE_AUTO_UPDATE="true"
 
 VSCODE='cursor'
 
+zstyle ':omz:update' mode reminder
+
 [ -f "$HOME/.secrets" ] && source "$HOME/.secrets"
 
 plugins=(
