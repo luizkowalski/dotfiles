@@ -15,15 +15,17 @@ only = [
   "bun_packages",
   "claude_code",
   "config_update",
+  "cursor",
   "github_cli_extensions",
   "go",
   "mise",
   "node",
   "pi",
   "self_update",
-  "skills",
   "shell",                 #, "mas",
-  "tmux"
+  "skills",
+  "tmux",
+  "vscode",
 ]
 
 # Do not ask to retry failed steps (default: false)
@@ -52,9 +54,7 @@ cleanup = true
 
 [git]
 max_concurrency = 5
-repos = [
-  "~/Projects/37signals-skills"
-]
+repos = ["~/Projects/37signals-skills"]
 # Additional git repositories to pull
 #repos = [
 #    "~/src/*/",
@@ -80,7 +80,7 @@ self_update = true
 
 [brew]
 greedy_cask = true
-autoremove  = true
+autoremove = true
 
 # [linux]
 # Arguments to pass yay when updating packages
