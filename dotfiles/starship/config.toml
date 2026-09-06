@@ -7,7 +7,11 @@ $git_branch\
 $git_commit\
 $git_metrics\
 $git_status\
+$bun\
+$nodejs\
 $package\
+$ruby\
+$rust\
 $python\
 $cmd_duration\
 $line_break\
@@ -22,7 +26,7 @@ style = 'bold yellow'
 disabled = true
 
 [bun]
-symbol = "🥟"
+symbol = "🥟 "
 
 [aws]
 disabled = true
@@ -92,10 +96,10 @@ format = "[$symbol$version]($style) "
 style = "bold 205"
 
 [rust]
-symbol = " "
+symbol = "🦀 "
 
 [ruby]
-symbol = "💎"
+symbol = "💎 "
 
 [battery]
 full_symbol = '🔋 '
