@@ -10,8 +10,8 @@ cursor-style-blink = false
 
 copy-on-select = clipboard
 
-font-family = Cascadia Code NF
-font-style = Light
+font-family = Maple Mono Normal NF Light
+# font-style = Light
 font-size = 14
 
 scrollback-limit-bytes = 500000000

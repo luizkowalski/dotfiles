@@ -15,7 +15,7 @@ only = [
   "bun_packages",
   "claude_code",
   "config_update",
-  "cursor",
+  # "cursor",
   "github_cli_extensions",
   "go",
   "mise",
