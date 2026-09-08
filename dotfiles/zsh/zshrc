@@ -5,7 +5,7 @@ export CDPATH="$CDPATH:$HOME/Projects"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 export BULB_HOST="192.168.178.112"
 export BULB_PORT="38899"
-export EDITOR="cursor --wait"
+export EDITOR="code --wait"
 export VISUAL="$EDITOR"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/18/bin"
 
@@ -20,7 +20,7 @@ export PATH="$HOME/.local/bin:/opt/homebrew/bin:/opt/zerobrew/prefix/bin:$PATH"
 
 DISABLE_AUTO_UPDATE="true"
 
-VSCODE='cursor'
+VSCODE='code'
 
 zstyle ':omz:update' mode reminder
 
@@ -48,7 +48,7 @@ plugins=(
 
 source "$ZSH/oh-my-zsh.sh"
 
-export RAILS_EDITOR="cursor"
+export RAILS_EDITOR="code"
 
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
