@@ -10,8 +10,7 @@ cursor-style-blink = false
 
 copy-on-select = clipboard
 
-font-family = Monaspace Argon NF Light
-# font-style = Light
+font-family = Ioskeley Mono Term Light
 font-size = 14
 
 scrollback-limit-bytes = 500000000
